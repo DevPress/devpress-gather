@@ -18,7 +18,7 @@ function gather_get_default_footer_text() {
 	$text .= '<span class="sep"> | </span>';
 	$text .= sprintf(
 		__( '%1$s by %2$s.', 'gather' ),
-			'Themes MX',
+			'Gather Theme',
 			'<a href="http://devpress.com/" rel="designer">DevPress</a>'
 	);
 	return $text;
