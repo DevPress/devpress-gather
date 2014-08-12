@@ -393,6 +393,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -422,6 +423,7 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  word-wrap: break-word;
 }
 
 a:hover,
@@ -1196,6 +1198,12 @@ a:active {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   font-weight: 400;
   color: #666;
+}
+
+.no-comments {
+  margin: 0;
+  padding: 4% 6%;
+  text-align: center;
 }
 
 .comment-content a {

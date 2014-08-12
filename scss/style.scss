@@ -37,6 +37,7 @@ body {
 	font-size: $primary-font-size;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	word-wrap: break-word;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $secondary-font;
@@ -59,6 +60,7 @@ a {
 	color: $primary-color;
 	text-decoration: none;
 	transition: all 0.2s ease;
+	word-wrap: break-word;
 }
 a:hover,
 a:focus,
@@ -471,6 +473,11 @@ a:active {
 	font-family: $primary-font;
 	font-weight:400;
 	color:#666;
+}
+.no-comments {
+	margin:0;
+	padding:4% 6%;
+	text-align: center;
 }
 .comment-content a {
 	word-wrap: break-word;
