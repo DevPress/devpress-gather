@@ -174,10 +174,15 @@
 				this.cache.$postswrap.find('.module').css({ 'margin-right' : 0 });
 			}
 
+			// So cached selectors can be used in functions
+			var self = this;
+
 			// Initialize
-			this.cache.$postswrap.masonry({
-				itemSelector: '.module',
-				gutter : gutter,
+			this.cache.$postswrap.imagesLoaded( function() {
+				self.cache.$postswrap.masonry({
+					itemSelector: '.module',
+					gutter : gutter
+				});
 			});
 
 			// For Infinite Scroll
