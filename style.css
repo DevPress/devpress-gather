@@ -501,7 +501,7 @@ a:active {
   padding-left: 30px;
 }
 
-/* Responsive */
+/* General Responsive Layout */
 @media screen and (max-width: 881px) {
   #page .content-area {
     float: none;
@@ -516,6 +516,25 @@ a:active {
   #page .site-content .secondary {
     float: none;
     width: auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  .single #page .content-area {
+    margin-top: 1px;
+  }
+
+  .single #content .col-width {
+    width: 100%;
+  }
+
+  .single .module {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .single.sidebar-right .site-content .secondary {
+    margin: 0;
+    margin-top: 1px;
   }
 }
 /* Header
@@ -562,6 +581,15 @@ a:active {
   margin-top: 15px;
 }
 
+@media screen and (max-width: 881px) {
+  .site-branding {
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 48px;
+  }
+}
 /* Primary Navigation
 -------------------------------------------------------------- */
 .main-navigation {
@@ -1005,6 +1033,45 @@ a:active {
 .page-links {
   clear: both;
   margin: 0 0 20px;
+}
+
+.more-link {
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 510px) {
+  .entry-title {
+    padding: 6%;
+  }
+
+  .entry-footer-meta {
+    padding: 0 6% 6%;
+  }
+}
+/* Post Formats
+--------------------------------------------------------------*/
+#content blockquote {
+  font-size: 18px;
+  background: #f6f6f6;
+  margin: 0 0 20px;
+  padding: 20px;
+  border-left: 4px solid #5bc08c;
+}
+
+#content blockquote cite {
+  display: inline-block;
+  margin-top: .5em;
+  font-size: 16px;
+}
+
+#content blockquote cite:before {
+  content: '\2014';
+  margin-right: .5em;
+}
+
+#content blockquote p:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Masonry
@@ -1621,34 +1688,4 @@ object {
 /* Show footer when scrolling ends */
 .infinity-end.neverending .site-footer {
   display: block;
-}
-
-/* General Responsive Styles
---------------------------------------------------------------*/
-@media screen and (max-width: 510px) {
-  .entry-title {
-    padding: 6%;
-  }
-
-  .entry-footer-meta {
-    padding: 0 6% 6%;
-  }
-
-  .single #page .content-area {
-    margin-top: 0;
-  }
-
-  .single #content .col-width {
-    width: 100%;
-  }
-
-  .single .module {
-    border-radius: 0;
-    margin-bottom: 0;
-  }
-
-  .single.sidebar-right .site-content .secondary {
-    border-top: 1px solid #eee;
-    margin: 0;
-  }
 }

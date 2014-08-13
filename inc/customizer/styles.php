@@ -65,6 +65,16 @@ function gather_build_css_rules() {
 			)
 		) );
 
+		// Block Quote Border
+		gather_css()->add( array(
+			'selectors' => array(
+				'#content blockquote'
+			),
+			'declarations' => array(
+				'border-color' => $mod
+			)
+		) );
+
 	}
 
 	// Secondary Color
