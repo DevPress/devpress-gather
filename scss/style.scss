@@ -340,7 +340,6 @@ a:active {
 --------------------------------------------------------------*/
 
 #content blockquote {
-	font-size:18px;
 	background:#f6f6f6;
 	margin:0 0 20px;
 	padding:20px;
@@ -357,6 +356,9 @@ a:active {
 }
 #content blockquote p:last-of-type {
 	margin-bottom:0;
+}
+.single #content blockquote {
+	font-size:18px;
 }
 
 /* Masonry
