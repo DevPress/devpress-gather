@@ -272,14 +272,6 @@ function gather_options() {
 		'default' => 0,
 	);
 
-	$options['full-bleed-images'] = array(
-		'id' => 'full-bleed-images',
-		'label'   => __( 'Display Featured Post Images Full-Bleed', 'gather' ),
-		'section' => $section,
-		'type'    => 'checkbox',
-		'default' => 1,
-	);
-
 	// Typography
 	$section = 'typography';
 

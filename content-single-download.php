@@ -4,13 +4,7 @@
  */
 ?>
 
-<?php
-	$classes = array();
-	if ( get_theme_mod( 'full-bleed-images', gather_get_default( 'full-bleed-images' ) ) ) {
-		$classes = array( 'full-bleed' );
-	}
-?>
-<article id="post-<?php the_ID(); ?>" <?php post_class( $classes ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
