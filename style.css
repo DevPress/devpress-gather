@@ -390,7 +390,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   background: #f2f2f2;
   color: #333;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
@@ -1010,6 +1010,10 @@ a:active {
   padding: 0 6% 4%;
 }
 
+.single .entry-content {
+  padding: 0 16% 4%;
+}
+
 .entry-footer-meta {
   padding: 0 6% 4%;
 }
@@ -1124,18 +1128,11 @@ a:active {
 }
 
 /* Columns */
-@media screen and (min-width: 510px) and (max-width: 880px) {
+@media screen and (min-width: 881px) {
   .masonry .hentry {
     float: left;
-    width: calc(50% - 10px);
-    margin-right: 20px;
   }
 
-  .masonry .hentry:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 881px) {
   .column-masonry-2 .hentry {
     width: calc(50% - 15px);
     margin-right: 30px;
@@ -1160,6 +1157,17 @@ a:active {
   }
 
   .column-masonry-4 .hentry:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 880px) {
+  .masonry .hentry {
+    float: left;
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+
+  .masonry .hentry:nth-child(2n) {
     margin-right: 0;
   }
 }
@@ -1196,7 +1204,7 @@ a:active {
 
 .widget-title {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #555;
 }
 

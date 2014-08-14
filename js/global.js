@@ -11,7 +11,7 @@
 	 	cache: {
 			$document: $(document),
 			$window: $(window),
-			$postswrap: false,
+			$postswrap: $('#posts-wrap'),
 			masonry : false
 		},
 
@@ -69,7 +69,7 @@
 				function() {
 
 					if ( self.cache.masonry ) {
-						self.masonryInit();
+						// self.masonryInit();
 					}
 
 				}, 200 )
@@ -169,16 +169,12 @@
 				gutter = 20;
 			}
 
-			if ( ! this.cache.$postswrap ) {
-				this.cache.$postswrap = $('#posts-wrap');
-				this.cache.$postswrap.find('.module').css({ 'margin-right' : 0 });
-			}
-
 			// So cached selectors can be used in functions
 			var self = this;
 
 			// Initialize
 			this.cache.$postswrap.imagesLoaded( function() {
+				self.cache.$postswrap.find('.module').css({ 'margin-right' : 0 });
 				self.cache.$postswrap.masonry({
 					itemSelector: '.module',
 					gutter : gutter
