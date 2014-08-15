@@ -269,6 +269,7 @@ function gather_options() {
 		'label'   => __( 'Display Sidebar on Archives', 'gather' ),
 		'section' => $section,
 		'type'    => 'checkbox',
+		'description' => __( 'Available for layouts with sidebars only.', 'gather' ),
 		'default' => 0,
 	);
 

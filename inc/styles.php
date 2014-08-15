@@ -3,10 +3,9 @@
  * Implements styles set in the theme customizer
  *
  * @package Gather
- * @credit Based on code from "Make" by The Theme Foundary
  */
 
-if ( ! function_exists( 'gather_build_css_rules' ) ) :
+if ( ! function_exists( 'gather_styles' ) ) :
 /**
  * Process user options to generate CSS needed to implement the choices.
  *
@@ -14,7 +13,7 @@ if ( ! function_exists( 'gather_build_css_rules' ) ) :
  *
  * @return void
  */
-function gather_build_css_rules() {
+function gather_styles() {
 
 	// Primary Color
 	$setting = 'primary-color';
@@ -26,7 +25,7 @@ function gather_build_css_rules() {
 		$color_obj = new Jetpack_Color( $color );
 
 		// Link Styling
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'a',
 				'.site-title a',
@@ -38,7 +37,7 @@ function gather_build_css_rules() {
 		) );
 
 		// Button Styling
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'button',
 				'.button',
@@ -52,7 +51,7 @@ function gather_build_css_rules() {
 		) );
 
 		// Button Hover State
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'button:hover',
 				'.button:hover',
@@ -66,7 +65,7 @@ function gather_build_css_rules() {
 		) );
 
 		// Block Quote Border
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'#content blockquote'
 			),
@@ -84,7 +83,7 @@ function gather_build_css_rules() {
 	if ( $mod !== gather_get_default( $setting ) ) {
 
 		// Colors
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-title a:hover',
 			),
@@ -102,7 +101,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'body',
 				'.site-description',
@@ -124,7 +123,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'h1, h2, h3, h4, h5, h6',
 				'.comment-author',
@@ -161,7 +160,7 @@ function gather_build_css_rules() {
 		$mod = get_theme_mod( $setting, false );
 
 		if ( $mod ) {
-			gather_css()->add( array(
+			Customizer_Library_Styles()->add( array(
 				'selectors' => array(
 					$selector,
 					$selector . 'ul ul a:hover'
@@ -177,7 +176,7 @@ function gather_build_css_rules() {
 		$mod = get_theme_mod( $setting, false );
 
 		if ( $mod ) {
-			gather_css()->add( array(
+			Customizer_Library_Styles()->add( array(
 				'selectors' => array(
 					$selector . 'a:hover',
 					$selector . 'li:hover a'
@@ -193,7 +192,7 @@ function gather_build_css_rules() {
 		$mod = get_theme_mod( $setting, false );
 
 		if ( $mod ) {
-			gather_css()->add( array(
+			Customizer_Library_Styles()->add( array(
 				'selectors' => array(
 					$selector . 'a',
 					$selector . 'a:hover',
@@ -211,7 +210,7 @@ function gather_build_css_rules() {
 		$mod = get_theme_mod( $setting, false );
 
 		if ( $mod ) {
-			gather_css()->add( array(
+			Customizer_Library_Styles()->add( array(
 				'selectors' => array(
 					$selector . 'ul',
 					$selector . 'a',
@@ -235,7 +234,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-branding'
 			),
@@ -252,7 +251,7 @@ function gather_build_css_rules() {
 
 	if ( $mod ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-branding'
 			),
@@ -269,7 +268,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-branding'
 			),
@@ -288,7 +287,7 @@ function gather_build_css_rules() {
 
 	if ( $mod ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-branding'
 			),
@@ -305,7 +304,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-title a'
 			),
@@ -322,7 +321,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-title a:hover'
 			),
@@ -340,7 +339,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-title'
 			),
@@ -357,7 +356,7 @@ function gather_build_css_rules() {
 
 	if ( $mod != gather_get_default( $setting ) ) {
 
-		gather_css()->add( array(
+		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-description'
 			),
@@ -371,13 +370,13 @@ function gather_build_css_rules() {
 }
 endif;
 
-add_action( 'gather_css', 'gather_build_css_rules' );
+add_action( 'customizer_library_styles', 'gather_styles' );
 
 if ( ! function_exists( 'gather_display_customizations' ) ) :
 /**
  * Generates the style tag and CSS needed for the theme options.
  *
- * By using the "gather_css" filter, different components can print CSS in the header.
+ * By using the "Customizer_Library_Styles" filter, different components can print CSS in the header.
  * It is organized this way to ensure there is only one "style" tag.
  *
  * @since  1.0.0.
@@ -386,10 +385,10 @@ if ( ! function_exists( 'gather_display_customizations' ) ) :
  */
 function gather_display_customizations() {
 
-	do_action( 'gather_css' );
+	do_action( 'customizer_library_styles' );
 
 	// Echo the rules
-	$css = gather_css()->build();
+	$css = Customizer_Library_Styles()->build();
 
 	if ( ! empty( $css ) ) {
 		echo "\n<!-- Begin Gather Custom CSS -->\n<style type=\"text/css\" id=\"gather-custom-css\">\n";

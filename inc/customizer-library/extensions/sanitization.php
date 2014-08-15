@@ -2,7 +2,7 @@
 /**
  * Customizer Sanization
  *
- * @package Gather
+ * @package Customizer_Library
  */
 
 if ( ! function_exists( 'gather_sanitize_text' ) ) :

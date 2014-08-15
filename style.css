@@ -58,7 +58,6 @@ html {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -421,7 +420,6 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   word-wrap: break-word;
 }
@@ -499,6 +497,12 @@ a:active {
 
 .sidebar-left.masonry .site-main {
   padding-left: 30px;
+}
+
+/* No Sidebar */
+.no-sidebar.single .content-area {
+  max-width: 790px;
+  margin: 0 auto;
 }
 
 /* General Responsive Layout */
@@ -1007,11 +1011,7 @@ a:active {
 }
 
 .entry-content {
-  padding: 0 6% 4%;
-}
-
-.single .entry-content {
-  padding: 0 16% 4%;
+  padding: 0 12% 4%;
 }
 
 .entry-footer-meta {
@@ -1093,7 +1093,6 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -1111,7 +1110,7 @@ a:active {
 
 .masonry .entry-content {
   font-size: 14px;
-  padding-bottom: 15px;
+  padding: 0 6% 15px;
 }
 
 .masonry .entry-footer-meta {

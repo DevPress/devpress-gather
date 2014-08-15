@@ -130,6 +130,13 @@ a:active {
 	padding-left: 30px;
 }
 
+/* No Sidebar */
+
+.no-sidebar.single .content-area {
+	max-width: 790px;
+	margin:0 auto;
+}
+
 /* General Responsive Layout */
 
 @media screen and (max-width: 881px ) {
@@ -301,10 +308,7 @@ a:active {
 	right: 15px;
 }
 .entry-content {
-	padding: 0 6% 4%;
-}
-.single .entry-content {
-	padding: 0 16% 4%;
+	padding: 0 12% 4%;
 }
 .entry-footer-meta {
 	padding:0 6% 4%;
@@ -388,7 +392,7 @@ a:active {
 }
 .masonry .entry-content {
 	font-size:14px;
-	padding-bottom:15px;
+	padding: 0 6% 15px;
 }
 .masonry .entry-footer-meta {
 	padding: 0;

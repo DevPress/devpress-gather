@@ -217,38 +217,28 @@ function gather_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gather_scripts' );
 
-/**
- * Custom template tags for this theme.
- */
+
+// Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
 
-/**
- * Custom functions that act independently of the theme templates.
- */
+// Custom functions that act independently of the theme templates.
 require get_template_directory() . '/inc/extras.php';
 
-/**
- * Load color utility functions.
- */
+// Color utility functions.
 if ( ! class_exists( 'Jetpack_Color' ) ) {
 	require get_template_directory() . '/inc/jetpack.class.color.php';
 }
 
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
+// Helper library for the theme customizer.
+require get_template_directory() . '/inc/customizer-library/customizer-library.php';
 
-/**
- * Load functions that are controlled by theme customizer.
- */
-require get_template_directory() . '/inc/customizer-functions.php';
+// Define options for the theme customizer.
+require get_template_directory() . '/inc/customizer-options.php';
 
-/**
- * Theme customizer.
- *
- * gather_remove_theme_mods() can be used to reset custom theme mods.
- */
-require get_template_directory() . '/inc/customizer/customizer.php';
+// Output inline styles based on theme customizer selections.
+require get_template_directory() . '/inc/styles.php';
+
+// Additional filters and actions based on theme customizer selections.
+require get_template_directory() . '/inc/mods.php';
 
 // gather_remove_theme_mods();

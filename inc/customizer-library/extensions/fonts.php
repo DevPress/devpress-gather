@@ -2,7 +2,7 @@
 /**
  * Theme Customizer Fonts
  *
- * @package Gather
+ * @package Customizer_Library
  */
 
 if ( ! function_exists( 'gather_get_all_fonts' ) ) :

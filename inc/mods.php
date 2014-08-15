@@ -84,7 +84,7 @@ add_filter( 'body_class', 'gather_body_classes' );
  }
 
 /**
- * Used to output number of masonry columns as a data attribute
+ * Outputs the number of masonry columns as a data attribute
  *
  * @since Gather 0.1
  */
@@ -102,7 +102,11 @@ add_filter( 'body_class', 'gather_body_classes' );
 	 }
  }
 
-
+/**
+ * Outputs search icon in menu based on customizer option
+ *
+ * @since Gather 0.1
+ */
 function gather_search_in_menu( $items, $args ) {
 
 	if (

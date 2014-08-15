@@ -1,10 +1,10 @@
 <?php
 /**
- * @package Gather
+ * @package Customizer_Library
  * @credit Based on code from "Make" by The Theme Foundary
  */
 
-if ( ! class_exists( 'GATHER_CSS' ) ) :
+if ( ! class_exists( 'Customizer_Library_Styles' ) ) :
 /**
  * Singleton to collect and print CSS based on user input.
  *
@@ -12,14 +12,14 @@ if ( ! class_exists( 'GATHER_CSS' ) ) :
  * of conflicting rules and sorts out what the final CSS should be. The primary function is `add()`. It allows the
  * caller to add a new rule to be generated in the CSS.
  */
-class GATHER_CSS {
+class Customizer_Library_Styles {
 
 	/**
-	 * The one instance of GATHER_CSS.
+	 * The one instance of Customizer_Library_Styles.
 	 *
 	 * @since 1.0.0.
 	 *
-	 * @var   GATHER_CSS    The one instance for the singleton.
+	 * @var   Customizer_Library_Styles    The one instance for the singleton.
 	 */
 	private static $instance;
 
@@ -52,11 +52,11 @@ class GATHER_CSS {
 	private $tab = '';
 
 	/**
-	 * Instantiate or return the one GATHER_CSS instance.
+	 * Instantiate or return the one Customizer_Library_Styles instance.
 	 *
 	 * @since  1.0.0.
 	 *
-	 * @return GATHER_CSS
+	 * @return Customizer_Library_Styles
 	 */
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
@@ -71,7 +71,7 @@ class GATHER_CSS {
 	 *
 	 * @since  1.0.0.
 	 *
-	 * @return GATHER_CSS
+	 * @return Customizer_Library_Styles
 	 */
 	function __construct() {
 		// Set line ending and tab
@@ -251,17 +251,17 @@ class GATHER_CSS {
 }
 endif;
 
-if ( ! function_exists( 'gather_css' ) ) :
+if ( ! function_exists( 'customizer_library_styles' ) ) :
 /**
- * Return the one GATHER_CSS object.
+ * Return the one Customizer_Library_Styles object.
  *
  * @since  1.0.0.
  *
- * @return GATHER_CSS    The one GATHER_CSS object.
+ * @return GATHER_CSS    The one Customizer_Library_Styles object.
  */
-function gather_css() {
-	return GATHER_CSS::instance();
+function customizer_library_styles() {
+	return Customizer_Library_Styles::instance();
 }
 endif;
 
-add_action( 'init', 'gather_css', 1 );
+add_action( 'init', 'customizer_library_styles', 1 );

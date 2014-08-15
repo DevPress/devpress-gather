@@ -1,8 +1,8 @@
 <?php
 /**
- * Theme Customizer
+ * Builds out customizer options
  *
- * @package Gather
+ * @package Theme_Customizer_Library
  */
 
 if ( ! function_exists( 'gather_customizer' ) ) :
