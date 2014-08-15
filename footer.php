@@ -20,9 +20,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="col-width">
-			<?php if ( get_theme_mod( 'footer-text', gather_get_default( 'footer-text' ) ) != '' ) : ?>
+			<?php if ( get_theme_mod( 'footer-text', customizer_library_get_default( 'footer-text' ) ) != '' ) : ?>
 			<div class="site-info">
-				<?php echo get_theme_mod( 'footer-text', gather_get_default( 'footer-text' ) ); ?>
+				<?php echo get_theme_mod( 'footer-text', customizer_library_get_default( 'footer-text' ) ); ?>
 			</div><!-- .site-info -->
 			<?php endif; ?>
 		</div><!-- .col-width -->

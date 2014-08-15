@@ -1,7 +1,7 @@
 <?php
 /**
- * @package Customizer_Library
- * @credit Based on code from "Make" by The Theme Foundary
+ * @package 	Customizer_Library
+ * @author		Devin Price, The Theme Foundary
  */
 
 if ( ! class_exists( 'Customizer_Library_Styles' ) ) :

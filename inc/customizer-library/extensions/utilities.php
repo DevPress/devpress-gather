@@ -2,7 +2,8 @@
 /**
  * Customizer Utility Functions
  *
- * @package Gather
+ * @package 	Customizer_Library
+ * @author		Devin Price, The Theme Foundary
  */
 
 /**
@@ -14,9 +15,9 @@
  * @return mixed $default
  */
 
-function gather_get_default( $setting ) {
+function customizer_library_get_default( $setting ) {
 
-	$options = gather_options();
+	$options = customizer_library_options();
 
 	if ( isset( $options[$setting]['default'] ) ) {
 		return $options[$setting]['default'];
@@ -32,9 +33,9 @@ function gather_get_default( $setting ) {
  * @param string
  * @return mixed $default
  */
-function gather_get_choices( $setting ) {
+function customizer_library_get_choices( $setting ) {
 
-	$options = gather_options();
+	$options = customizer_library_options();
 
 	if ( isset( $options[$setting]['choices'] ) ) {
 		return $options[$setting]['choices'];
@@ -51,7 +52,7 @@ function gather_get_choices( $setting ) {
  * @param  string  $hex
  * @return array
  */
-function gather_hex_to_rgb( $hex ) {
+function customizer_library_hex_to_rgb( $hex ) {
 
 	// Remove "#" if it was added
 	$color = trim( $hex, '#' );
@@ -83,9 +84,9 @@ function gather_hex_to_rgb( $hex ) {
  * @param string
  * @return mixed $default
  */
-function gather_remove_theme_mods() {
+function customizer_library_remove_theme_mods() {
 
-	$options = gather_options();
+	$options = customizer_library_options();
 
 	if ( $options ) {
 		foreach( $options as $option ) {

@@ -17,9 +17,9 @@ function gather_styles() {
 
 	// Primary Color
 	$setting = 'primary-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod !== gather_get_default( $setting ) ) {
+	if ( $mod !== customizer_library_get_default( $setting ) ) {
 
 		$color = sanitize_hex_color( $mod );
 		$color_obj = new Jetpack_Color( $color );
@@ -78,9 +78,9 @@ function gather_styles() {
 
 	// Secondary Color
 	$setting = 'secondary-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod !== gather_get_default( $setting ) ) {
+	if ( $mod !== customizer_library_get_default( $setting ) ) {
 
 		// Colors
 		Customizer_Library_Styles()->add( array(
@@ -96,10 +96,10 @@ function gather_styles() {
 
 	// Primary Font
 	$setting = 'primary-font';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
-	$stack = gather_get_font_stack( $mod );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
+	$stack = customizer_library_get_font_stack( $mod );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -118,10 +118,10 @@ function gather_styles() {
 
 	// Secondary Font
 	$setting = 'secondary-font';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
-	$stack = gather_get_font_stack( $mod );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
+	$stack = customizer_library_get_font_stack( $mod );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -230,9 +230,9 @@ function gather_styles() {
 
 	// Header Background Color
 	$setting = 'header-background-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -264,9 +264,9 @@ function gather_styles() {
 
 	// Header Background Image Styles
 	$setting = 'header-background-image-style';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -283,7 +283,7 @@ function gather_styles() {
 
 	// Center Header Text
 	$setting = 'center-branding';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
 	if ( $mod ) {
 
@@ -300,9 +300,9 @@ function gather_styles() {
 
 	// Site Title Color
 	$setting = 'site-title-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -317,9 +317,9 @@ function gather_styles() {
 
 	// Site Title Color
 	$setting = 'site-title-hover-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -334,10 +334,10 @@ function gather_styles() {
 
 	// Site Title Font
 	$setting = 'site-title-font';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
-	$stack = gather_get_font_stack( $mod );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
+	$stack = customizer_library_get_font_stack( $mod );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
@@ -352,9 +352,9 @@ function gather_styles() {
 
 	// Site Tagline Color
 	$setting = 'site-tagline-color';
-	$mod = get_theme_mod( $setting, gather_get_default( $setting ) );
+	$mod = get_theme_mod( $setting, customizer_library_get_default( $setting ) );
 
-	if ( $mod != gather_get_default( $setting ) ) {
+	if ( $mod != customizer_library_get_default( $setting ) ) {
 
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(

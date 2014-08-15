@@ -32,12 +32,12 @@ function gather_get_default_footer_text() {
 function gather_body_classes( $classes ) {
 
 	if ( gather_load_masonry() ) {
-		$classes[] = get_theme_mod( 'archive-layout', gather_get_default( 'archive-layout' ) );
+		$classes[] = get_theme_mod( 'archive-layout', customizer_library_get_default( 'archive-layout' ) );
 		$classes[] = 'masonry';
 	}
 
 	if ( gather_show_sidebar() ) {
-		$classes[] = get_theme_mod( 'standard-layout', gather_get_default( 'standard-layout' ) );
+		$classes[] = get_theme_mod( 'standard-layout', customizer_library_get_default( 'standard-layout' ) );
 	} else {
 		$classes[] = 'no-sidebar';
 	}
@@ -74,7 +74,7 @@ add_filter( 'body_class', 'gather_body_classes' );
  function gather_load_masonry() {
 
  	if ( !is_singular() && !is_404() && !is_author() && !is_search() ) {
- 		$archive_layout = get_theme_mod( 'archive-layout', gather_get_default( 'archive-layout' ) );
+ 		$archive_layout = get_theme_mod( 'archive-layout', customizer_library_get_default( 'archive-layout' ) );
  		if ( $archive_layout != 'standard' ) {
  			return true;
  		}
@@ -89,7 +89,7 @@ add_filter( 'body_class', 'gather_body_classes' );
  * @since Gather 0.1
  */
  function gather_get_columns() {
-	 $layout = get_theme_mod( 'archive-layout', gather_get_default( 'archive-layout' ) );
+	 $layout = get_theme_mod( 'archive-layout', customizer_library_get_default( 'archive-layout' ) );
 	 switch ( $layout ) {
 	 	case '4-column-masonry':
 	 		return '4';

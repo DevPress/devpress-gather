@@ -2,7 +2,8 @@
 /**
  * Customize for textarea, extend the WP customizer
  *
- * @package Theme_Customizer_Library
+ * @package 	Customizer_Library
+ * @author		Devin Price, The Theme Foundary
  */
 
 if ( ! class_exists( 'WP_Customize_Control' ) )

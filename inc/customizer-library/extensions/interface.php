@@ -2,10 +2,11 @@
 /**
  * Builds out customizer options
  *
- * @package Theme_Customizer_Library
+ * @package 	Customizer_Library
+ * @author		Devin Price
  */
 
-if ( ! function_exists( 'gather_customizer' ) ) :
+if ( ! function_exists( 'customizer_library_register' ) ) :
 /**
  * Configure settings and controls for the theme customizer
  *
@@ -14,9 +15,9 @@ if ( ! function_exists( 'gather_customizer' ) ) :
  * @param  object $wp_customize The global customizer object.
  * @return void
  */
-function gather_customizer( $wp_customize ) {
+function customizer_library_register( $wp_customize ) {
 
-	$options = gather_options();
+	$options = customizer_library_options();
 	$sections = $options['sections'];
 
 	if ( isset( $sections ) ) {
@@ -45,7 +46,7 @@ function gather_customizer( $wp_customize ) {
 					case 'select':
 
 						if ( !isset( $option['sanitize_callback'] ) ) {
-							$option['sanitize_callback'] = 'gather_sanitize_choices';
+							$option['sanitize_callback'] = 'customizer_library_sanitize_choices';
 						}
 
 						$wp_customize->add_control( $option['id'], array(
@@ -61,7 +62,7 @@ function gather_customizer( $wp_customize ) {
 					case 'checkbox':
 
 						if ( !isset( $option['sanitize_callback'] ) ) {
-							$option['sanitize_callback'] = 'gather_sanitize_checkbox';
+							$option['sanitize_callback'] = 'customizer_library_sanitize_checkbox';
 						}
 
 						$wp_customize->add_control( $option['id'], array(
@@ -91,7 +92,7 @@ function gather_customizer( $wp_customize ) {
 					case 'upload':
 
 						if ( !isset( $option['sanitize_callback'] ) ) {
-							$option['sanitize_callback'] = 'gather_sanitize_file_url';
+							$option['sanitize_callback'] = 'customizer_library_sanitize_file_url';
 						}
 
 				    	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
@@ -106,7 +107,7 @@ function gather_customizer( $wp_customize ) {
 					case 'textarea':
 
 						if ( !isset( $option['sanitize_callback'] ) ) {
-							$option['sanitize_callback'] = 'gather_sanitize_text';
+							$option['sanitize_callback'] = 'customizer_library_sanitize_text';
 						}
 
 				    	$wp_customize->add_control( new Textarea_Custom_Control( $wp_customize,
@@ -126,4 +127,4 @@ function gather_customizer( $wp_customize ) {
 }
 endif;
 
-add_action( 'customize_register', 'gather_customizer', 100 );
+add_action( 'customize_register', 'customizer_library_register', 100 );

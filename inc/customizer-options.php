@@ -12,7 +12,7 @@
  *
  * @return array $options
  */
-function gather_options() {
+function customizer_library_options() {
 
 	// Theme defaults
 	$primary_color = '#5bc08c';
@@ -48,7 +48,7 @@ function gather_options() {
 		'label'   => __( 'Site Title Font', 'gather' ),
 		'section' => $section,
 		'type'    => 'select',
-		'choices' => gather_get_font_choices(),
+		'choices' => customizer_library_get_font_choices(),
 		'default' => 'Monoton'
 	);
 
@@ -296,7 +296,7 @@ function gather_options() {
 		'label'   => __( 'Primary Font', 'gather' ),
 		'section' => $section,
 		'type'    => 'select',
-		'choices' => gather_get_font_choices(),
+		'choices' => customizer_library_get_font_choices(),
 		'default' => 'Roboto'
 	);
 
@@ -305,7 +305,7 @@ function gather_options() {
 		'label'   => __( 'Secondary Font', 'gather' ),
 		'section' => $section,
 		'type'    => 'select',
-		'choices' => gather_get_font_choices(),
+		'choices' => customizer_library_get_font_choices(),
 		'default' => 'Merriweather'
 	);
 

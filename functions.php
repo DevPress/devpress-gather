@@ -125,12 +125,12 @@ function gather_fonts() {
 
 	// Font options
 	$fonts = array(
-		get_theme_mod( 'site-title-font', gather_get_default( 'site-title-font' ) ),
-		get_theme_mod( 'primary-font', gather_get_default( 'primary-font' ) ),
-		get_theme_mod( 'secondary-font', gather_get_default( 'secondary-font' ) )
+		get_theme_mod( 'site-title-font', customizer_library_get_default( 'site-title-font' ) ),
+		get_theme_mod( 'primary-font', customizer_library_get_default( 'primary-font' ) ),
+		get_theme_mod( 'secondary-font', customizer_library_get_default( 'secondary-font' ) )
 	);
 
-	$font_uri = gather_get_google_font_uri( $fonts );
+	$font_uri = customizer_library_get_google_font_uri( $fonts );
 
 	// Load Google Fonts
 	wp_enqueue_style( 'gather_body_fonts', $font_uri, array(), null, 'screen' );
