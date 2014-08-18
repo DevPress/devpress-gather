@@ -17,7 +17,8 @@
 
 function customizer_library_get_default( $setting ) {
 
-	$options = customizer_library_options();
+	$customizer_library = Customizer_Library::Instance();
+	$options = $customizer_library->get_options();
 
 	if ( isset( $options[$setting]['default'] ) ) {
 		return $options[$setting]['default'];
@@ -86,7 +87,8 @@ function customizer_library_hex_to_rgb( $hex ) {
  */
 function customizer_library_remove_theme_mods() {
 
-	$options = customizer_library_options();
+	$customizer_library = Customizer_Library::Instance();
+	$options = $customizer_library->get_options();
 
 	if ( $options ) {
 		foreach( $options as $option ) {

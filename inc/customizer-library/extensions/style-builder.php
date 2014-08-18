@@ -1,7 +1,7 @@
 <?php
 /**
  * @package 	Customizer_Library
- * @author		Devin Price, The Theme Foundary
+ * @author		The Theme Foundary
  */
 
 if ( ! class_exists( 'Customizer_Library_Styles' ) ) :
@@ -257,7 +257,7 @@ if ( ! function_exists( 'customizer_library_styles' ) ) :
  *
  * @since  1.0.0.
  *
- * @return GATHER_CSS    The one Customizer_Library_Styles object.
+ * @return Customizer_Library_Styles	The Customizer_Library_Styles object.
  */
 function customizer_library_styles() {
 	return Customizer_Library_Styles::instance();

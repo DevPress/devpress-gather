@@ -12,6 +12,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+// Exit if the Customizer_Library is already in use.
+if ( ! class_exists( 'Customizer_Library' ) ) {
+	return;
+}
+
 // Helper functions to output the customizer controls.
 require plugin_dir_path( __FILE__ ) . 'extensions/interface.php';
 
@@ -32,3 +37,52 @@ require plugin_dir_path( __FILE__ ) . 'extensions/preview.php';
 
 // Custom controls for the theme customizer.
 require plugin_dir_path( __FILE__ ) . 'custom-controls/textarea.php';
+
+/**
+ * Class wrapper with useful methods for interacting with the theme customizer.
+ */
+class Customizer_Library {
+
+	/**
+	 * The one instance of Customizer_Library.
+	 *
+	 * @since 1.0.0.
+	 *
+	 * @var   Customizer_Library_Styles    The one instance for the singleton.
+	 */
+	private static $instance;
+
+	/**
+	 * The array for storing $options.
+	 *
+	 * @since 1.0.0.
+	 *
+	 * @var   array    Holds the options array.
+	 */
+
+	public $options = array();
+
+	/**
+	 * Instantiate or return the one Customizer_Library instance.
+	 *
+	 * @since  1.0.0.
+	 *
+	 * @return Customizer_Library
+	 */
+	public static function instance() {
+		if ( is_null( self::$instance ) ) {
+			self::$instance = new self();
+		}
+
+		return self::$instance;
+	}
+
+	public function add_options( $options = array() ) {
+		$this->options = array_merge( $options, $this->options );
+	}
+
+	public function get_options() {
+		return $this->options;
+	}
+
+}

@@ -5,7 +5,7 @@
  * @package Gather
  */
 
-if ( ! function_exists( 'gather_styles' ) ) :
+if ( ! function_exists( 'gather_styles' ) && class_exists( 'Customizer_Library_Styles' ) ) :
 /**
  * Process user options to generate CSS needed to implement the choices.
  *

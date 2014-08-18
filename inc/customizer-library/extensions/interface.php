@@ -17,7 +17,9 @@ if ( ! function_exists( 'customizer_library_register' ) ) :
  */
 function customizer_library_register( $wp_customize ) {
 
-	$options = customizer_library_options();
+	$customizer_library = Customizer_Library::Instance();
+	$options = $customizer_library->get_options();
+
 	$sections = $options['sections'];
 
 	if ( isset( $sections ) ) {
@@ -110,7 +112,7 @@ function customizer_library_register( $wp_customize ) {
 							$option['sanitize_callback'] = 'customizer_library_sanitize_text';
 						}
 
-				    	$wp_customize->add_control( new Textarea_Custom_Control( $wp_customize,
+				    	$wp_customize->add_control( new Customizer_Library_Textarea( $wp_customize,
 				    		$option['id'], array(
 								'label'   => $option['label'],
 								'section' => $option['section'],

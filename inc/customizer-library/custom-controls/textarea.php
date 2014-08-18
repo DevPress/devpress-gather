@@ -6,10 +6,11 @@
  * @author		Devin Price, The Theme Foundary
  */
 
-if ( ! class_exists( 'WP_Customize_Control' ) )
+if ( ! class_exists( 'WP_Customize_Control' ) ) {
 	return NULL;
+}
 
-class Textarea_Custom_Control extends WP_Customize_Control {
+class Customizer_Library_Textarea extends WP_Customize_Control {
 
 	/**
 	 * Render the control's content.

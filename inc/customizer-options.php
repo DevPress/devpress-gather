@@ -12,7 +12,7 @@
  *
  * @return array $options
  */
-function customizer_library_options() {
+function gather_options() {
 
 	// Theme defaults
 	$primary_color = '#5bc08c';
@@ -345,9 +345,11 @@ function customizer_library_options() {
 	// Adds the sections to the $options array
 	$options['sections'] = $sections;
 
-	return $options;
+	$customizer_library = Customizer_Library::Instance();
+	$customizer_library->add_options( $options );
 
 }
+add_action( 'init', 'gather_options', 100 );
 
 /**
  * Alters some of the defaults for the theme customizer
