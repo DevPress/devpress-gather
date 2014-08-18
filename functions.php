@@ -241,4 +241,8 @@ require get_template_directory() . '/inc/styles.php';
 // Additional filters and actions based on theme customizer selections.
 require get_template_directory() . '/inc/mods.php';
 
-// gather_remove_theme_mods();
+// Theme Updater
+function gather_theme_updater() {
+	require( get_template_directory() . '/inc/updater/theme-updater.php' );
+}
+add_action( 'after_setup_theme', 'gather_theme_updater' );
