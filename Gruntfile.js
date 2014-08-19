@@ -85,8 +85,8 @@ module.exports = function(grunt) {
 				],
 				overwrite: true,
 				replacements: [ {
-					from: /^define\( 'BARO_VERSION'.*$/m,
-					to: 'define( \'BARO_VERSION\', \'<%= pkg.version %>\' );'
+					from: /^define\( 'GATHER_VERSION'.*$/m,
+					to: 'define( \'GATHER_VERSION\', \'<%= pkg.version %>\' );'
 				} ]
 			},
 		}
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
 		'csscomb',
     ]);
 
-    grunt.registerTask( 'build', [
+    grunt.registerTask( 'release', [
     	'replace',
     	'sass',
     	'autoprefixer',
