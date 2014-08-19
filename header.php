@@ -30,7 +30,11 @@
 				<button class="menu-toggle" data-toggle="#primary-navigation .menu">
 					<?php echo esc_html( gather_get_menu_name( 'primary' ) ); ?>
 				</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'primary',
+					'link_before' => '<span>',
+					'link_after' => '</span>'
+				) ); ?>
 			</div>
 		</nav>
 		<?php endif; ?>
@@ -65,7 +69,11 @@
 				<button class="menu-toggle" data-toggle="#secondary-navigation .menu">
 					<?php echo esc_html( gather_get_menu_name( 'secondary' ) ); ?>
 				</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'secondary',
+					'link_before' => '<span>',
+					'link_after' => '</span>'
+				) ); ?>
 			</div>
 		</nav>
 		<?php endif; ?>

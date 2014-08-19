@@ -19,7 +19,6 @@
 		init: function() {
 
 			this.bindEvents();
-			this.socialMenu();
 
 		},
 
@@ -69,7 +68,7 @@
 				function() {
 
 					if ( self.cache.masonry ) {
-						// self.masonryInit();
+						self.masonryInit();
 					}
 
 				}, 200 )
@@ -110,18 +109,6 @@
 				}
 			});
 
-		},
-
-		/**
-		 * Initialize the social menu functionality
-		 *
-		 * @since 1.0.0
-		 *
-		 * @return void
-		 */
-		socialMenu: function() {
-			$social = $('.main-navigation .menu > li > a[href*="behance.com"],.main-navigation .menu > li > a[href*="dribbble.com"],.main-navigation .menu > li > a[href*="facebook.com"],.main-navigation .menu > li > a[href*="flickr.com"],.main-navigation .menu > li > a[href*="github.com"],.main-navigation .menu > li > a[href*="linkedin.com"],.main-navigation .menu > li > a[href*="pinterest.com"],.main-navigation .menu > li > a[href*="plus.google.com"],.main-navigation .menu > li > a[href*="instagr.am"],.main-navigation .menu > li > a[href*="instagram.com"],.main-navigation .menu > li > a[href*="skype.com"],.main-navigation .menu > li > a[href*="spotify.com"],.main-navigation .menu > li > a[href*="tumblr.com"],.main-navigation .menu > li > a[href*="twitter.com"],.main-navigation .menu > li > a[href*="vimeo.com"]').parent('li').addClass('social');
-			$social.find('a').contents().wrap('<span class="social-text">');
 		},
 
 		// Initialize FitVids

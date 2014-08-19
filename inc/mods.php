@@ -126,3 +126,45 @@ function gather_search_in_menu( $items, $args ) {
     return $items;
 }
 add_filter( 'wp_nav_menu_items', 'gather_search_in_menu', 10, 2 );
+
+/**
+ * Append class "social" to specific off-site links
+ *
+ * @since Gather 0.1
+ */
+function gather_social_nav_class( $classes, $item ) {
+
+    if ( 0 == $item->parent && 'custom' == $item->type) {
+
+    	$url = parse_url( $item->url );
+    	$base = str_replace( "www.", "", $url['host'] );
+
+    	// @TODO Make this filterable
+    	$social = array(
+    		'behance.com',
+    		'dribbble.com',
+    		'facebook.com',
+    		'flickr.com',
+    		'github.com',
+    		'linkedin.com',
+    		'pinterest.com',
+    		'plus.google.com',
+    		'instagr.am',
+    		'instagram.com',
+    		'skype.com',
+    		'spotify.com',
+    		'tumblr.com',
+    		'twitter.com',
+    		'vimeo.com'
+    	);
+
+    	if ( in_array( $base, $social ) ) {
+	    	$classes[] = 'social';
+    	}
+
+    }
+
+    return $classes;
+
+}
+add_filter( 'nav_menu_css_class', 'gather_social_nav_class', 10, 2 );
