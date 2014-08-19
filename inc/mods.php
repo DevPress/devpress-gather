@@ -54,7 +54,7 @@ add_filter( 'body_class', 'gather_body_classes' );
  function gather_show_sidebar() {
 
  	 // If an archive page is displayed and display sidebar on archives is checked
- 	if ( !is_singular() && !is_404() && !is_author() && !get_theme_mod( 'archive-sidebar', '0' ) ) {
+ 	if ( !is_singular() && !is_404() && !is_author() && !is_search() && !get_theme_mod( 'archive-sidebar', '0' ) ) {
 	 	return false;
  	}
 

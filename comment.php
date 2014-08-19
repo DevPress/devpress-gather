@@ -10,7 +10,11 @@
 	<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 		<header class="comment-meta">
 			<div class="comment-author vcard">
+				<?php if ( 'trackback' == $comment->comment_type || 'pingback' == $comment->comment_type ) { ?>
+					<div class="avatar"><i class="fa fa-link"></i></div>
+				<?php } else { ?>
 				<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+				<?php } ?>
 				<?php printf( '<b class="fn">%s</b>', get_comment_author_link() ); ?>
 			</div><!-- .comment-author -->
 
