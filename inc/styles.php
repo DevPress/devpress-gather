@@ -86,6 +86,7 @@ function gather_styles() {
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
 				'.site-title a:hover',
+				'.bypostauthor .comment-author .fn:after'
 			),
 			'declarations' => array(
 				'color' => sanitize_hex_color( $color )

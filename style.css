@@ -1335,6 +1335,14 @@ a:active {
   line-height: 50px;
 }
 
+.bypostauthor .comment-author .fn:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  content: '\f14b';
+  color: #f99868;
+  margin-left: 10px;
+}
+
 .comment-content a {
   word-wrap: break-word;
 }
