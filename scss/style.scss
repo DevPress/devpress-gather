@@ -597,7 +597,7 @@ a:active {
 	text-align: center;
 	line-height: 50px;
 }
-.bypostauthor .comment-author .fn:after {
+.comment-by-post-author .comment-author .fn:after {
 	font-family: FontAwesome;
 	font-weight: normal;
 	content: '\f14b';
@@ -648,6 +648,9 @@ a:active {
 #respond {
 	padding:4% 6%;
 }
+.comment-list #respond {
+	padding:4% 0;
+}
 #respond p {
 	margin-bottom: 20px;
 }
@@ -675,6 +678,11 @@ a:active {
 }
 #respond .form-allowed-tags code {
 	font-size: 12px;
+}
+#cancel-comment-reply-link {
+	text-transform: uppercase;
+	font-size:12px;
+	font-weight:600;
 }
 
 @media screen and (max-width:510px) {

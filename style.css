@@ -58,8 +58,7 @@ html {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -421,8 +420,7 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -1081,8 +1079,7 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {
@@ -1324,7 +1321,7 @@ a:active {
   line-height: 50px;
 }
 
-.bypostauthor .comment-author .fn:after {
+.comment-by-post-author .comment-author .fn:after {
   font-family: FontAwesome;
   font-weight: normal;
   content: '\f14b';
@@ -1387,6 +1384,10 @@ a:active {
   padding: 4% 6%;
 }
 
+.comment-list #respond {
+  padding: 4% 0;
+}
+
 #respond p {
   margin-bottom: 20px;
 }
@@ -1422,6 +1423,12 @@ a:active {
 
 #respond .form-allowed-tags code {
   font-size: 12px;
+}
+
+#cancel-comment-reply-link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 510px) {

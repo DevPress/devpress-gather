@@ -6,8 +6,17 @@
  */
 ?>
 
+<?php
+global $post;
+$comment_body_class = 'comment-body';
+if ( $post ) {
+	if ( $comment->user_id === $post->post_author ) {
+		$comment_body_class = 'comment-body comment-by-post-author';
+	}
+}
+?>
 <li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
-	<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+	<article id="div-comment-<?php comment_ID(); ?>" class="<?php echo $comment_body_class; ?>">
 		<header class="comment-meta">
 			<div class="comment-author vcard">
 				<?php if ( 'trackback' == $comment->comment_type || 'pingback' == $comment->comment_type ) { ?>
