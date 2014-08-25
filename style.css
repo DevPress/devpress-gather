@@ -58,8 +58,7 @@ html {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -421,8 +420,7 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -708,6 +706,10 @@ a:active {
 
 /* Search
 -------------------------------------------------------------- */
+.main-navigation .toggle-search-link {
+  display: none;
+}
+
 .main-navigation .menu-search a:before {
   content: '\f002';
 }
@@ -721,11 +723,9 @@ a:active {
 }
 
 .toggle-search {
-  display: none;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 14px 12px;
-  margin: 0 0 14px;
 }
 
 /* Small Screen Sizes */
@@ -816,7 +816,8 @@ a:active {
   }
 
   /* Social */
-  .main-navigation li.social {
+  .main-navigation li.social,
+  .main-navigation li.menu-search {
     float: right;
   }
 
@@ -824,7 +825,8 @@ a:active {
     float: none;
   }
 
-  .main-navigation .social > a {
+  .main-navigation .social > a,
+  .main-navigation .menu-search a {
     display: inline-block;
   }
 
@@ -837,7 +839,8 @@ a:active {
     overflow: hidden;
   }
 
-  .main-navigation .social a:before {
+  .main-navigation .social a:before,
+  .main-navigation .menu-search a:before {
     display: inline-block;
     font-family: FontAwesome;
     font-style: normal;
@@ -902,6 +905,11 @@ a:active {
 
   .main-navigation .social a[href*="vimeo.com"]:before {
     content: '\f194';
+  }
+
+  .toggle-search {
+    margin: 0 0 14px;
+    display: none;
   }
 }
 /* Content
@@ -1081,8 +1089,7 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {

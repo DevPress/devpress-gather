@@ -115,8 +115,8 @@ function gather_search_in_menu( $items, $args ) {
 	) :
 
 		$selector = '#' . $args->theme_location . '-navigation .toggle-search';
-	    $items .= '<li class="menu-item menu-search social">';
-	    $items .= '<a href="#search" data-toggle="' . $selector . '">';
+	    $items .= '<li class="menu-item menu-search">';
+	    $items .= '<a class="toggle-search-link" href="#search" data-toggle="' . $selector . '">';
 	    $items .= '<span class="screen-reader-text">' . __( 'Search', 'gather' ) . '</span>';
 	    $items .= '</a></li>';
 	    $items .= '<div class="toggle-search">' . get_search_form( false ) . '</div>';

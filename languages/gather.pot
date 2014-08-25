@@ -41,15 +41,11 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: comment.php:24
-msgid "Author"
-msgstr ""
-
-#: comment.php:30
+#: comment.php:31
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: comment.php:51 content-page.php:26 content-single.php:55 content.php:59
+#: comment.php:52 content-page.php:26 content-single.php:55 content.php:59
 msgid "Edit"
 msgstr ""
 
@@ -469,7 +465,7 @@ msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: comment.php:47
+#: comment.php:48
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
 msgstr ""

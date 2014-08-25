@@ -97,6 +97,9 @@
 /* Search
 -------------------------------------------------------------- */
 
+.main-navigation .toggle-search-link {
+	display: none;
+}
 .main-navigation .menu-search a:before {
 	content: '\f002';
 }
@@ -107,11 +110,9 @@
 	content: '\f010';
 }
 .toggle-search {
-	display: none;
 	background:rgba(0,0,0,.1);
 	border-radius: 4px;
 	padding: 14px 12px;
-	margin:0 0 14px;
 }
 
 /* Small Screen Sizes */
@@ -189,13 +190,15 @@
 	}
 
 	/* Social */
-	.main-navigation li.social {
+	.main-navigation li.social,
+	.main-navigation li.menu-search {
 		float:right;
 	}
 	.main-navigation li.inline {
 		float: none;
 	}
-	.main-navigation .social > a {
+	.main-navigation .social > a,
+	.main-navigation .menu-search a {
 		display: inline-block;
 	}
 	.main-navigation .social span {
@@ -206,7 +209,8 @@
 		width: 1px;
 		overflow: hidden;
 	}
-	.main-navigation .social a:before {
+	.main-navigation .social a:before,
+	.main-navigation .menu-search a:before {
 		display: inline-block;
 		font-family: FontAwesome;
 		font-style: normal;
@@ -257,5 +261,11 @@
 	}
 	.main-navigation .social a[href*="vimeo.com"]:before {
 		content: '\f194';
+	}
+	.main-navigation .toggle-search-link {
+	}
+	.toggle-search {
+		margin:0 0 14px;
+		display: none;
 	}
 }
