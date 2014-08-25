@@ -58,7 +58,8 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 body {
@@ -420,7 +421,8 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -1079,7 +1081,8 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+          transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {
@@ -1219,6 +1222,14 @@ a:active {
   overflow: hidden;
   font-weight: 500;
   font-size: 15px;
+}
+
+.site-main .comment-navigation {
+  padding: 0 6% 0;
+}
+
+.site-main #comment-nav-below {
+  padding: 4% 6% 0;
 }
 
 .comment-navigation .nav-previous,
