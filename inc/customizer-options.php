@@ -27,45 +27,12 @@ function gather_options() {
 	// Header section
 	$section = 'title_tagline';
 
-	$options['site-title-color'] = array(
-		'id' => 'site-title-color',
-		'label'   => __( 'Site Title Color', 'gather' ),
-		'section' => $section,
-		'type'    => 'color',
-		'default' => $primary_color,
-	);
-
-	$options['site-title-hover-color'] = array(
-		'id' => 'site-title-hover-color',
-		'label'   => __( 'Site Title Hover Color', 'gather' ),
-		'section' => $section,
-		'type'    => 'color',
-		'default' => $secondary_color,
-	);
-
-	$options['site-title-font'] = array(
-		'id' => 'site-title-font',
-		'label'   => __( 'Site Title Font', 'gather' ),
-		'section' => $section,
-		'type'    => 'select',
-		'choices' => customizer_library_get_font_choices(),
-		'default' => 'Monoton'
-	);
-
 	$options['display-site-tagline'] = array(
 		'id' => 'display-site-tagline',
 		'label'   => __( 'Display Site Tagline', 'gather' ),
 		'section' => $section,
 		'type'    => 'checkbox',
 		'default' => 0,
-	);
-
-	$options['site-tagline-color'] = array(
-		'id' => 'site-tagline-color',
-		'label'   => __( 'Site Tagline Color', 'gather' ),
-		'section' => $section,
-		'type'    => 'color',
-		'default' => $primary_color,
 	);
 
 	$options['logo'] = array(
@@ -224,6 +191,30 @@ function gather_options() {
 		'default' => $secondary_color,
 	);
 
+	$options['site-title-color'] = array(
+		'id' => 'site-title-color',
+		'label'   => __( 'Site Title Color', 'gather' ),
+		'section' => $section,
+		'type'    => 'color',
+		'default' => $primary_color,
+	);
+
+	$options['site-title-hover-color'] = array(
+		'id' => 'site-title-hover-color',
+		'label'   => __( 'Site Title Hover Color', 'gather' ),
+		'section' => $section,
+		'type'    => 'color',
+		'default' => $secondary_color,
+	);
+
+	$options['site-tagline-color'] = array(
+		'id' => 'site-tagline-color',
+		'label'   => __( 'Site Tagline Color', 'gather' ),
+		'section' => $section,
+		'type'    => 'color',
+		'default' => $primary_color,
+	);
+
 	// Layout
 	$section = 'layout';
 
@@ -281,13 +272,13 @@ function gather_options() {
 		'priority' => '80'
 	);
 
-	// Post Settings
-	$section = 'general';
-
-	$sections[] = array(
-		'id' => $section,
-		'title' => __( 'General', 'gather' ),
-		'priority' => '80'
+	$options['site-title-font'] = array(
+		'id' => 'site-title-font',
+		'label'   => __( 'Site Title Font', 'gather' ),
+		'section' => $section,
+		'type'    => 'select',
+		'choices' => customizer_library_get_font_choices(),
+		'default' => 'Monoton'
 	);
 
 	$options['primary-font'] = array(
@@ -306,6 +297,15 @@ function gather_options() {
 		'type'    => 'select',
 		'choices' => customizer_library_get_font_choices(),
 		'default' => 'Merriweather'
+	);
+
+	// Post Settings
+	$section = 'general';
+
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'General', 'gather' ),
+		'priority' => '80'
 	);
 
 	$options['display-post-dates'] = array(

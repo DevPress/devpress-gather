@@ -49,13 +49,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					$template = '';
-					if ( gather_load_masonry() ) {
-						$template = 'masonry';
-					}
-					get_template_part( 'content', $template );
-				?>
+				<?php get_template_part( 'content', gather_template_part() ); ?>
 
 			<?php endwhile; ?>
 			</div>

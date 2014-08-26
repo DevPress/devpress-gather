@@ -19,7 +19,7 @@
 	<?php if ( has_post_thumbnail() ) { ?>
 	<figure class="entry-image">
 		<a href="<?php the_permalink() ?>" class="thumbnail">
-		<?php the_post_thumbnail( 'gather-post' ); ?>
+		<?php the_post_thumbnail(); ?>
 		</a>
 	</figure>
 	<?php } ?>
@@ -35,28 +35,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta entry-footer-meta">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'gather' ) );
-
-			if ( $category_list ) {
-				echo '<span class="category-meta meta-group">';
-				echo '<i class="fa fa-folder-open"></i>';
-				echo '<span class="category-meta-list">' . $category_list . '</span>';
-				echo '</span>';
-			}
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'gather' ) );
-
-			if ( $tag_list ) {
-				echo '<span class="tag-meta meta-group">';
-				echo '<i class="fa fa-tags"></i>';
-				echo '<span class="tag-meta-list">' . $tag_list . '</span>';
-				echo '</span>';
-			}
-
-			edit_post_link( __( 'Edit', 'gather' ), '<span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span>' );
-		?>
+		<?php gather_post_meta(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

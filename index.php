@@ -24,10 +24,16 @@ get_header(); ?>
 
 				<?php
 					$template = '';
+					$type = get_post_type();
+
 					if ( gather_load_masonry() ) {
 						$template = 'masonry';
+						if ( 'download' == $type ) {
+							$template = 'masonry-download';
+						}
 					}
-					get_template_part( 'content', $template );
+
+					get_template_part( 'content', gather_template_part() );
 				?>
 
 			<?php endwhile; ?>

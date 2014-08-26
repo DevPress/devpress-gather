@@ -89,3 +89,34 @@ function gather_posted_on() {
 
 }
 endif;
+
+if ( ! function_exists( 'gather_post_meta' ) ) :
+/**
+ * Prints post meta information for categories and tags.
+ */
+function gather_post_meta() {
+
+	/* translators: used between list items, there is a space after the comma */
+	$category_list = get_the_category_list( __( ', ', 'gather' ) );
+
+	if ( $category_list ) {
+		echo '<span class="category-meta meta-group">';
+		echo '<i class="fa fa-folder-open"></i>';
+		echo '<span class="category-meta-list">' . $category_list . '</span>';
+		echo '</span>';
+	}
+
+	/* translators: used between list items, there is a space after the comma */
+	$tag_list = get_the_tag_list( '', __( ', ', 'gather' ) );
+
+	if ( $tag_list ) {
+		echo '<span class="tag-meta meta-group">';
+		echo '<i class="fa fa-tags"></i>';
+		echo '<span class="tag-meta-list">' . $tag_list . '</span>';
+		echo '</span>';
+	}
+
+	edit_post_link( __( 'Edit', 'gather' ), '<span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span>' );
+
+}
+endif;

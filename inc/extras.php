@@ -8,18 +8,6 @@
  */
 
 /**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- *
- * @param array $args Configuration arguments.
- * @return array
- */
-function gather_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-add_filter( 'wp_page_menu_args', 'gather_page_menu_args' );
-
-/**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  *
  * @param string $title Default title text for current view.
@@ -195,6 +183,23 @@ function gather_get_menu_name( $location ) {
 }
 
 /**
+ * Determine which template part to load
+ *
+ * @return string template part
+ */
+function gather_template_part() {
+	$template = '';
+	$type = get_post_type();
+	if ( gather_load_masonry() ) {
+		$template = 'masonry';
+	}
+	if ( 'download' == $type && gather_load_masonry() ) {
+		$template = 'masonry-download';
+	}
+	return $template;
+}
+
+/**
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */
@@ -214,6 +219,6 @@ add_action( 'after_setup_theme', 'gather_jetpack_setup' );
 function gather_infinite_scroll_render() {
 	while( have_posts() ) {
 	    the_post();
-	    get_template_part( 'content', 'masonry' );
+	    get_template_part( 'content', gather_template_part() );
 	}
 }
