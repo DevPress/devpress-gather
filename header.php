@@ -50,7 +50,7 @@
 					$output = get_bloginfo( 'name' );
 				} ?>
 
-				<h1 class="<?php echo $class; ?>">
+				<h1 class="<?php echo esc_attr( $class ); ?>">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php echo $output; ?>
 					</a>

@@ -52,7 +52,7 @@
 				echo '</span>';
 			}
 
-			echo edit_post_link( __( 'Edit', 'gather' ), '<span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span>' );
+			edit_post_link( __( 'Edit', 'gather' ), '<span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span>' );
 		?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

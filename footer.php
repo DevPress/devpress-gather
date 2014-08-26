@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<?php if ( is_active_sidebar( 'footer' ) ) : ?>
-	<div class="footer-widgets <?php echo gather_footer_class(); ?> clearfix">
+	<div class="footer-widgets <?php echo esc_attr( gather_footer_class() ); ?> clearfix">
 		<div class="col-width">
 			<?php dynamic_sidebar( 'footer' ); ?>
 		</div>
