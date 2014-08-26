@@ -137,6 +137,11 @@ function gather_social_nav_class( $classes, $item ) {
     if ( 0 == $item->parent && 'custom' == $item->type) {
 
     	$url = parse_url( $item->url );
+
+    	if ( !isset( $url['host'] ) ) {
+	    	return $classes;
+    	}
+
     	$base = str_replace( "www.", "", $url['host'] );
 
     	// @TODO Make this filterable
