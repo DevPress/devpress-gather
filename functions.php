@@ -133,10 +133,10 @@ function gather_fonts() {
 	$font_uri = customizer_library_get_google_font_uri( $fonts );
 
 	// Load Google Fonts
-	wp_enqueue_style( 'gather_body_fonts', $font_uri, array(), null, 'screen' );
+	wp_enqueue_style( 'gather-body-fonts', $font_uri, array(), null, 'screen' );
 
 	// Icon Font
-	wp_enqueue_style( 'gather_icons', get_template_directory_uri() . '/fonts/font-awesome.css', array(), GATHER_VERSION );
+	wp_enqueue_style( 'gather-icons', get_template_directory_uri() . '/fonts/font-awesome.css', array(), '4.1.0' );
 
 }
 add_action( 'wp_enqueue_scripts', 'gather_fonts' );
@@ -208,7 +208,7 @@ function gather_scripts() {
 	endif;
 
 	if ( gather_load_masonry() ) {
-		wp_enqueue_script( 'gather-masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), GATHER_VERSION, true );
+		wp_enqueue_script( 'gather-masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), '3.1.5', true );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
