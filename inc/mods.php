@@ -58,8 +58,8 @@ add_filter( 'body_class', 'gather_body_classes' );
 	 	return false;
  	}
 
- 	// If the "no-sidebar" customizer option is selected return false
- 	if ( get_theme_mod( 'standard-layout', 'sidebar-right' ) == 'no-sidebar' ) {
+ 	// If there's no active sidebar widgets
+ 	if ( !is_active_sidebar( 'primary' ) ) {
 	 	return false;
  	}
 

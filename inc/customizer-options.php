@@ -236,7 +236,6 @@ function gather_options() {
 	$choices = array(
 		'sidebar-right' => 'Sidebar Right',
 		'sidebar-left' => 'Sidebar Left',
-		'no-sidebar' => 'No Sidebar',
 	);
 
 	$options['standard-layout'] = array(
