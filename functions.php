@@ -44,8 +44,8 @@ function gather_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'gather-post', 720, 999 );
-
+	set_post_thumbnail_size( 720, 1200 )
+	add_image_size( 'gather-archive', 560, 999 );
 
 	// Registers menu above the site title
 	register_nav_menus( array(

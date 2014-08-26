@@ -17,7 +17,7 @@ else : ?>
 	<div class="entry-image-section">
 		<a href="<?php the_permalink() ?>" class="entry-image-link">
 			<figure class="entry-image">
-				<?php the_post_thumbnail( 'gather-post' ); ?>
+				<?php the_post_thumbnail( 'gather-archive' ); ?>
 			</figure>
 		</a>
 	</div>

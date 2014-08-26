@@ -93,6 +93,16 @@ a:active {
 	width: 28%;
 }
 
+/* No Sidebar */
+
+.no-sidebar .content-area {
+	max-width: 790px;
+	margin:0 auto;
+}
+.no-sidebar.masonry .content-area {
+	max-width: 100%;
+}
+
 /* Sidebar Right */
 
 .sidebar-right .content-area {
@@ -127,13 +137,6 @@ a:active {
 }
 .sidebar-left.masonry .site-main {
 	padding-left: 30px;
-}
-
-/* No Sidebar */
-
-.no-sidebar.single .content-area {
-	max-width: 790px;
-	margin:0 auto;
 }
 
 /* General Responsive Layout */

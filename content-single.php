@@ -16,7 +16,7 @@
 
 	<?php if ( has_post_thumbnail() ) { ?>
 	<figure class="entry-image">
-		<?php the_post_thumbnail( 'gather-post' ); ?>
+		<?php the_post_thumbnail(); ?>
 	</figure>
 	<?php } ?>
 
