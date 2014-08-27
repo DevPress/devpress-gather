@@ -4,13 +4,6 @@
  */
 ?>
 
-<?php
-$type = get_post_type();
-
-if ( 'download' == $type ) :
-	get_template_part( 'content', 'masonry-download' );
-else : ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'module'); ?>>
 
 	<?php if ( has_post_thumbnail() ) { ?>
@@ -47,5 +40,3 @@ else : ?>
 		<span class="more-link"><a href="<?php the_permalink(); ?>"><?php _e( 'View More', 'gather' ); ?></a></span>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
-<?php endif; ?>
