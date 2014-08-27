@@ -56,7 +56,7 @@
 					</a>
 				</h1>
 
-				<?php if ( get_theme_mod( 'display-site-tagline', 0 ) ) : ?>
+				<?php if ( get_bloginfo( 'description' ) != '' ) : ?>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 

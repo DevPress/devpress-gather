@@ -27,20 +27,13 @@ function gather_options() {
 	// Header section
 	$section = 'title_tagline';
 
-	$options['display-site-tagline'] = array(
-		'id' => 'display-site-tagline',
-		'label'   => __( 'Display Site Tagline', 'gather' ),
-		'section' => $section,
-		'type'    => 'checkbox',
-		'default' => 0,
-	);
-
 	$options['logo'] = array(
 		'id' => 'logo',
 		'label'   => __( 'Logo', 'gather' ),
 		'section' => $section,
 		'type'    => 'upload',
 		'default' => '',
+		'priority' => 10,
 	);
 
 	$options['center-branding'] = array(
@@ -49,6 +42,7 @@ function gather_options() {
 		'section' => $section,
 		'type'    => 'checkbox',
 		'default' => 0,
+		'priority' => 20,
 	);
 
 	$options['header-background-color'] = array(
@@ -57,6 +51,7 @@ function gather_options() {
 		'section' => $section,
 		'type'    => 'color',
 		'default' => '#ffffff',
+		'priority' => 30,
 	);
 
 	$options['header-background-image'] = array(
@@ -65,6 +60,7 @@ function gather_options() {
 		'section' => $section,
 		'type'    => 'upload',
 		'default' => '',
+		'priority' => 40,
 	);
 
 	$choices = array(
@@ -78,7 +74,8 @@ function gather_options() {
 		'section' => $section,
 		'type'    => 'select',
 		'choices' => $choices,
-		'default' => 'image-scale'
+		'default' => 'image-scale',
+		'priority' => 50,
 	);
 
 	// Navigation Styles
