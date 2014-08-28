@@ -212,6 +212,14 @@ function gather_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gather_scripts' );
 
+/**
+ * Load placeholder polyfill for IE9 and older
+ */
+function gather_placeholder_polyfill() {
+    echo '<!--[if lte IE 9]><script src="' . get_template_directory_uri() . '/js/jquery-placeholder.js"></script><![endif]-->'. "\n";
+}
+add_action( 'wp_head', 'gather_placeholder_polyfill' );
+
 
 // Custom template tags for this theme.
 require get_template_directory() . '/inc/template-tags.php';
