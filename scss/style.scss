@@ -41,7 +41,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: $secondary-font;
 	font-weight:700;
-	margin-bottom: 15px;
+	margin-bottom: .5em;
 }
 h1 {
 	font-size: 36px;
@@ -498,6 +498,12 @@ a:active {
 }
 #calendar_wrap {
 	overflow-x: scroll;
+}
+
+@media screen and (max-width: 881px ) {
+	.secondary .widget {
+		margin-bottom:0px;
+	}
 }
 
 /* Paging Navigation

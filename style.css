@@ -44,8 +44,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 html {
-  font-size: 62.5%;
-  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
   overflow-y: scroll;
   /* Keeps page centered in all browsers regardless of content height */
   -webkit-text-size-adjust: 100%;
@@ -121,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 b, strong {
@@ -133,20 +131,19 @@ dfn, cite, em, i {
 }
 
 blockquote {
-  margin: 0 15px;
+  margin: 0 1em;
 }
 
 address {
-  margin: 0 0 15px;
+  margin: 0 0 1em;
 }
 
 pre {
   background: rgba(0, 0, 0, 0.05);
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 14px;
-  font-size: 1.4rem;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
   max-width: 100%;
   overflow: auto;
   padding: 15px;
@@ -184,11 +181,11 @@ sub {
 }
 
 small {
-  font-size: 75%;
+  font-size: 80%;
 }
 
 big {
-  font-size: 125%;
+  font-size: 120%;
 }
 
 /* Elements
@@ -197,12 +194,12 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
 }
 
 ul, ol {
   list-style-position: outside;
-  margin: 0 0 15px 20px;
+  margin: 0 0 1em 1.5em;
 }
 
 ul {
@@ -223,7 +220,7 @@ dt {
 }
 
 dd {
-  margin: 0 15px 15px;
+  margin: 0 1.5em 1em;
 }
 
 img {
@@ -238,7 +235,7 @@ figure {
 }
 
 table {
-  margin: 0 0 15px;
+  margin: 0 0 1em;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-width: 1px 0 0 1px;
@@ -350,7 +347,7 @@ textarea {
   color: rgba(0, 0, 0, 0.75);
   display: block;
   font-size: 15px;
-  margin: 0 0 15px 0;
+  margin: 0 0 1em 0;
   padding: 8px;
   width: 100%;
   border-radius: 3px;
@@ -397,7 +394,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: .5em;
 }
 
 h1 {
@@ -1223,6 +1220,11 @@ a:active {
   overflow-x: scroll;
 }
 
+@media screen and (max-width: 881px) {
+  .secondary .widget {
+    margin-bottom: 0px;
+  }
+}
 /* Paging Navigation
 --------------------------------------------------------------*/
 .site-main .comment-navigation,
