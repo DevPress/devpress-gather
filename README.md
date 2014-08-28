@@ -4,14 +4,9 @@ Gather is a highly adaptable theme for displaying products, art, and content.  C
 
 ## Installation Instructions
 
-### Zip
+This theme can be installed under "Appearance" > "Themes".  Click on the "Add New" button to upload the theme zip file.
 
-If you download the zip file from GitHub you will also need to download the "customizer-library" and drop it in the "inc" directory.  That project can be found at https://github.com/devinsays/customizer-library.
-
-### Git
-
-If you pull the project via the command line, make sure use the --recusive parameter:
-`git clone --recursive git@github.com:devpress/gather`
+## Developer Instructions
 
 ### Grunt
 
