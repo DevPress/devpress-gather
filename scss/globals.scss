@@ -120,7 +120,7 @@ th, td {
 --------------------------------------------------------------*/
 
 label {
-	font-size:14px;
+	font-size: $secondary-font-size;
 	cursor: pointer;
 	display: block;
 }
@@ -215,6 +215,9 @@ textarea:focus {
 input[type="search"]::-webkit-search-decoration {
 	/* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
+}
+input[name="post_password"] {
+	margin-top:.5em;
 }
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */

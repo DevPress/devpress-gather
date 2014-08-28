@@ -503,6 +503,7 @@ a:active {
 @media screen and (max-width: 881px ) {
 	.secondary .widget {
 		margin-bottom:0px;
+		padding:15px 6%;
 	}
 }
 
@@ -749,7 +750,6 @@ a:active {
 }
 
 @media screen and (min-width:881px) {
-
 	.footer-widgets.columns-2 .widget {
 		width:45%;
 		margin-right:10%;
@@ -767,6 +767,17 @@ a:active {
 		margin-right:0;
 	}
 
+}
+
+@media screen and (max-width:510px) {
+	.footer-widgets .widget {
+		margin-bottom:15px;
+	}
+	.footer-widgets .col-width,
+	#colophon .col-width {
+		padding-right: 6%;
+		padding-left: 6%;
+	}
 }
 
 /* Accessibility

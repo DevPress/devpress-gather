@@ -55,8 +55,7 @@ html {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -371,6 +370,10 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+input[name="post_password"] {
+  margin-top: .5em;
+}
+
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
@@ -417,8 +420,7 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -1091,8 +1093,7 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {
@@ -1226,6 +1227,7 @@ a:active {
 @media screen and (max-width: 881px) {
   .secondary .widget {
     margin-bottom: 0px;
+    padding: 15px 6%;
   }
 }
 /* Paging Navigation
@@ -1523,6 +1525,17 @@ a:active {
 
   .footer-widgets.columns-3 .widget:nth-of-type(3n) {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 510px) {
+  .footer-widgets .widget {
+    margin-bottom: 15px;
+  }
+
+  .footer-widgets .col-width,
+  #colophon .col-width {
+    padding-right: 6%;
+    padding-left: 6%;
   }
 }
 /* Accessibility

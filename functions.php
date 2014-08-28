@@ -57,11 +57,6 @@ function gather_setup() {
 		'secondary' => __( 'Secondary Menu', 'gather' ),
 	) );
 
-	// Registers menu for use in the footer
-	register_nav_menus( array(
-		'footer' => __( 'Footer Menu', 'gather' ),
-	) );
-
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
