@@ -119,11 +119,15 @@ add_action( 'widgets_init', 'gather_widgets_init' );
 function gather_fonts() {
 
 	// Font options
-	$fonts = array(
-		get_theme_mod( 'site-title-font', customizer_library_get_default( 'site-title-font' ) ),
-		get_theme_mod( 'primary-font', customizer_library_get_default( 'primary-font' ) ),
-		get_theme_mod( 'secondary-font', customizer_library_get_default( 'secondary-font' ) )
-	);
+	$fonts = array();
+
+	// Site title font only required when logo not in use
+	if ( ! get_theme_mod( 'logo', 0 ) ) :
+		$fonts[0] = get_theme_mod( 'site-title-font', customizer_library_get_default( 'site-title-font' ) );
+	endif;
+
+	$fonts[1] = get_theme_mod( 'primary-font', customizer_library_get_default( 'primary-font' ) );
+	$fonts[2] = get_theme_mod( 'secondary-font', customizer_library_get_default( 'secondary-font' ) );
 
 	$font_uri = customizer_library_get_google_font_uri( $fonts );
 
