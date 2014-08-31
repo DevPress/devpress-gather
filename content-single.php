@@ -14,7 +14,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<?php if ( has_post_thumbnail() ) { ?>
+	<?php if ( has_post_thumbnail() && get_theme_mod( 'display-featured-images', 1 ) ) { ?>
 	<figure class="entry-image">
 		<?php the_post_thumbnail(); ?>
 	</figure>

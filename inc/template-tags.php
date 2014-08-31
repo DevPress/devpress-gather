@@ -67,25 +67,29 @@ if ( ! function_exists( 'gather_posted_on' ) ) :
  */
 function gather_posted_on() {
 
-	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+	if ( get_theme_mod( 'display-post-dates', 1 ) ) :
 
-	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() )
-	);
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 
-	$posted_on = sprintf(
-		_x( '%s', 'post date', 'gather' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() )
+		);
 
-	$byline = sprintf(
-		_x( 'By %s', 'post author', 'gather' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
+		$posted_on = sprintf(
+			_x( '%s', 'post date', 'gather' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		);
 
-	echo '<span class="posted-on">' . $posted_on . '</span>';
-	echo '<span class="byline"> ' . $byline . '</span>';
+		$byline = sprintf(
+			_x( 'By %s', 'post author', 'gather' ),
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		);
+
+		echo '<span class="posted-on">' . $posted_on . '</span>';
+		echo '<span class="byline"> ' . $byline . '</span>';
+
+	endif;
 
 }
 endif;

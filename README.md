@@ -23,6 +23,8 @@ Development
 ===
 
 * Update: Use bundled WordPress version of masonry.js
+* Fix: Post dates option
+* Fix: Featured image option
 
 0.1.0
 ===

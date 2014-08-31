@@ -297,11 +297,11 @@ function gather_options() {
 	);
 
 	// Post Settings
-	$section = 'general';
+	$section = 'post';
 
 	$sections[] = array(
 		'id' => $section,
-		'title' => __( 'General', 'gather' ),
+		'title' => __( 'Post', 'gather' ),
 		'priority' => '80'
 	);
 
@@ -318,7 +318,7 @@ function gather_options() {
 		'label'   => __( 'Display Featured Images', 'gather' ),
 		'section' => $section,
 		'type'    => 'checkbox',
-		'default' => '',
+		'default' => 1,
 	);
 
 	// Footer Settings
