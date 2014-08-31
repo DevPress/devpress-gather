@@ -21,10 +21,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php if ( current_user_can( 'edit_post', get_the_ID() ) ) : ?>
-	<footer class="entry-meta entry-footer-meta">
-		<?php edit_post_link( __( 'Edit', 'gather' ), '<span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span>' ); ?>
-	</footer><!-- .entry-footer -->
-	<?php endif; ?>
+	<?php edit_post_link( __( 'Edit', 'gather' ), '<footer class="entry-meta entry-footer-meta"><span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span></footer>' ); ?>
 
 </article><!-- #post-## -->
