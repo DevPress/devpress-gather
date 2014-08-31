@@ -203,7 +203,7 @@ function gather_scripts() {
 	endif;
 
 	if ( gather_load_masonry() ) {
-		wp_enqueue_script( 'gather-masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), '3.1.5', true );
+		 wp_enqueue_script( 'masonry' );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
