@@ -20,7 +20,7 @@ if ( $post ) {
 		<header class="comment-meta">
 			<div class="comment-author vcard">
 				<?php if ( 'trackback' == $comment->comment_type || 'pingback' == $comment->comment_type ) { ?>
-					<div class="avatar"><i class="fa fa-link"></i></div>
+					<div class="avatar"><i class="gather-icon-link"></i></div>
 				<?php } else { ?>
 				<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
 				<?php } ?>

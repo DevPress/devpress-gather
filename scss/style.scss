@@ -315,8 +315,26 @@ a:active {
 .entry-footer-meta {
 	padding:0 6% 4%;
 }
-.entry-footer-meta .fa {
+.category-meta:before, .tag-meta:before, .edit-meta:before {
+	font-family: 'gather-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	margin-right: 10px;
+}
+.category-meta:before {
+	content: "\f07c";
+}
+.tag-meta:before {
+	content: "\f02c";
+}
+.edit-meta:before {
+	content: "\f040";
 }
 .entry-footer-meta .meta-group {
 	margin-right:20px;
@@ -613,7 +631,7 @@ a:active {
 	line-height: 50px;
 }
 .comment-by-post-author .comment-author .fn:after {
-	font-family: FontAwesome;
+	font-family: 'gather-icons';
 	font-weight: normal;
 	content: '\f14b';
 	color:$secondary-color;
@@ -637,7 +655,7 @@ a:active {
 }
 .comment-reply-link:before {
 	display: inline-block;
-	font-family: "FontAwesome";
+	font-family: 'gather-icons';
 	content: '\f112';
 	margin-right:5px;
 }

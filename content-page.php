@@ -21,6 +21,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<?php edit_post_link( __( 'Edit', 'gather' ), '<footer class="entry-meta entry-footer-meta"><span class="meta-group"><i class="fa fa-pencil"></i><span class="edit-link">', '</span></span></span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'gather' ), '<footer class="entry-meta entry-footer-meta"><span class="edit-meta meta-group">', '</span></span></span></footer>' ); ?>
 
 </article><!-- #post-## -->

@@ -12,6 +12,6 @@
 		<input type="search" class="search-field" placeholder="<?php _e( 'Search...', 'gather' ); ?>" value="" name="s" title="<?php _e( 'Search for:', 'gather' ); ?>" />
 	</label>
 	<button type="submit" class="search-submit">
-		<i class="fa fa-search"></i><span class="screen-reader-text"><?php _e( 'Search...', 'gather' ); ?></span>
+		<div class="gather-icon-search"></div><span class="screen-reader-text"><?php _e( 'Search...', 'gather' ); ?></span>
 	</button>
 </form>
