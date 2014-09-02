@@ -19,7 +19,7 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
-Development
+0.2.0
 ===
 
 * Update: Use bundled WordPress version of masonry.js
