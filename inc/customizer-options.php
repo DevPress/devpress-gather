@@ -218,7 +218,7 @@ function gather_options() {
 	$sections[] = array(
 		'id' => $section,
 		'title' => __( 'Layout', 'gather' ),
-		'priority' => '80'
+		'priority' => '70'
 	);
 
 	$choices = array(
@@ -265,7 +265,7 @@ function gather_options() {
 	$sections[] = array(
 		'id' => $section,
 		'title' => __( 'Typography', 'gather' ),
-		'priority' => '80'
+		'priority' => '75'
 	);
 
 	$options['site-title-font'] = array(
@@ -293,6 +293,24 @@ function gather_options() {
 		'type'    => 'select',
 		'choices' => customizer_library_get_font_choices(),
 		'default' => 'Merriweather'
+	);
+
+	// Archive Settings
+	$section = 'archive';
+
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'Archive', 'gather' ),
+		'priority' => '80'
+	);
+
+	$options['archive-excerpts'] = array(
+		'id' => 'archive-excerpts',
+		'label'   => __( 'Display Excerpts', 'gather' ),
+		'description'   => __( 'Display excerpts instead of full content.', 'gather' ),
+		'section' => $section,
+		'type'    => 'checkbox',
+		'default' => 0,
 	);
 
 	// Post Settings

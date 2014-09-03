@@ -8,11 +8,10 @@
 
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta entry-header-meta">
-			<?php gather_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="entry-meta entry-header-meta">
+				<?php gather_posted_on(); ?>
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -25,13 +24,17 @@
 	<?php } ?>
 
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'gather' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'gather' ),
-				'after'  => '</div>',
-			) );
-		?>
+	<?php if ( is_search() || get_theme_mod( 'archive-excerpts', 0 ) ) :
+		the_excerpt();
+	else :
+		the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'gather' ) );
+	endif; ?>
+	<?php
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . __( 'Pages:', 'gather' ),
+			'after'  => '</div>',
+		) );
+	?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta entry-footer-meta">
