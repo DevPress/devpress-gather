@@ -45,7 +45,7 @@
 	cursor: pointer;
 }
 .dropdown-toggle:after {
-	font-family: 'FontAwesome';
+	font-family: 'gather-icons';
 	color:#fff;
 	font-size:14px;
 	line-height: 1;
@@ -81,7 +81,7 @@
 	background:none;
 }
 .menu-toggle:before {
-    font-family: "FontAwesome";
+    font-family: 'gather-icons';
     content: '\f0c9';
     speak: none;
     display: inline-block;
@@ -212,7 +212,7 @@
 	.main-navigation .social a:before,
 	.main-navigation .menu-search a:before {
 		display: inline-block;
-		font-family: FontAwesome;
+		font-family: 'gather-icons';
 		font-style: normal;
 		font-weight: normal;
 		line-height: 1;
