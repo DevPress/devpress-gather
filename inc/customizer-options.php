@@ -313,6 +313,14 @@ function gather_options() {
 		'default' => 0,
 	);
 
+	$options['archive-featured-images'] = array(
+		'id' => 'archive-featured-images',
+		'label'   => __( 'Display Featured Images', 'gather' ),
+		'section' => $section,
+		'type'    => 'checkbox',
+		'default' => 1,
+	);
+
 	// Post Settings
 	$section = 'post';
 
@@ -330,8 +338,8 @@ function gather_options() {
 		'default' => 1,
 	);
 
-	$options['display-featured-images'] = array(
-		'id' => 'display-featured-images',
+	$options['post-featured-images'] = array(
+		'id' => 'post-featured-images',
 		'label'   => __( 'Display Featured Images', 'gather' ),
 		'section' => $section,
 		'type'    => 'checkbox',

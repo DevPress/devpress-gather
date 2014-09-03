@@ -114,7 +114,7 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:103 inc/customizer-options.php:346
+#: functions.php:103 inc/customizer-options.php:354
 msgid "Footer"
 msgstr ""
 
@@ -254,19 +254,19 @@ msgstr ""
 msgid "Display excerpts instead of full content."
 msgstr ""
 
-#: inc/customizer-options.php:321
-msgid "Post"
-msgstr ""
-
-#: inc/customizer-options.php:327
-msgid "Display Post Dates"
-msgstr ""
-
-#: inc/customizer-options.php:335
+#: inc/customizer-options.php:318 inc/customizer-options.php:343
 msgid "Display Featured Images"
 msgstr ""
 
-#: inc/customizer-options.php:352
+#: inc/customizer-options.php:329
+msgid "Post"
+msgstr ""
+
+#: inc/customizer-options.php:335
+msgid "Display Post Dates"
+msgstr ""
+
+#: inc/customizer-options.php:360
 msgid "Footer Text"
 msgstr ""
 

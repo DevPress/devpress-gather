@@ -23,7 +23,9 @@ Development
 ===
 
 * Enhancement: Option to display archive excerpts
+* Enchancement: Option to display archive featured images
 * Fix: Primary color set for "View More" background
+* Update: Display featured images full-bleed in masonry layout only
 
 0.2.0
 ===

@@ -10,7 +10,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( has_post_thumbnail() ) { ?>
+	<?php if ( has_post_thumbnail() && get_theme_mod( 'post-featured-images', 1 ) ) { ?>
 	<figure class="entry-image">
 		<?php the_post_thumbnail(); ?>
 	</figure>

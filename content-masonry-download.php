@@ -6,7 +6,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'module'); ?>>
 
-	<?php if ( has_post_thumbnail() ) { ?>
+	<?php if ( has_post_thumbnail() && get_theme_mod( 'archive-featured-images', 1 ) ) { ?>
 	<div class="entry-image-section">
 		<a href="<?php the_permalink() ?>" class="entry-image-link">
 			<figure class="entry-image">

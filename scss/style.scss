@@ -273,11 +273,11 @@ a:active {
 .entry-image {
 	display: block;
 	position: relative;
-	margin: 0 0 4%;
+	margin: 0 6% 4%;
 	overflow: hidden;
 }
-.single .entry-image {
-	margin: 0 6% 4%;
+.masonry .entry-image {
+	margin: 0 0 4%;
 }
 .entry-image:before {
 	z-index: 1;
