@@ -29,7 +29,6 @@ function gather_styles() {
 			'selectors' => array(
 				'a',
 				'.site-title a',
-				'.masonry .entry-footer-meta a:hover'
 			),
 			'declarations' => array(
 				'color' => $color
@@ -43,7 +42,8 @@ function gather_styles() {
 				'.button',
 				'input[type="button"]',
 				'input[type="reset"]',
-				'input[type="submit"]'
+				'input[type="submit"]',
+				'.masonry .entry-footer-meta a:hover'
 			),
 			'declarations' => array(
 				'background-color' => $color

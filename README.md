@@ -23,6 +23,7 @@ Development
 ===
 
 * Enhancement: Option to display archive excerpts
+* Fix: Primary color set for "View More" background
 
 0.2.0
 ===
