@@ -24,7 +24,8 @@ Development
 
 * Enhancement: Option to display archive excerpts
 * Enchancement: Option to display archive featured images
-* Fix: Primary color set for "View More" background
+* Fix: Apply primary color styling to "View More" background
+* Fix: Apply primary color styling to archive page header
 * Fix: Icon font loading
 * Update: Display featured images full-bleed in masonry layout only
 

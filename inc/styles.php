@@ -64,10 +64,11 @@ function gather_styles() {
 			)
 		) );
 
-		// Block Quote Border
+		// Border Colors
 		Customizer_Library_Styles()->add( array(
 			'selectors' => array(
-				'#content blockquote'
+				'#content blockquote',
+				'.page-header'
 			),
 			'declarations' => array(
 				'border-color' => $mod

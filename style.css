@@ -55,8 +55,7 @@ html {
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -421,8 +420,7 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -1116,8 +1114,7 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {
