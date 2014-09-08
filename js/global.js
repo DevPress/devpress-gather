@@ -91,22 +91,16 @@
 			// When mobile menu is tapped/clicked
 			$('.menu-toggle').fastClick( function() {
 				var menu = $(this).data('toggle');
-				$(menu).slideToggle();
+				$(menu).toggle();
 			});
 
 			// When mobile submenu is tapped/clicked
 			$('.dropdown-toggle').fastClick( function() {
 				var $submenu = $(this).parent().find('.children,.sub-menu'),
 					$toggle = $(this);
-				if ( ! $(this).hasClass('toggled') ) {
-					$submenu.slideDown( '400', function() {
-						$toggle.addClass('toggled');
-					});
-				} else {
-					$submenu.slideUp( '400', function(){
-						$toggle.removeClass('toggled');
-					});
-				}
+				$submenu.toggle( 0, function() {
+					$toggle.toggleClass('toggled');
+				});
 			});
 
 		},

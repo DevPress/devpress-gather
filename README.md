@@ -24,6 +24,7 @@ Development
 
 * Update: Display post archives in same format as standard archives
 * Fix: Missing drop down indicator in menus
+* Enhancement: Better menu transitions
 
 0.3.0
 ===
