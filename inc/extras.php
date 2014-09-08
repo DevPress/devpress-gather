@@ -68,7 +68,7 @@ add_action( 'wp', 'gather_setup_author' );
  * @param array  $args    An array of arguments.
  */
 function gather_comment_callback( $comment, $args, $depth ) {
-	include( locate_template('comment.php') );
+	include( locate_template( 'comment.php' ) );
 }
 
 /**

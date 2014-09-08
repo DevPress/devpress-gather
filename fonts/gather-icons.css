@@ -96,3 +96,6 @@
 .gather-icon-link:before {
 	content: "\f0c1";
 }
+.gather-icon-caret-down:before {
+	content: "\f0d7";
+}

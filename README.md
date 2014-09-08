@@ -19,6 +19,12 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+===
+
+* Update: Display post archives in same format as standard archives
+* Fix: Missing drop down indicator in menus
+
 0.3.0
 ===
 
