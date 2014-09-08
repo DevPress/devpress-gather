@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'GATHER_VERSION', '0.2.0' );
+define( 'GATHER_VERSION', '0.4.0' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -135,7 +135,7 @@ function gather_fonts() {
 	wp_enqueue_style( 'gather-body-fonts', $font_uri, array(), null, 'screen' );
 
 	// Icon Font
-	wp_enqueue_style( 'gather-icons', get_template_directory_uri() . '/fonts/gather-icons.css', array(), '1.0.0' );
+	wp_enqueue_style( 'gather-icons', get_template_directory_uri() . '/fonts/gather-icons.css', array(), '0.4.0' );
 
 }
 add_action( 'wp_enqueue_scripts', 'gather_fonts' );
