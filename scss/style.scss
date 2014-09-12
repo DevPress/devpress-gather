@@ -26,6 +26,12 @@ Gather is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic,
 
 @import "globals";
 
+/* @noflip */
+body.rtl {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
 /* Theme Globals
 -------------------------------------------------------------- */
 
@@ -435,24 +441,30 @@ a:active {
 	.masonry .hentry {
 		float:left;
 	}
+	/* @noflip */
 	.column-masonry-2 .hentry {
 		width: calc(50% - 15px);
 		margin-right:30px;
 	}
+	/* @noflip */
 	.column-masonry-2 .hentry:nth-child(2n) {
 		margin-right:0;
 	}
+	/* @noflip */
 	.column-masonry-3 .hentry {
 		width: calc(33.3% - 20px);
 		margin-right:30px;
 	}
+	/* @noflip */
 	.column-masonry-3 .hentry:nth-child(3n) {
 		margin-right:0;
 	}
+	/* @noflip */
 	.column-masonry-4 .hentry {
 		width: calc(25% - 23px);
 		margin-right:30px;
 	}
+	/* @noflip */
 	.column-masonry-4 .hentry:nth-child(4n) {
 		margin-right:0;
 	}
@@ -460,12 +472,13 @@ a:active {
 }
 
 @media screen and (min-width:510px) and (max-width:880px) {
-
+	/* @noflip */
 	.masonry .hentry {
 		float:left;
 		width: calc(50% - 10px);
 		margin-right:20px;
 	}
+	/* @noflip */
 	.masonry .hentry:nth-child(2n) {
 		margin-right:0;
 	}

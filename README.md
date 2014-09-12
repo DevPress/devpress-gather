@@ -19,6 +19,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+===
+
+* Support RTL layouts
+
 0.4.0
 ===
 
