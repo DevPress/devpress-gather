@@ -522,7 +522,8 @@ a:active {
 .widget select {
 	max-width: 100%;
 }
-.widget > ul {
+.widget > ul,
+.widget > div > ul {
 	list-style: none;
 	margin-left:0;
 }
