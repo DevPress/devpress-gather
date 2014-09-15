@@ -14,7 +14,7 @@ define( 'GATHER_VERSION', '0.4.0' );
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 720; /* pixels */
+	$content_width = 664; /* pixels */
 }
 
 if ( ! function_exists( 'gather_setup' ) ) :

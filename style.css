@@ -932,7 +932,7 @@ a:active {
 /* Content
 --------------------------------------------------------------*/
 .entry-header {
-  padding: 4% 6%;
+  padding: 4% 8%;
   text-align: center;
 }
 
@@ -980,7 +980,7 @@ a:active {
 .entry-image {
   display: block;
   position: relative;
-  margin: 0 6% 4%;
+  margin: 0 8% 4%;
   overflow: hidden;
 }
 
@@ -1023,12 +1023,9 @@ a:active {
   right: 15px;
 }
 
-.entry-content {
-  padding: 0 12% 4%;
-}
-
+.entry-content,
 .entry-footer-meta {
-  padding: 0 6% 4%;
+  padding: 0 8% 4%;
 }
 
 .category-meta:before, .tag-meta:before, .edit-meta:before {
@@ -1079,6 +1076,7 @@ a:active {
     padding: 6%;
   }
 
+  .entry-content,
   .entry-footer-meta {
     padding: 0 6% 6%;
   }

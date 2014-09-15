@@ -22,8 +22,9 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 Development
 ===
 
-* Support RTL layouts
-* Fix for EDD masonry layouts
+* Enhancement: Support RTL layouts
+* Fix: EDD masonry layouts
+* Update: Post padding styles
 
 0.4.0
 ===
