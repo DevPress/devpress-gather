@@ -23,7 +23,7 @@
 	</figure>
 	<?php } ?>
 
-	<div class="entry-content">
+	<div class="entry-content clearfix">
 	<?php if ( is_search() || get_theme_mod( 'archive-excerpts', 0 ) ) :
 		the_excerpt();
 	else :

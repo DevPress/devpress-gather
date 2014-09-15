@@ -28,7 +28,7 @@
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content clearfix">
 	<?php if ( is_search() || get_theme_mod( 'archive-excerpts', 0 ) ) :
 		the_excerpt();
 	else :

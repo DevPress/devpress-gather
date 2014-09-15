@@ -23,33 +23,34 @@ Development
 ===
 
 * Enhancement: Support RTL layouts
-* Fix: EDD masonry layouts
 * Update: Post padding styles
+* Fix: EDD masonry layouts
+* Fix: Make sure post content clears
 
 0.4.0
 ===
 
+* Enhancement: Better menu transitions
 * Update: Display post archives in same format as standard archives
 * Fix: Missing drop down indicator in menus
-* Enhancement: Better menu transitions
 
 0.3.0
 ===
 
 * Enhancement: Option to display archive excerpts
-* Enchancement: Option to display archive featured images
+* Enhancement: Option to display archive featured images
+* Update: Display featured images full-bleed in masonry layout only
 * Fix: Apply primary color styling to "View More" background
 * Fix: Apply primary color styling to archive page header
 * Fix: Icon font loading
-* Update: Display featured images full-bleed in masonry layout only
 
 0.2.0
 ===
 
+* Enhancement: More efficient font loading
 * Update: Use bundled WordPress version of masonry.js
 * Fix: Post dates option
 * Fix: Featured image option
-* Enhancement: More efficient font loading
 
 0.1.0
 ===
