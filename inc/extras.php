@@ -134,13 +134,13 @@ function gather_footer_class() {
 
 	$count = gather_count_widgets( 'footer' );
 
-	// If there's three widgets or less
-	if ( $count <= 3) {
+	// If there's two widgets or less
+	if ( $count <= 2) {
 		return 'columns-' . $count;
 	}
 
-	// Otherwise we'll have 4 columns
-	return 'columns-4';
+	// Otherwise we'll have 3 columns
+	return 'columns-3';
 
 }
 

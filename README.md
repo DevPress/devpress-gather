@@ -26,6 +26,7 @@ Development
 * Update: Post padding styles
 * Fix: EDD masonry layouts
 * Fix: Make sure post content clears
+* Fix: Footer widget columns with more than 3 widgets
 
 0.4.0
 ===
