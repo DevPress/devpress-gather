@@ -27,6 +27,7 @@ Development
 * Fix: EDD masonry layouts
 * Fix: Make sure post content clears
 * Fix: Footer widget columns with more than 3 widgets
+* Fix: Require jquery when loading minified scripts
 
 0.4.0
 ===

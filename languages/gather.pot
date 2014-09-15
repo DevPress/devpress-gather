@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.4.0\n"
+"Project-Id-Version: Gather 0.5.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
@@ -335,78 +335,76 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:94
-#: inc/updater/theme-updater-admin.php:95
-#: inc/updater/theme-updater-admin.php:124
+#: inc/updater/theme-updater-admin.php:68
 msgid "Theme License"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:114
+#: inc/updater/theme-updater-admin.php:69
 msgid "Enter your theme license key."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:134
+#: inc/updater/theme-updater-admin.php:70
 msgid "License Key"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:147
+#: inc/updater/theme-updater-admin.php:71
 msgid "License Action"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:153
+#: inc/updater/theme-updater-admin.php:72
 msgid "Deactivate License"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:155
+#: inc/updater/theme-updater-admin.php:73
 msgid "Activate License"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:323
-#: inc/updater/theme-updater-admin.php:370
+#: inc/updater/theme-updater-admin.php:347
+#: inc/updater/theme-updater-admin.php:394
 msgid "License status is unknown."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:331
+#: inc/updater/theme-updater-admin.php:355
 msgid "Renew?"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:340
+#: inc/updater/theme-updater-admin.php:364
 msgid "unlimited"
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:344
+#: inc/updater/theme-updater-admin.php:368
 msgid "License key is active."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:346
+#: inc/updater/theme-updater-admin.php:370
 msgid "Expires %s."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:349
+#: inc/updater/theme-updater-admin.php:373
 msgid "You have %1$s / %2$s sites activated."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:353
+#: inc/updater/theme-updater-admin.php:377
 msgid "License key expired %s."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:355
+#: inc/updater/theme-updater-admin.php:379
 msgid "License key has expired."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:361
+#: inc/updater/theme-updater-admin.php:385
 msgid "License keys do not match."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:363
+#: inc/updater/theme-updater-admin.php:387
 msgid "License is inactive."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:365
+#: inc/updater/theme-updater-admin.php:389
 msgid "License key is disabled."
 msgstr ""
 
-#: inc/updater/theme-updater-admin.php:368
+#: inc/updater/theme-updater-admin.php:392
 msgid "Site is inactive."
 msgstr ""
 

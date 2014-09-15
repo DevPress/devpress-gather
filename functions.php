@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'GATHER_VERSION', '0.4.0' );
+define( 'GATHER_VERSION', '0.5.0' );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -206,7 +206,7 @@ function gather_scripts() {
 		wp_enqueue_script(
 			'gather-scripts',
 			get_template_directory_uri() . '/js/gather.min.js',
-			array(),
+			array( 'jquery' ),
 			GATHER_VERSION,
 			true
 		);
