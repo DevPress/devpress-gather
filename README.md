@@ -23,6 +23,7 @@ Development
 ===
 
 * Support RTL layouts
+* Fix for EDD masonry layouts
 
 0.4.0
 ===

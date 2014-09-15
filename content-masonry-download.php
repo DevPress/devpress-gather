@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'module'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'module hentry'); ?>>
 
 	<?php if ( has_post_thumbnail() && get_theme_mod( 'archive-featured-images', 1 ) ) { ?>
 	<div class="entry-image-section">
