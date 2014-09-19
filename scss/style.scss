@@ -1006,7 +1006,9 @@ object {
 	text-decoration: underline;
 }
 .infinite-loader {
-	margin-bottom:30px;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
 }
 /* Globally hide elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-navigation,

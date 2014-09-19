@@ -1790,7 +1790,9 @@ object {
 }
 
 .infinite-loader {
-  margin-bottom: 30px;
+  position: absolute;
+  right: 50%;
+  bottom: 30px;
 }
 
 /* Globally hide elements when Infinite Scroll is supported and in use. */
