@@ -19,6 +19,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+===
+
+* Enhancement: Favicon and Apple Touch icon support
+
 0.5.0
 ===
 

@@ -102,11 +102,11 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: functions.php:52 inc/customizer-options.php:102
+#: functions.php:52 inc/customizer-options.php:128
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:57 inc/customizer-options.php:106
+#: functions.php:57 inc/customizer-options.php:132
 msgid "Secondary Menu"
 msgstr ""
 
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:103 inc/customizer-options.php:354
+#: functions.php:103 inc/customizer-options.php:380
 msgid "Footer"
 msgstr ""
 
@@ -163,110 +163,130 @@ msgid "Vietnamese"
 msgstr ""
 
 #: inc/customizer-options.php:32
-msgid "Logo"
-msgstr ""
-
-#: inc/customizer-options.php:41
 msgid "Center Header Text/Logo"
 msgstr ""
 
-#: inc/customizer-options.php:50
+#: inc/customizer-options.php:41
 msgid "Header Background Color"
 msgstr ""
 
-#: inc/customizer-options.php:59
+#: inc/customizer-options.php:50
 msgid "Header Background Image"
 msgstr ""
 
-#: inc/customizer-options.php:73
+#: inc/customizer-options.php:64
 msgid "Background Image Style"
 msgstr ""
 
-#: inc/customizer-options.php:86
+#: inc/customizer-options.php:77 inc/customizer-options.php:83
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer-options.php:91
+msgid "Favicon"
+msgstr ""
+
+#: inc/customizer-options.php:95
+msgid ""
+"File must be <strong>.png</strong> format. Optimal dimensions: <strong>32px "
+"x 32px</strong>."
+msgstr ""
+
+#: inc/customizer-options.php:100
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: inc/customizer-options.php:104
+msgid ""
+"File must be <strong>.png</strong> format. Optimal dimensions: "
+"<strong>152px x 152px</strong>."
+msgstr ""
+
+#: inc/customizer-options.php:112
 msgid "Navigation Styles"
 msgstr ""
 
-#: inc/customizer-options.php:171
+#: inc/customizer-options.php:197
 msgid "Colors"
 msgstr ""
 
-#: inc/customizer-options.php:177
+#: inc/customizer-options.php:203
 msgid "Primary Color"
 msgstr ""
 
-#: inc/customizer-options.php:185
+#: inc/customizer-options.php:211
 msgid "Secondary Color"
 msgstr ""
 
-#: inc/customizer-options.php:193
+#: inc/customizer-options.php:219
 msgid "Site Title Color"
 msgstr ""
 
-#: inc/customizer-options.php:201
+#: inc/customizer-options.php:227
 msgid "Site Title Hover Color"
 msgstr ""
 
-#: inc/customizer-options.php:209
+#: inc/customizer-options.php:235
 msgid "Site Tagline Color"
 msgstr ""
 
-#: inc/customizer-options.php:220
+#: inc/customizer-options.php:246
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer-options.php:231
+#: inc/customizer-options.php:257
 msgid "Standard Layout"
 msgstr ""
 
-#: inc/customizer-options.php:247
+#: inc/customizer-options.php:273
 msgid "Archive Layout"
 msgstr ""
 
-#: inc/customizer-options.php:256
+#: inc/customizer-options.php:282
 msgid "Display Sidebar on Archives"
 msgstr ""
 
-#: inc/customizer-options.php:267
+#: inc/customizer-options.php:293
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer-options.php:273
+#: inc/customizer-options.php:299
 msgid "Site Title Font"
 msgstr ""
 
-#: inc/customizer-options.php:282
+#: inc/customizer-options.php:308
 msgid "Primary Font"
 msgstr ""
 
-#: inc/customizer-options.php:291
+#: inc/customizer-options.php:317
 msgid "Secondary Font"
 msgstr ""
 
-#: inc/customizer-options.php:303
+#: inc/customizer-options.php:329
 msgid "Archive"
 msgstr ""
 
-#: inc/customizer-options.php:309
+#: inc/customizer-options.php:335
 msgid "Display Excerpts"
 msgstr ""
 
-#: inc/customizer-options.php:310
+#: inc/customizer-options.php:336
 msgid "Display excerpts instead of full content."
 msgstr ""
 
-#: inc/customizer-options.php:318 inc/customizer-options.php:343
+#: inc/customizer-options.php:344 inc/customizer-options.php:369
 msgid "Display Featured Images"
 msgstr ""
 
-#: inc/customizer-options.php:329
+#: inc/customizer-options.php:355
 msgid "Post"
 msgstr ""
 
-#: inc/customizer-options.php:335
+#: inc/customizer-options.php:361
 msgid "Display Post Dates"
 msgstr ""
 
-#: inc/customizer-options.php:360
+#: inc/customizer-options.php:386
 msgid "Footer Text"
 msgstr ""
 

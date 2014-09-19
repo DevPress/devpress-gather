@@ -27,15 +27,6 @@ function gather_options() {
 	// Header section
 	$section = 'title_tagline';
 
-	$options['logo'] = array(
-		'id' => 'logo',
-		'label'   => __( 'Logo', 'gather' ),
-		'section' => $section,
-		'type'    => 'upload',
-		'default' => '',
-		'priority' => 10,
-	);
-
 	$options['center-branding'] = array(
 		'id' => 'center-branding',
 		'label'   => __( 'Center Header Text/Logo', 'gather' ),
@@ -76,6 +67,41 @@ function gather_options() {
 		'choices' => $choices,
 		'default' => 'image-scale',
 		'priority' => 50,
+	);
+
+	// Logo
+	$section = 'logo';
+
+	$sections[] = array(
+		'id' => $section,
+		'title' => __( 'Logo', 'gather' ),
+		'priority' => '20'
+	);
+
+	$options['logo'] = array(
+		'id' => 'logo',
+		'label'   => __( 'Logo', 'gather' ),
+		'section' => $section,
+		'type'    => 'upload',
+		'default' => '',
+	);
+
+	$options['logo-favicon'] = array(
+		'id' => 'logo-favicon',
+		'label'   => __( 'Favicon', 'gather' ),
+		'section' => $section,
+		'type'    => 'upload',
+		'default' => '',
+		'description'  => __( 'File must be <strong>.png</strong> format. Optimal dimensions: <strong>32px x 32px</strong>.', 'gather' ),
+	);
+
+	$options['logo-apple-touch'] = array(
+		'id' => 'logo-apple-touch',
+		'label'   => __( 'Apple Touch Icon', 'gather' ),
+		'section' => $section,
+		'type'    => 'upload',
+		'default' => '',
+		'description'  => __( 'File must be <strong>.png</strong> format. Optimal dimensions: <strong>152px x 152px</strong>.', 'gather' ),
 	);
 
 	// Navigation Styles
