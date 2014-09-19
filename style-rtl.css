@@ -1754,9 +1754,8 @@ object {
   *zoom: 1;
 }
 
-/* Plugin support
+/* Jetpack Support
 --------------------------------------------------------------*/
-/* Infinite Scroll */
 #infinite-handle {
   clear: both;
 }
@@ -1806,7 +1805,40 @@ object {
   display: block;
 }
 
-/* Sharedaddy */
 .entry-content .sharedaddy {
   padding-top: 30px;
+}
+
+/* Event Calendar Support
+--------------------------------------------------------------*/
+#tribe-events-pg-template {
+  max-width: 790px;
+  padding: 0;
+}
+
+#tribe-events {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 30px 0 60px;
+  overflow: hidden;
+  padding: 4% 8%;
+}
+
+#tribe-events .secondary {
+  float: none;
+  width: auto;
+}
+
+@media screen and (max-width: 510px) {
+  .tribe-events-page-template .col-width {
+    width: 100%;
+  }
+
+  #tribe-events {
+    margin-top: 1px;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+  }
 }

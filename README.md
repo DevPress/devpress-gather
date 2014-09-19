@@ -23,6 +23,7 @@ Development
 ===
 
 * Enhancement: Favicon and Apple Touch icon support
+* Basic Event Calendar Support (https://wordpress.org/plugins/the-events-calendar/)
 
 0.5.0
 ===
