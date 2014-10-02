@@ -51,6 +51,9 @@ class EDD_Theme_Updater {
 	}
 
 	function update_nag() {
+
+		$strings = $this->strings;
+
 		$theme = wp_get_theme( $this->theme_slug );
 
 		$api_response = get_transient( $this->response_key );

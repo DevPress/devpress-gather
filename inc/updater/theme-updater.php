@@ -18,7 +18,7 @@ $updater = new EDD_Theme_Updater_Admin(
 		'remote_api_url' => 'https://devpress.com',
 		'item_name' => 'Gather',
 		'theme_slug' => 'gather',
-		'version' => GATHER_VERSION,
+		'version' => '0.2.0',
 		'author' => 'DevPress'
 	),
 	// Strings should use theme textdomain
