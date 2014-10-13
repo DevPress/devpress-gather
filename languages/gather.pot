@@ -355,85 +355,86 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: inc/updater/theme-updater.php:28
+#: inc/updater/theme-updater-admin.php:59
 msgid "Theme License"
 msgstr ""
 
-#: inc/updater/theme-updater.php:29
+#: inc/updater/theme-updater-admin.php:60
 msgid "Enter your theme license key."
 msgstr ""
 
-#: inc/updater/theme-updater.php:30
+#: inc/updater/theme-updater-admin.php:61
 msgid "License Key"
 msgstr ""
 
-#: inc/updater/theme-updater.php:31
+#: inc/updater/theme-updater-admin.php:62
 msgid "License Action"
 msgstr ""
 
-#: inc/updater/theme-updater.php:32
+#: inc/updater/theme-updater-admin.php:63
 msgid "Deactivate License"
 msgstr ""
 
-#: inc/updater/theme-updater.php:33
+#: inc/updater/theme-updater-admin.php:64
 msgid "Activate License"
 msgstr ""
 
-#: inc/updater/theme-updater.php:34 inc/updater/theme-updater.php:46
+#: inc/updater/theme-updater-admin.php:65
+#: inc/updater/theme-updater-admin.php:77
 msgid "License status is unknown."
 msgstr ""
 
-#: inc/updater/theme-updater.php:35
+#: inc/updater/theme-updater-admin.php:66
 msgid "Renew?"
 msgstr ""
 
-#: inc/updater/theme-updater.php:36
+#: inc/updater/theme-updater-admin.php:67
 msgid "unlimited"
 msgstr ""
 
-#: inc/updater/theme-updater.php:37
+#: inc/updater/theme-updater-admin.php:68
 msgid "License key is active."
 msgstr ""
 
-#: inc/updater/theme-updater.php:38
+#: inc/updater/theme-updater-admin.php:69
 msgid "Expires %s."
 msgstr ""
 
-#: inc/updater/theme-updater.php:39
+#: inc/updater/theme-updater-admin.php:70
 msgid "You have %1$s / %2$s sites activated."
 msgstr ""
 
-#: inc/updater/theme-updater.php:40
+#: inc/updater/theme-updater-admin.php:71
 msgid "License key expired %s."
 msgstr ""
 
-#: inc/updater/theme-updater.php:41
+#: inc/updater/theme-updater-admin.php:72
 msgid "License key has expired."
 msgstr ""
 
-#: inc/updater/theme-updater.php:42
+#: inc/updater/theme-updater-admin.php:73
 msgid "License keys do not match."
 msgstr ""
 
-#: inc/updater/theme-updater.php:43
+#: inc/updater/theme-updater-admin.php:74
 msgid "License is inactive."
 msgstr ""
 
-#: inc/updater/theme-updater.php:44
+#: inc/updater/theme-updater-admin.php:75
 msgid "License key is disabled."
 msgstr ""
 
-#: inc/updater/theme-updater.php:45
+#: inc/updater/theme-updater-admin.php:76
 msgid "Site is inactive."
 msgstr ""
 
-#: inc/updater/theme-updater.php:47
+#: inc/updater/theme-updater-admin.php:78
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
 
-#: inc/updater/theme-updater.php:48
+#: inc/updater/theme-updater-admin.php:79
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" "
 "class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a "

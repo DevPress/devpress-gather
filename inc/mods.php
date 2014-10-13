@@ -158,10 +158,14 @@ function gather_social_nav_class( $classes, $item ) {
     		'instagram.com',
     		'skype.com',
     		'spotify.com',
-    		'tumblr.com',
     		'twitter.com',
     		'vimeo.com'
     	);
+
+    	// Tumblr needs special attention
+    	if ( strpos( $base, 'tumblr' ) ) {
+			$classes[] = 'social';
+		}
 
     	if ( in_array( $base, $social ) ) {
 	    	$classes[] = 'social';
