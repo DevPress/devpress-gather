@@ -114,7 +114,7 @@ msgstr ""
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:103 inc/customizer-options.php:380
+#: functions.php:103 inc/customizer-options.php:402
 msgid "Footer"
 msgstr ""
 
@@ -286,7 +286,15 @@ msgstr ""
 msgid "Display Post Dates"
 msgstr ""
 
-#: inc/customizer-options.php:386
+#: inc/customizer-options.php:383
+msgid "Easy Digital Downloads"
+msgstr ""
+
+#: inc/customizer-options.php:389
+msgid "Display downloads on front page."
+msgstr ""
+
+#: inc/customizer-options.php:408
 msgid "Footer Text"
 msgstr ""
 

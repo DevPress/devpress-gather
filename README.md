@@ -2,11 +2,11 @@
 
 Gather is a highly adaptable theme for displaying products, art, and content.  Choose your own fonts, update colors, or upload a logo using the theme customizer.  Multiple menu locations, social icons, and widget areas are available.  Integrates well with popular plugins like JetPack and Easy Digital Downloads.  Gather is responsive and looks great on all devices.
 
-### Installation Instructions
+## Installation Instructions
 
 This theme can be installed under "Appearance" > "Themes".  Click on the "Add New" button to upload the theme zip file.
 
-### Developer Instructions
+## Developer Instructions
 
 ### Grunt
 
@@ -17,14 +17,15 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 `grunt watch` can be used while editing SASS and JS.
 `grunt release` should be used before browser testing or releasing.
 
-### Change Log
+## Change Log
 
 Development
 ---
 
 * Enhancement: Favicon and Apple Touch icon support
-* Basic Event Calendar Support (https://wordpress.org/plugins/the-events-calendar/)
-* Fix for tumblr links in social menu
+* Enhancement: Basic Event Calendar Support (https://wordpress.org/plugins/the-events-calendar/)
+* Enhancement: Support for display downloads archive on front page
+* Fix: Tumblr url detection for social menu
 
 0.5.0
 ---

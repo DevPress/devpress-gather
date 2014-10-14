@@ -197,3 +197,55 @@ function gather_display_favicons() {
 }
 endif;
 add_action( 'wp_head', 'gather_display_favicons' );
+
+/**
+ * Loads the downloads post type archive as the front page.
+ * Requires Easy Digital Downloads plugin to be installed.
+ *
+ * @since Gather 0.6
+ */
+function gather_downloads_front_page( $query ) {
+
+	// Only load if Easy Digital Downloads is installed
+	if ( ! class_exists( 'Easy_Digital_Downloads' ) ) {
+		return;
+	}
+
+	// Only filter the main query on the front-end
+    if ( is_admin() || ! $query->is_main_query() ) {
+    	return;
+    }
+
+	// Only filter if the option is set
+	if ( ! get_theme_mod( 'front-page-downloads', 0 ) ) {
+		return;
+	}
+
+    global $wp;
+    $front = false;
+
+	// If the latest posts are showing on the home page
+    if ( ( is_home() && empty( $wp->query_string ) ) ) {
+    	$front = true;
+    }
+
+	// If a static page is set as the home page
+    if ( ( $query->get( 'page_id' ) == get_option( 'page_on_front' ) && get_option( 'page_on_front' ) ) || empty( $wp->query_string ) ) {
+    	$front = true;
+    }
+
+    if ( $front ) :
+
+        $query->set( 'post_type', 'download' );
+        $query->set( 'page_id', '' );
+
+        // Set properties to match an archive
+        $query->is_page = 0;
+        $query->is_singular = 0;
+        $query->is_post_type_archive = 1;
+        $query->is_archive = 1;
+
+    endif;
+
+}
+add_action( 'pre_get_posts', 'gather_downloads_front_page' );

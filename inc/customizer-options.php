@@ -372,6 +372,28 @@ function gather_options() {
 		'default' => 1,
 	);
 
+	// Easy Digital Downloads
+	if ( class_exists( 'Easy_Digital_Downloads' ) ) :
+
+		// EDD Settings
+		$section = 'easy-digital-downloads';
+
+		$sections[] = array(
+			'id' => $section,
+			'title' => __( 'Easy Digital Downloads', 'gather' ),
+			'priority' => '90'
+		);
+
+		$options['front-page-downloads'] = array(
+			'id' => 'front-page-downloads',
+			'label'   => __( 'Display downloads on front page.', 'gather' ),
+			'section' => $section,
+			'type'    => 'checkbox',
+			'default' => 0
+		);
+
+	endif;
+
 	// Footer Settings
 	$section = 'footer';
 
