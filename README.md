@@ -24,7 +24,8 @@ Development
 
 * Enhancement: Favicon and Apple Touch icon support
 * Enhancement: Basic Event Calendar Support (https://wordpress.org/plugins/the-events-calendar/)
-* Enhancement: Support for display downloads archive on front page
+* Enhancement: Option to display download archive on front page
+* Enhancement: Download taxonomies displayed by default
 * Fix: Tumblr url detection for social menu
 
 0.5.0

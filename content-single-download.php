@@ -26,4 +26,8 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<footer class="entry-meta entry-footer-meta">
+		<?php gather_post_meta( 'download' ); ?>
+	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->
