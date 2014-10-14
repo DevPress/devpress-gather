@@ -534,6 +534,15 @@ a:active {
   padding-right: 30px;
 }
 
+/* Full Width Template */
+.full-width .content-area {
+  margin: 0;
+}
+
+.full-width .site-main {
+  margin: 0;
+}
+
 /* General Responsive Layout */
 @media screen and (max-width: 881px) {
   #page .content-area {

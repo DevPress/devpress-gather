@@ -31,6 +31,8 @@ function gather_get_default_footer_text() {
  */
 function gather_body_classes( $classes ) {
 
+	global $post;
+
 	if ( gather_load_masonry() ) {
 		$classes[] = get_theme_mod( 'archive-layout', customizer_library_get_default( 'archive-layout' ) );
 		$classes[] = 'masonry';
@@ -40,6 +42,16 @@ function gather_body_classes( $classes ) {
 		$classes[] = get_theme_mod( 'standard-layout', customizer_library_get_default( 'standard-layout' ) );
 	} else {
 		$classes[] = 'no-sidebar';
+	}
+
+	// Simplify body class for full-width template
+	if ( isset( $post ) && ( is_page_template( 'templates/full-width.php' ) ) ) {
+		foreach( $classes as $key => $value) {
+			if ( $value == 'page-template-templatesfull-width-php') {
+				$classes[$key] = 'page-template-full-width-php';
+			}
+		}
+		$classes[] = 'full-width';
 	}
 
 	return $classes;

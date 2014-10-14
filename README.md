@@ -27,6 +27,7 @@ Development
 * Enhancement: Option to display download archive on front page
 * Enhancement: Download taxonomies displayed by default
 * Enhancement: Sticky footer
+* Enhancement: Full Width Page Template
 * Fix: Tumblr url detection for social menu
 
 0.5.0

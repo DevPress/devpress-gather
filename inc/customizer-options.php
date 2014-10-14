@@ -125,11 +125,11 @@ function gather_options() {
 		}
 
 		if ( $menu == 'primary' ) {
-			$label = __( 'Primary Menu' );
+			$label = __( 'Primary Menu', 'gather' );
 		}
 
 		if ( $menu == 'secondary' ) {
-			$label = __( 'Secondary Menu' );
+			$label = __( 'Secondary Menu', 'gather' );
 		}
 
 		$options[$menu . '-menu-background'] = array(

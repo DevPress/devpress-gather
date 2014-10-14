@@ -338,7 +338,7 @@ msgstr ""
 msgid "%1$s by %2$s."
 msgstr ""
 
-#: inc/mods.php:120
+#: inc/mods.php:132
 msgid "Search"
 msgstr ""
 
@@ -484,6 +484,10 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://devpress.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width Page"
 msgstr ""
 
 #: archive.php:29
