@@ -26,6 +26,7 @@ Development
 * Enhancement: Basic Event Calendar Support (https://wordpress.org/plugins/the-events-calendar/)
 * Enhancement: Option to display download archive on front page
 * Enhancement: Download taxonomies displayed by default
+* Enhancement: Sticky footer
 * Fix: Tumblr url detection for social menu
 
 0.5.0

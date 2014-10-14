@@ -400,6 +400,16 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -454,6 +464,13 @@ a:active {
 
 /* Layout
 -------------------------------------------------------------- */
+#page {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .content-area {
   width: 100%;
 }
