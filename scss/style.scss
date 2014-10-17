@@ -331,9 +331,39 @@ a:active {
 	right: 15px;
 }
 .entry-content,
+.author-meta,
 .entry-footer-meta {
 	padding:0 8% 4%;
 }
+
+/* Author Meta*/
+
+.author-box {
+	background: #fafafa;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+	padding:20px;
+	min-height: 100px;
+}
+.author-avatar {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+.author-avatar img {
+	border-radius: 50%;
+}
+.author-description {
+	margin-left: 90px;
+}
+.author-description h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+/* Post Meta */
+
 .category-meta:before, .tag-meta:before, .edit-meta:before {
 	font-family: 'gather-icons';
 	speak: none;
@@ -375,6 +405,7 @@ a:active {
 		padding:6%;
 	}
 	.entry-content,
+	.author-meta,
 	.entry-footer-meta {
 		padding: 0 6% 6%;
 	}

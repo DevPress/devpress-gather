@@ -102,6 +102,10 @@ msgid ""
 "searching can help."
 msgstr ""
 
+#: content-single.php:41
+msgid "About %s"
+msgstr ""
+
 #: functions.php:52 inc/customizer-options.php:128
 msgid "Primary Menu"
 msgstr ""

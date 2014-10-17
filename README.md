@@ -28,6 +28,7 @@ Development
 * Enhancement: Download taxonomies displayed by default
 * Enhancement: Sticky footer
 * Enhancement: Full Width Page Template
+* Enhancement: Author Box
 * Fix: Tumblr url detection for social menu
 
 0.5.0
