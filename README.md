@@ -29,6 +29,7 @@ Development
 * Enhancement: Sticky footer
 * Enhancement: Full Width Page Template
 * Enhancement: Author Box
+* Translations: fr_FR (French) props @fxbenard
 * Fix: Tumblr url detection for social menu
 
 0.5.0
