@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.5.0\n"
+"Project-Id-Version: Gather 0.6.0\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
