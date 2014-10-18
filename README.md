@@ -2,6 +2,11 @@
 
 Gather is a highly adaptable theme for displaying products, art, and content.  Choose your own fonts, update colors, or upload a logo using the theme customizer.  Multiple menu locations, social icons, and widget areas are available.  Integrates well with popular plugins like JetPack and Easy Digital Downloads.  Gather is responsive and looks great on all devices.
 
+## Translations
+
+* French (France) : @fxbenard
+* Finnish : @samikeijonen
+
 ## Installation Instructions
 
 This theme can be installed under "Appearance" > "Themes".  Click on the "Add New" button to upload the theme zip file.
@@ -30,6 +35,7 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 * Enhancement: Full Width Page Template
 * Enhancement: Author Box
 * Translations: fr_FR (French) props @fxbenard
+* Translations: fi (Finnish) props @samikeijonen
 * Fix: Tumblr url detection for social menu
 
 0.5.0
