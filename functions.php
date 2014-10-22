@@ -38,15 +38,6 @@ function gather_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 720, 1200 );
-	add_image_size( 'gather-archive', 560, 999 );
-
 	// Registers menu above the site title
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'gather' ),
@@ -81,6 +72,22 @@ function gather_setup() {
 }
 endif; // gather_setup
 add_action( 'after_setup_theme', 'gather_setup' );
+
+if ( ! function_exists( 'gather_register_image_sizes' ) ) :
+/*
+ * Enables support for Post Thumbnails on posts and pages.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+ */
+function gather_register_image_sizes() {
+
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 720, 1200 );
+	add_image_size( 'gather-archive', 560, 999 );
+
+}
+add_action( 'after_setup_theme', 'gather_register_image_sizes' );
+endif;
 
 /**
  * Register widget area.

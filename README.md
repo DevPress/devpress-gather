@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Enhancement: Better support for changing image sizes
+
 0.6.0
 ---
 
