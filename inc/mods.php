@@ -65,6 +65,11 @@ add_filter( 'body_class', 'gather_body_classes' );
  */
  function gather_show_sidebar() {
 
+	// Support for bbPress archives
+ 	if ( is_post_type_archive( 'forum' ) && is_active_sidebar( 'primary' ) ) {
+ 		return true;
+	}
+
  	 // If an archive page is displayed and display sidebar on archives is checked
  	if ( !is_singular() && !is_404() && !is_search() && !get_theme_mod( 'archive-sidebar', '0' ) ) {
 	 	return false;
@@ -86,6 +91,10 @@ add_filter( 'body_class', 'gather_body_classes' );
  function gather_load_masonry() {
 
  	if ( !is_singular() && !is_404() && !is_search() ) {
+	 	// Support for bbPress
+	 	if ( is_post_type_archive( 'forum' ) ) {
+		 	return false;
+	 	}
  		$archive_layout = get_theme_mod( 'archive-layout', customizer_library_get_default( 'archive-layout' ) );
  		if ( $archive_layout != 'standard' ) {
  			return true;
