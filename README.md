@@ -24,6 +24,12 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Fix: Make theme updater strings translatable
+* Update: Spanish translations
+
 0.6.0
 ---
 
