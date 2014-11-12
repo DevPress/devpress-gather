@@ -27,9 +27,10 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 Development
 ---
 
-* Fix: Make theme update strings translatable
-* Update: Spanish translations
 * Enhancement: Better support for changing image sizes
+* Enhancement: Basic bbPress Support
+* Translations: es_ES
+* Fix: Make theme update strings translatable
 
 0.6.0
 ---
