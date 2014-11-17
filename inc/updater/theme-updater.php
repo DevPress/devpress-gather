@@ -18,7 +18,7 @@ $updater = new EDD_Theme_Updater_Admin(
 		'remote_api_url' => 'https://devpress.com',
 		'item_name' => 'Gather',
 		'theme_slug' => 'gather',
-		'version' => '0.6.0',
+		'version' => GATHER_VERSION,
 		'author' => 'DevPress',
 		'download_id' => '21186',
 	),

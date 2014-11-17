@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.6.0\n"
+"Project-Id-Version: Gather 0.7.0\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.4.8\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
 "X-Poedit-KeywordsList: "
 "__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
 "attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
@@ -121,15 +121,15 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:48 inc/customizer-options.php:132
+#: functions.php:44 inc/customizer-options.php:132
 msgid "Secondary Menu"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:99
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:110 inc/customizer-options.php:402
+#: functions.php:109 inc/customizer-options.php:402
 msgid "Footer"
 msgstr ""
 

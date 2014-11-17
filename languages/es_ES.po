@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: Gather\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
-"PO-Revision-Date: 2014-11-04 18:50+0000\n"
-"Last-Translator: Santiago\n"
+"PO-Revision-Date: 2014-11-14 20:30+0000\n"
+"Last-Translator: Devin Price <devin@wptheming.com>\n"
 "Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/gather/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: grunt-wp-i18n 0.4.8\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-Bookmarks: \n"
 "X-Poedit-Country: United States\n"
@@ -117,19 +117,19 @@ msgstr "Parece que no pudimos encontrar lo que buscabas. Quizás buscando puedas
 msgid "About %s"
 msgstr "Acerca %s"
 
-#: functions.php:52 inc/customizer-options.php:128
+#: functions.php:43 inc/customizer-options.php:128
 msgid "Primary Menu"
 msgstr "Menú Principal"
 
-#: functions.php:57 inc/customizer-options.php:132
+#: functions.php:44 inc/customizer-options.php:132
 msgid "Secondary Menu"
 msgstr "Menú Secundario"
 
-#: functions.php:93
+#: functions.php:99
 msgid "Sidebar"
 msgstr "Barra Lateral"
 
-#: functions.php:103 inc/customizer-options.php:402
+#: functions.php:109 inc/customizer-options.php:402
 msgid "Footer"
 msgstr "Pie de Página"
 
@@ -353,7 +353,7 @@ msgstr "http://wordpress.org/"
 msgid "%1$s by %2$s."
 msgstr "%1$s por %2$s."
 
-#: inc/mods.php:132
+#: inc/mods.php:141
 msgid "Search"
 msgstr "Buscar"
 
@@ -378,86 +378,85 @@ msgstr "Navegador de Publicación"
 msgid ", "
 msgstr ", "
 
-#: inc/updater/theme-updater-admin.php:59
+#: inc/updater/theme-updater.php:28
 msgid "Theme License"
 msgstr "Licencia de la Plantilla"
 
-#: inc/updater/theme-updater-admin.php:60
+#: inc/updater/theme-updater.php:29
 msgid "Enter your theme license key."
 msgstr "Ingresa tu código de licencia."
 
-#: inc/updater/theme-updater-admin.php:61
+#: inc/updater/theme-updater.php:30
 msgid "License Key"
 msgstr "Clave de Licencia"
 
-#: inc/updater/theme-updater-admin.php:62
+#: inc/updater/theme-updater.php:31
 msgid "License Action"
 msgstr "Acciones de Licencia"
 
-#: inc/updater/theme-updater-admin.php:63
+#: inc/updater/theme-updater.php:32
 msgid "Deactivate License"
 msgstr "Desactivar Licencia"
 
-#: inc/updater/theme-updater-admin.php:64
+#: inc/updater/theme-updater.php:33
 msgid "Activate License"
 msgstr "Activar Licencia"
 
-#: inc/updater/theme-updater-admin.php:65
-#: inc/updater/theme-updater-admin.php:77
+#: inc/updater/theme-updater.php:34 inc/updater/theme-updater.php:46
 msgid "License status is unknown."
 msgstr "Estado de Licencia Desconocido"
 
-#: inc/updater/theme-updater-admin.php:66
+#: inc/updater/theme-updater.php:35
 msgid "Renew?"
 msgstr "¿Renovar?"
 
-#: inc/updater/theme-updater-admin.php:67
+#: inc/updater/theme-updater.php:36
 msgid "unlimited"
 msgstr "ilimitado"
 
-#: inc/updater/theme-updater-admin.php:68
+#: inc/updater/theme-updater.php:37
 msgid "License key is active."
 msgstr "El código de licencia está activado."
 
-#: inc/updater/theme-updater-admin.php:69
+#: inc/updater/theme-updater.php:38
 msgid "Expires %s."
 msgstr "Expira %s."
 
-#: inc/updater/theme-updater-admin.php:70
+#: inc/updater/theme-updater.php:39
 msgid "You have %1$s / %2$s sites activated."
 msgstr "Tienes %1$s / %2$s sitios activos."
 
-#: inc/updater/theme-updater-admin.php:71
+#: inc/updater/theme-updater.php:40
 msgid "License key expired %s."
 msgstr "Clave de Licencia expirada %s."
 
-#: inc/updater/theme-updater-admin.php:72
+#: inc/updater/theme-updater.php:41
 msgid "License key has expired."
 msgstr "La Clave de Licencia ha expirado."
 
-#: inc/updater/theme-updater-admin.php:73
+#: inc/updater/theme-updater.php:42
 msgid "License keys do not match."
 msgstr "Los códigos de licencia no coinciden."
 
-#: inc/updater/theme-updater-admin.php:74
+#: inc/updater/theme-updater.php:43
 msgid "License is inactive."
 msgstr "Licencia inactiva."
 
-#: inc/updater/theme-updater-admin.php:75
+#: inc/updater/theme-updater.php:44
 msgid "License key is disabled."
 msgstr "Licencia desactivada."
 
-#: inc/updater/theme-updater-admin.php:76
+#: inc/updater/theme-updater.php:45
 msgid "Site is inactive."
 msgstr "Sitio inactivo."
 
-#: inc/updater/theme-updater-admin.php:78
+#: inc/updater/theme-updater.php:47
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr "Al actualizar esta plantilla perderás tus personalizaciones. 'Cancelar' para detenerlo, 'OK' para actualizarla."
 
-#: inc/updater/theme-updater-admin.php:79
+#: inc/updater/theme-updater.php:48
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\""
 " title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
