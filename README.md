@@ -29,8 +29,10 @@ Development
 
 * Enhancement: Better support for changing image sizes
 * Enhancement: Basic bbPress Support
+* Enhancement: Editor Styles
 * Translations: es_ES
 * Fix: Make theme update strings translatable
+* Fix: Fix footer issue in IE11
 
 0.6.0
 ---

@@ -38,13 +38,9 @@ function gather_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
-	// Registers menu above the site title
+	// Registers navigation menus
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'gather' ),
-	) );
-
-	// Registers menu above the site title
-	register_nav_menus( array(
 		'secondary' => __( 'Secondary Menu', 'gather' ),
 	) );
 
@@ -55,6 +51,9 @@ function gather_setup() {
 	add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
+
+	// Post editor styles
+	add_editor_style( 'editor-style.css' );
 
 	/*
 	 * Enable support for Post Formats.

@@ -117,19 +117,19 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-#: functions.php:52 inc/customizer-options.php:128
+#: functions.php:43 inc/customizer-options.php:128
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:57 inc/customizer-options.php:132
+#: functions.php:48 inc/customizer-options.php:132
 msgid "Secondary Menu"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:100
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:103 inc/customizer-options.php:402
+#: functions.php:110 inc/customizer-options.php:402
 msgid "Footer"
 msgstr ""
 
@@ -353,7 +353,7 @@ msgstr ""
 msgid "%1$s by %2$s."
 msgstr ""
 
-#: inc/mods.php:132
+#: inc/mods.php:141
 msgid "Search"
 msgstr ""
 
