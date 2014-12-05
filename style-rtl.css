@@ -724,12 +724,11 @@ a:active {
   background: none;
   line-height: 1;
   cursor: pointer;
-  min-height: 50px;
   text-align: right;
   box-shadow: none;
   color: #fff;
-  padding: 18px 20px 0;
-  margin: 0 20px 0 0;
+  padding: 18px 20px 19px;
+  margin: 0;
   font-weight: 600;
 }
 
@@ -739,10 +738,8 @@ a:active {
   speak: none;
   display: inline-block;
   font-weight: normal;
-  position: absolute;
-  right: 0;
   vertical-align: baseline;
-  margin: 0 20px 0 0;
+  margin: 0 0 0 5px;
 }
 
 .menu-toggle:focus {
