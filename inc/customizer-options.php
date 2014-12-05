@@ -333,7 +333,7 @@ function gather_options() {
 	$options['archive-excerpts'] = array(
 		'id' => 'archive-excerpts',
 		'label'   => __( 'Display Excerpts', 'gather' ),
-		'description'   => __( 'Display excerpts instead of full content.', 'gather' ),
+		'description'   => __( 'Always display excerpts instead of full content.', 'gather' ),
 		'section' => $section,
 		'type'    => 'checkbox',
 		'default' => 0,

@@ -21,6 +21,11 @@ function gather_wp_title( $title, $sep ) {
 
 	global $page, $paged;
 
+	// If "Downloads" are set on home page, just display site name and tagline
+	if ( get_theme_mod( 'front-page-downloads', 0 ) && is_front_page() ) {
+		$title = '';
+	}
+
 	// Add the blog name
 	$title .= get_bloginfo( 'name', 'display' );
 

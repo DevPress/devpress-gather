@@ -27,9 +27,9 @@
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 		<nav id="primary-navigation" class="main-navigation clearfix" role="navigation">
 			<div class="col-width">
-				<button class="menu-toggle" data-toggle="#primary-navigation .menu">
+				<div class="menu-toggle" data-toggle="#primary-navigation .menu">
 					<?php echo esc_html( gather_get_menu_name( 'primary' ) ); ?>
-				</button>
+				</div>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'primary',
 					'link_before' => '<span>',

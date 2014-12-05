@@ -391,6 +391,10 @@ body.rtl {
 
 /* Theme Globals
 -------------------------------------------------------------- */
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   background: #f2f2f2;
@@ -399,17 +403,16 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
+  min-height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -466,9 +469,9 @@ a:active {
 -------------------------------------------------------------- */
 #page {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .content-area {
@@ -717,17 +720,17 @@ a:active {
 /* Mobile Toggle
 -------------------------------------------------------------- */
 .menu-toggle {
+  display: inline-block;
   background: none;
   line-height: 1;
   cursor: pointer;
-  margin: 0 0 0 20px;
   min-height: 50px;
   text-align: left;
   box-shadow: none;
-}
-
-.menu-toggle:hover {
-  background: none;
+  color: #fff;
+  padding: 18px 20px 0;
+  margin: 0 0 0 20px;
+  font-weight: 600;
 }
 
 .menu-toggle:before {
@@ -738,6 +741,8 @@ a:active {
   font-weight: normal;
   position: absolute;
   left: 0;
+  vertical-align: baseline;
+  margin: 0 0 0 20px;
 }
 
 .menu-toggle:focus {

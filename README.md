@@ -24,6 +24,14 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Fix: 2px Menu toggle offset in Firefox
+* Fix: Fix footer issue in IE11
+* Update: Display excerpts on archives if available
+* Enhancement: Filter title if EDD archive is set as home page
+
 0.7.0
 ---
 
@@ -32,7 +40,6 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 * Enhancement: Editor Styles
 * Translations: es_ES
 * Fix: Make theme update strings translatable
-* Fix: Fix footer issue in IE11
 
 0.6.0
 ---
