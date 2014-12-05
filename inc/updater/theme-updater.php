@@ -20,7 +20,6 @@ $updater = new EDD_Theme_Updater_Admin(
 		'theme_slug' => 'gather',
 		'version' => GATHER_VERSION,
 		'author' => 'DevPress',
-		'download_id' => '21186',
 	),
 
 	// Strings

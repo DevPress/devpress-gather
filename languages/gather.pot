@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.7.0\n"
+"Project-Id-Version: Gather 0.8.0\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
@@ -80,8 +80,8 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: content-masonry-download.php:35 content-masonry.php:27 content.php:30
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+#: content-masonry-download.php:35
+msgid "View More <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: content-masonry-download.php:39 content-masonry.php:31 content-page.php:18
@@ -91,6 +91,10 @@ msgstr ""
 
 #: content-masonry-download.php:46 content-masonry.php:38
 msgid "View More"
+msgstr ""
+
+#: content-masonry.php:27 content.php:30
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: content-none.php:14
@@ -286,7 +290,7 @@ msgid "Display Excerpts"
 msgstr ""
 
 #: inc/customizer-options.php:336
-msgid "Display excerpts instead of full content."
+msgid "Always display excerpts instead of full content."
 msgstr ""
 
 #: inc/customizer-options.php:344 inc/customizer-options.php:369
@@ -313,31 +317,31 @@ msgstr ""
 msgid "Footer Text"
 msgstr ""
 
-#: inc/extras.php:35
+#: inc/extras.php:40
 msgid "Page %s"
 msgstr ""
 
-#: inc/extras.php:88
+#: inc/extras.php:93
 msgid "Name"
 msgstr ""
 
-#: inc/extras.php:89
+#: inc/extras.php:94
 msgid "Name *"
 msgstr ""
 
-#: inc/extras.php:95
+#: inc/extras.php:100
 msgid "Email"
 msgstr ""
 
-#: inc/extras.php:96
+#: inc/extras.php:101
 msgid "Email *"
 msgstr ""
 
-#: inc/extras.php:102 inc/extras.php:103
+#: inc/extras.php:107 inc/extras.php:108
 msgid "Website"
 msgstr ""
 
-#: inc/extras.php:121
+#: inc/extras.php:126
 msgid "Comment *"
 msgstr ""
 

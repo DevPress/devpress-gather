@@ -24,7 +24,7 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
-Development
+0.8.0
 ---
 
 * Fix: 2px Menu toggle offset in Firefox

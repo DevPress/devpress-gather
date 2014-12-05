@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Gather\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
-"PO-Revision-Date: 2014-11-14 20:30+0000\n"
+"PO-Revision-Date: 2014-12-05 15:05+0000\n"
 "Last-Translator: Devin Price <devin@wptheming.com>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/gather/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -80,9 +80,9 @@ msgstr "Les commentaires sont fermés."
 msgid "Free"
 msgstr "Gratuit"
 
-#: content-masonry-download.php:35 content-masonry.php:27 content.php:30
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
+#: content-masonry-download.php:35
+msgid "View More <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
 
 #: content-masonry-download.php:39 content-masonry.php:31 content-page.php:18
 #: content-single-download.php:23 content-single.php:27 content.php:34
@@ -92,6 +92,10 @@ msgstr "Pages&nbsp;:"
 #: content-masonry-download.php:46 content-masonry.php:38
 msgid "View More"
 msgstr "Lire la suite"
+
+#: content-masonry.php:27 content.php:30
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
 #: content-none.php:14
 msgid "Nothing Found"
@@ -286,8 +290,8 @@ msgid "Display Excerpts"
 msgstr "Afficher les extraits"
 
 #: inc/customizer-options.php:336
-msgid "Display excerpts instead of full content."
-msgstr "Afficher les extraits plutôt que tout le contenu."
+msgid "Always display excerpts instead of full content."
+msgstr ""
 
 #: inc/customizer-options.php:344 inc/customizer-options.php:369
 msgid "Display Featured Images"
@@ -313,31 +317,31 @@ msgstr "Afficher des téléchargements sur la page d'accueil."
 msgid "Footer Text"
 msgstr "Texte du pied de page"
 
-#: inc/extras.php:35
+#: inc/extras.php:40
 msgid "Page %s"
 msgstr "Page %s"
 
-#: inc/extras.php:88
+#: inc/extras.php:93
 msgid "Name"
 msgstr "Nom"
 
-#: inc/extras.php:89
+#: inc/extras.php:94
 msgid "Name *"
 msgstr "Nom *"
 
-#: inc/extras.php:95
+#: inc/extras.php:100
 msgid "Email"
 msgstr "E-Mail"
 
-#: inc/extras.php:96
+#: inc/extras.php:101
 msgid "Email *"
 msgstr "E-mail *"
 
-#: inc/extras.php:102 inc/extras.php:103
+#: inc/extras.php:107 inc/extras.php:108
 msgid "Website"
 msgstr "Site Web"
 
-#: inc/extras.php:121
+#: inc/extras.php:126
 msgid "Comment *"
 msgstr "Commentaire *"
 
