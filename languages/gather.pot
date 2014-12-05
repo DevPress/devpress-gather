@@ -80,7 +80,7 @@ msgstr ""
 msgid "Free"
 msgstr ""
 
-#: content-masonry-download.php:35
+#: content-masonry-download.php:35 content-masonry.php:27
 msgid "View More <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -91,10 +91,6 @@ msgstr ""
 
 #: content-masonry-download.php:46 content-masonry.php:38
 msgid "View More"
-msgstr ""
-
-#: content-masonry.php:27 content.php:30
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: content-none.php:14
@@ -119,6 +115,10 @@ msgstr ""
 
 #: content-single.php:41
 msgid "About %s"
+msgstr ""
+
+#: content.php:30
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: functions.php:43 inc/customizer-options.php:128
