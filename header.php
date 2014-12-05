@@ -66,9 +66,9 @@
 		<?php if ( has_nav_menu( 'secondary' ) ) : ?>
 		<nav id="secondary-navigation" class="main-navigation clearfix" role="navigation">
 			<div class="col-width">
-				<button class="menu-toggle" data-toggle="#secondary-navigation .menu">
+				<div class="menu-toggle" data-toggle="#secondary-navigation .menu">
 					<?php echo esc_html( gather_get_menu_name( 'secondary' ) ); ?>
-				</button>
+				</div>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'secondary',
 					'link_before' => '<span>',
