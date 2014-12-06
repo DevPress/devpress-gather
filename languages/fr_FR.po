@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Gather\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
-"PO-Revision-Date: 2014-12-05 15:05+0000\n"
+"PO-Revision-Date: 2014-12-06 18:00+0000\n"
 "Last-Translator: Devin Price <devin@wptheming.com>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/gather/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
@@ -235,7 +235,7 @@ msgstr "Couleur principale"
 
 #: inc/customizer-options.php:211
 msgid "Secondary Color"
-msgstr "Couleur secondaire"
+msgstr ""
 
 #: inc/customizer-options.php:219
 msgid "Site Title Color"
@@ -382,85 +382,85 @@ msgstr "Navigation des articles"
 msgid ", "
 msgstr ",&nbsp;"
 
-#: inc/updater/theme-updater.php:28
+#: inc/updater/theme-updater.php:27
 msgid "Theme License"
 msgstr "Licence du thème"
 
-#: inc/updater/theme-updater.php:29
+#: inc/updater/theme-updater.php:28
 msgid "Enter your theme license key."
 msgstr "Entrez votre clé de licence du thème."
 
-#: inc/updater/theme-updater.php:30
+#: inc/updater/theme-updater.php:29
 msgid "License Key"
 msgstr "Clé de licence"
 
-#: inc/updater/theme-updater.php:31
+#: inc/updater/theme-updater.php:30
 msgid "License Action"
 msgstr "Action sur la licence"
 
-#: inc/updater/theme-updater.php:32
+#: inc/updater/theme-updater.php:31
 msgid "Deactivate License"
 msgstr "Désactiver la licence"
 
-#: inc/updater/theme-updater.php:33
+#: inc/updater/theme-updater.php:32
 msgid "Activate License"
 msgstr "Activer la licence"
 
-#: inc/updater/theme-updater.php:34 inc/updater/theme-updater.php:46
+#: inc/updater/theme-updater.php:33 inc/updater/theme-updater.php:45
 msgid "License status is unknown."
 msgstr "L'état de la licence est inconnu."
 
-#: inc/updater/theme-updater.php:35
+#: inc/updater/theme-updater.php:34
 msgid "Renew?"
 msgstr "Renouveler&nbsp;?"
 
-#: inc/updater/theme-updater.php:36
+#: inc/updater/theme-updater.php:35
 msgid "unlimited"
 msgstr "illimité"
 
-#: inc/updater/theme-updater.php:37
+#: inc/updater/theme-updater.php:36
 msgid "License key is active."
 msgstr "La clé de licence est activée."
 
-#: inc/updater/theme-updater.php:38
+#: inc/updater/theme-updater.php:37
 msgid "Expires %s."
 msgstr "Expire le %s."
 
-#: inc/updater/theme-updater.php:39
+#: inc/updater/theme-updater.php:38
 msgid "You have %1$s / %2$s sites activated."
 msgstr "Vous avez %1$s / %2$s sites activés."
 
-#: inc/updater/theme-updater.php:40
+#: inc/updater/theme-updater.php:39
 msgid "License key expired %s."
 msgstr "La clé de licence expire le %s."
 
-#: inc/updater/theme-updater.php:41
+#: inc/updater/theme-updater.php:40
 msgid "License key has expired."
 msgstr "La clé de licence est expirée."
 
-#: inc/updater/theme-updater.php:42
+#: inc/updater/theme-updater.php:41
 msgid "License keys do not match."
 msgstr "Les clés de licence ne correspondent pas."
 
-#: inc/updater/theme-updater.php:43
+#: inc/updater/theme-updater.php:42
 msgid "License is inactive."
 msgstr "Le licence est inactivée."
 
-#: inc/updater/theme-updater.php:44
+#: inc/updater/theme-updater.php:43
 msgid "License key is disabled."
 msgstr "La clé de licence est désactivée."
 
-#: inc/updater/theme-updater.php:45
+#: inc/updater/theme-updater.php:44
 msgid "Site is inactive."
 msgstr "Le site est inactif."
 
-#: inc/updater/theme-updater.php:47
+#: inc/updater/theme-updater.php:46
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr "En mettant ce thème à jour vous allez perdre toutes les modifications personnelles que vous y avez apportées. « Annuler » pour arrêter, « OK » pour mettre à jour."
 
-#: inc/updater/theme-updater.php:48
+#: inc/updater/theme-updater.php:47
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\""
 " title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
@@ -481,11 +481,11 @@ msgstr "Recherche&hellip;"
 
 #. Theme Name of the plugin/theme
 msgid "Gather"
-msgstr "Gather"
+msgstr ""
 
 #. Theme URI of the plugin/theme
 msgid "https://devpress.com/gather"
-msgstr "https://devpress.com/gather"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
@@ -494,15 +494,15 @@ msgid ""
 "theme customizer.  Multiple menu locations, social icons, and widget areas "
 "are available.  Integrates well with popular plugins like JetPack and Easy "
 "Digital Downloads.  Gather is responsive and looks great on all devices."
-msgstr "Gather est un thème parfaitement adapté pour afficher des produits, de l'art et du contenu. Choisissez vos propres polices, mettez à jour les couleurs en fonction de vos goûts ou téléchargez votre logo en utilisant le thème customizer. Plusieurs emplacements de menu, icônes sociaux et zones de widgets sont disponibles. Il permet d'intégrer facilement les extensions les plus connues que sont JetPack et Easy Digital Downloads. Gather est responsive et s'affiche idéalement sur tous les types d'appareils."
+msgstr ""
 
 #. Author of the plugin/theme
 msgid "DevPress"
-msgstr "DevPress"
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://devpress.com"
-msgstr "http://devpress.com"
+msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Full Width Page"

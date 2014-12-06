@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Gather\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
-"PO-Revision-Date: 2014-12-05 15:05+0000\n"
+"PO-Revision-Date: 2014-12-06 18:00+0000\n"
 "Last-Translator: Devin Price <devin@wptheming.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/gather/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -235,7 +235,7 @@ msgstr "Pääväri"
 
 #: inc/customizer-options.php:211
 msgid "Secondary Color"
-msgstr "Toinen väri"
+msgstr ""
 
 #: inc/customizer-options.php:219
 msgid "Site Title Color"
@@ -382,85 +382,85 @@ msgstr "Artikkelien selaus"
 msgid ", "
 msgstr ", "
 
-#: inc/updater/theme-updater.php:28
+#: inc/updater/theme-updater.php:27
 msgid "Theme License"
 msgstr "Teeman lisenssi"
 
-#: inc/updater/theme-updater.php:29
+#: inc/updater/theme-updater.php:28
 msgid "Enter your theme license key."
 msgstr "Kirjoita teeman lisenssiavain."
 
-#: inc/updater/theme-updater.php:30
+#: inc/updater/theme-updater.php:29
 msgid "License Key"
 msgstr "Licenssiavain"
 
-#: inc/updater/theme-updater.php:31
+#: inc/updater/theme-updater.php:30
 msgid "License Action"
 msgstr "Lisenssiavaimen aktivointi"
 
-#: inc/updater/theme-updater.php:32
+#: inc/updater/theme-updater.php:31
 msgid "Deactivate License"
 msgstr "Poista lisenssiavain käytöstä"
 
-#: inc/updater/theme-updater.php:33
+#: inc/updater/theme-updater.php:32
 msgid "Activate License"
 msgstr "Aktivoi lisenssiavain"
 
-#: inc/updater/theme-updater.php:34 inc/updater/theme-updater.php:46
+#: inc/updater/theme-updater.php:33 inc/updater/theme-updater.php:45
 msgid "License status is unknown."
 msgstr "Lisenssiavaimen tila on tuntematon."
 
-#: inc/updater/theme-updater.php:35
+#: inc/updater/theme-updater.php:34
 msgid "Renew?"
 msgstr "Uusi lisenssi?"
 
-#: inc/updater/theme-updater.php:36
+#: inc/updater/theme-updater.php:35
 msgid "unlimited"
 msgstr "Rajoittamaton"
 
-#: inc/updater/theme-updater.php:37
+#: inc/updater/theme-updater.php:36
 msgid "License key is active."
 msgstr "Lisenssiavain on aktiivinen."
 
-#: inc/updater/theme-updater.php:38
+#: inc/updater/theme-updater.php:37
 msgid "Expires %s."
 msgstr "Vanhenee %s."
 
-#: inc/updater/theme-updater.php:39
+#: inc/updater/theme-updater.php:38
 msgid "You have %1$s / %2$s sites activated."
 msgstr "Sinulla on %1$s / %2$s sivua aktiivisena."
 
-#: inc/updater/theme-updater.php:40
+#: inc/updater/theme-updater.php:39
 msgid "License key expired %s."
 msgstr "Lisenssiavain on vanhentunut %s."
 
-#: inc/updater/theme-updater.php:41
+#: inc/updater/theme-updater.php:40
 msgid "License key has expired."
 msgstr "Lisenssiavain on vanhentunut."
 
-#: inc/updater/theme-updater.php:42
+#: inc/updater/theme-updater.php:41
 msgid "License keys do not match."
 msgstr "Lisenssiavaimet eivät täsmää."
 
-#: inc/updater/theme-updater.php:43
+#: inc/updater/theme-updater.php:42
 msgid "License is inactive."
 msgstr "Lisenssiavain ei ole toiminnassa."
 
-#: inc/updater/theme-updater.php:44
+#: inc/updater/theme-updater.php:43
 msgid "License key is disabled."
 msgstr "Lisenssiavain on poissa käytöstä."
 
-#: inc/updater/theme-updater.php:45
+#: inc/updater/theme-updater.php:44
 msgid "Site is inactive."
 msgstr "Sivusto ei ole aktiivinen."
 
-#: inc/updater/theme-updater.php:47
+#: inc/updater/theme-updater.php:46
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr "Teeman päivittäminen poistaa kaikki teemaan tehdyt muutokset (ei alateemaan tehtyjä muutoksia). Klikkaa 'OK' jatkaaksesi ja 'Peruta' lopettaaksesi."
 
-#: inc/updater/theme-updater.php:48
+#: inc/updater/theme-updater.php:47
 msgid ""
 "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\""
 " title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update "
@@ -481,11 +481,11 @@ msgstr "Etsi..."
 
 #. Theme Name of the plugin/theme
 msgid "Gather"
-msgstr "Gather"
+msgstr ""
 
 #. Theme URI of the plugin/theme
 msgid "https://devpress.com/gather"
-msgstr "https://devpress.com/gather"
+msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
@@ -494,15 +494,15 @@ msgid ""
 "theme customizer.  Multiple menu locations, social icons, and widget areas "
 "are available.  Integrates well with popular plugins like JetPack and Easy "
 "Digital Downloads.  Gather is responsive and looks great on all devices."
-msgstr "Gather on mukautuva ja responsiivi teema, jolla valokuvat, tuotteet ja sisältö todella saavat arvoisensa ulkoasun. Voit valita fontit, värit tai ladata logon. Lisäksi teemassa on useita valikkoja, vimpainalueita, some-valikko sekä teema integroituu suosittujen lisäosien kanssa kuten Jetpack ja Easy Digital Downloads. "
+msgstr ""
 
 #. Author of the plugin/theme
 msgid "DevPress"
-msgstr "DevPress"
+msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "https://devpress.com"
-msgstr "https://devpress.com"
+msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Full Width Page"
