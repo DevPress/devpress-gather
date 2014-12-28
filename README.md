@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Update: Minimum height for tweet embeds
+
 0.8.0
 ---
 

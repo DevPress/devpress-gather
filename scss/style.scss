@@ -933,15 +933,18 @@ a:active {
 	margin-top: 0;
 	padding: 0;
 }
+
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,
 object {
 	max-width: 100%;
 }
+.masonry .twitter-tweet {
+	min-height: 240px;
+}
 
 /* Captions */
-
 .wp-caption {
 	margin-bottom: 15px;
 	max-width: 100%;
