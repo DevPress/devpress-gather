@@ -28,6 +28,7 @@ Development
 ---
 
 * Update: Minimum height for tweet embeds
+* Update: Display search results in masonry grid
 
 0.8.0
 ---

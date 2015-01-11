@@ -11,17 +11,28 @@ get_header(); ?>
 		<h1 class="page-title"><?php printf( __( 'Search results for: %s', 'gather' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 	</header><!-- .page-header -->
 
-	<section id="primary" class="content-area">
-
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<div id="posts-wrap">
+			<div id="posts-wrap" data-columns="<?php echo gather_get_columns(); ?>">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content' ); ?>
+				<?php
+					$template = '';
+					$type = get_post_type();
+
+					if ( gather_load_masonry() ) {
+						$template = 'masonry';
+						if ( 'download' == $type ) {
+							$template = 'masonry-download';
+						}
+					}
+
+					get_template_part( 'content', gather_template_part() );
+				?>
 
 			<?php endwhile; ?>
 			</div>
@@ -35,7 +46,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+
+	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
