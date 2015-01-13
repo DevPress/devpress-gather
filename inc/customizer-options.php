@@ -392,19 +392,6 @@ function gather_options() {
 			'default' => 0
 		);
 
-		$options['edd-slug'] = array(
-			'id' => 'edd-slug',
-			'label'   => __( 'Permalink for Downloads', 'reunion' ),
-			'description' => __( 'After updating, you will need to re-save your permalinks.', 'reunion' ),
-			'section' => $section,
-			'type'    => 'text',
-			'default' => '',
-			'input_attrs' => array(
-				'placeholder' => 'downloads'
-			),
-			'sanitize_callback' => 'sanitize_title'
-		);
-
 	endif;
 
 	// Footer Settings

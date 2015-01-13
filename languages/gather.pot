@@ -225,6 +225,22 @@ msgstr ""
 msgid "Navigation Styles"
 msgstr ""
 
+#: inc/customizer-options.php:160
+msgid "Background Hover (%s)"
+msgstr ""
+
+#: inc/customizer-options.php:168
+msgid "Text (%s)"
+msgstr ""
+
+#: inc/customizer-options.php:176
+msgid "Border (%s)"
+msgstr ""
+
+#: inc/customizer-options.php:184
+msgid "Search Box (%s)"
+msgstr ""
+
 #: inc/customizer-options.php:197
 msgid "Colors"
 msgstr ""
@@ -310,7 +326,7 @@ msgid "Easy Digital Downloads"
 msgstr ""
 
 #: inc/customizer-options.php:389
-msgid "Display downloads on front page."
+msgid "Display Downloads on Front Page"
 msgstr ""
 
 #: inc/customizer-options.php:408
