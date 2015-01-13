@@ -157,7 +157,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-background-hover'] = array(
 			'id' => $menu . '-menu-background-hover',
-			'label'   => __( sprintf( 'Background Hover (%s)', $label ), 'gather' ),
+			'label'   => sprintf( __( 'Background Hover (%s)', 'gather' ) $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $lighten5,
@@ -165,7 +165,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-color'] = array(
 			'id' => $menu . '-menu-color',
-			'label'   => __( sprintf( 'Text (%s)', $label ), 'gather' ),
+			'label'   => sprintf( __( 'Text (%s)', 'gather' ) $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $contrast,
@@ -173,7 +173,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-border'] = array(
 			'id' => $menu . '-menu-border',
-			'label'   => __( sprintf( 'Border (%s)', $label ), 'gather' ),
+			'label'   => sprintf( __( 'Border (%s)', 'gather' ) $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $lighten20,
@@ -181,7 +181,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-search'] = array(
 			'id' => $menu . '-menu-search',
-			'label'   => __( sprintf( 'Search Box (%s)', $label ), 'gather' ),
+			'label'   => sprintf( __( 'Search Box (%s)', 'gather' ) $label ),
 			'section' => $section,
 			'type'    => 'checkbox',
 			'default' => 0,
@@ -386,10 +386,23 @@ function gather_options() {
 
 		$options['front-page-downloads'] = array(
 			'id' => 'front-page-downloads',
-			'label'   => __( 'Display downloads on front page.', 'gather' ),
+			'label'   => __( 'Display Downloads on Front Page', 'gather' ),
 			'section' => $section,
 			'type'    => 'checkbox',
 			'default' => 0
+		);
+
+		$options['edd-slug'] = array(
+			'id' => 'edd-slug',
+			'label'   => __( 'Permalink for Downloads', 'reunion' ),
+			'description' => __( 'After updating, you will need to re-save your permalinks.', 'reunion' ),
+			'section' => $section,
+			'type'    => 'text',
+			'default' => '',
+			'input_attrs' => array(
+				'placeholder' => 'downloads'
+			),
+			'sanitize_callback' => 'sanitize_title'
 		);
 
 	endif;

@@ -270,3 +270,15 @@ function gather_downloads_front_page( $query ) {
 
 }
 add_action( 'pre_get_posts', 'gather_downloads_front_page' );
+
+/**
+ * Changes the permalink slug for downloads
+ *
+ * @since Gather 1.0.0
+ */
+if ( ! defined( 'EDD_SLUG' ) ) :
+	$eddslug = get_theme_mod( 'edd-slug', customizer_library_get_default( 'edd-slug' ) );
+	if ( $eddslug != customizer_library_get_default( 'edd-slug' ) ) :
+		define( 'EDD_SLUG', $eddslug );
+	endif;
+endif;

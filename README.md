@@ -27,8 +27,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 Development
 ---
 
+* Enhancement: Option to change download slug
 * Update: Minimum height for tweet embeds
 * Update: Display search results in masonry grid
+* Update: Latest version of Customizer Library
+* Fix: Make additional menu design strings translatable in customizer
 
 0.8.0
 ---

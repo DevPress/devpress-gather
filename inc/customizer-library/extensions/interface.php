@@ -46,6 +46,11 @@ function customizer_library_register( $wp_customize ) {
 				$option['sanitize_callback'] = customizer_library_get_sanitization( $option['type'] );
 			}
 
+			// Set blank active_callback if one isn't set
+			if ( ! isset( $option['active_callback'] ) ) {
+				$option['active_callback'] = '';
+			}
+
 			// Add the setting
 			customizer_library_add_setting( $option, $wp_customize );
 
@@ -57,6 +62,7 @@ function customizer_library_register( $wp_customize ) {
 			// Adds control based on control type
 			switch ( $option['type'] ) {
 
+				case 'text':
 				case 'select':
 				case 'radio':
 				case 'checkbox':
@@ -86,7 +92,8 @@ function customizer_library_register( $wp_customize ) {
 								'label'             => $option['label'],
 								'section'           => $option['section'],
 								'sanitize_callback' => $option['sanitize_callback'],
-								'priority'          => $option['priority']
+								'priority'          => $option['priority'],
+								'active_callback'	=> $option['active_callback']
 							)
 						)
 					);
@@ -96,13 +103,14 @@ function customizer_library_register( $wp_customize ) {
 				case 'upload':
 
 					$wp_customize->add_control(
-						new WP_Customize_Image_Control(
+						new WP_Customize_Upload_Control(
 							$wp_customize,
 							$option['id'], array(
 								'label'             => $option['label'],
 								'section'           => $option['section'],
 								'sanitize_callback' => $option['sanitize_callback'],
-								'priority'          => $option['priority']
+								'priority'          => $option['priority'],
+								'active_callback'	=> $option['active_callback']
 							)
 						)
 					);
@@ -172,24 +180,30 @@ function customizer_library_add_sections( $sections, $wp_customize )  {
  */
 function customizer_library_add_setting( $option, $wp_customize )  {
 
-	// Arguments for $wp_customize->add_setting
-	// http://codex.wordpress.org/Class_Reference/WP_Customize_Manager/add_setting
-	$setting_args = array(
-		'default',
-		'capability',
-		'theme_supports',
-		'sanitize_callback'
+	$settings_default = array(
+		'default' => null,
+		'option_type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'theme_supports' => null,
+		'transport' => null,
+		'sanitize_callback' => 'wp_kses_post',
+		'sanitize_js_callback' => null
 	);
 
-	$args = array();
+	// Settings defaults
+	$settings = array_merge( $settings_default, $option );
 
-	foreach ( $setting_args as $arg ) {
-		if ( isset( $option[$arg] ) ) {
-			$args[$arg] = $option[$arg];
-		}
-	}
-
-	$wp_customize->add_setting( $option['id'], $args );
+	// Arguments for $wp_customize->add_setting
+	$wp_customize->add_setting(	$option['id'], array(
+			'default' => $settings['default'],
+			'type' => $settings['option_type'],
+			'capability' => $settings['capability'],
+			'theme_supports' => $settings['theme_supports'],
+			'transport' => $settings['transport'],
+			'sanitize_callback' => $settings['sanitize_callback'],
+			'sanitize_js_callback' => $settings['sanitize_js_callback']
+		)
+	);
 
 }
 
@@ -219,7 +233,7 @@ function customizer_library_get_sanitization( $type )  {
 		return 'customizer_library_sanitize_file_url';
 	}
 
-	if ( 'textarea' == $type ) {
+	if ( 'text' == $type || 'textarea' == $type ) {
 		return 'customizer_library_sanitize_text';
 	}
 
