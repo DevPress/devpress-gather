@@ -157,7 +157,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-background-hover'] = array(
 			'id' => $menu . '-menu-background-hover',
-			'label'   => sprintf( __( 'Background Hover (%s)', 'gather' ) $label ),
+			'label'   => sprintf( __( 'Background Hover (%s)', 'gather' ), $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $lighten5,
@@ -165,7 +165,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-color'] = array(
 			'id' => $menu . '-menu-color',
-			'label'   => sprintf( __( 'Text (%s)', 'gather' ) $label ),
+			'label'   => sprintf( __( 'Text (%s)', 'gather' ), $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $contrast,
@@ -173,7 +173,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-border'] = array(
 			'id' => $menu . '-menu-border',
-			'label'   => sprintf( __( 'Border (%s)', 'gather' ) $label ),
+			'label'   => sprintf( __( 'Border (%s)', 'gather' ), $label ),
 			'section' => $section,
 			'type'    => 'color',
 			'default' => $lighten20,
@@ -181,7 +181,7 @@ function gather_options() {
 
 		$options[$menu . '-menu-search'] = array(
 			'id' => $menu . '-menu-search',
-			'label'   => sprintf( __( 'Search Box (%s)', 'gather' ) $label ),
+			'label'   => sprintf( __( 'Search Box (%s)', 'gather' ), $label ),
 			'section' => $section,
 			'type'    => 'checkbox',
 			'default' => 0,
