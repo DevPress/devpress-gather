@@ -31,6 +31,7 @@ Development
 * Update: Display search results in masonry grid
 * Update: Latest version of Customizer Library
 * Fix: Make additional menu design strings translatable in customizer
+* Fix: Navigation styling options in customizer
 
 0.8.0
 ---

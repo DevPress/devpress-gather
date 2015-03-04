@@ -120,72 +120,72 @@ function gather_options() {
 
 	foreach ( $menus as $menu ) {
 
-		if ( ! has_nav_menu( $menu ) ) {
-			break;
-		}
+		if ( has_nav_menu( $menu ) ) :
 
-		if ( $menu == 'primary' ) {
-			$label = __( 'Primary Menu', 'gather' );
-		}
+			if ( $menu == 'primary' ) {
+				$label = __( 'Primary Menu', 'gather' );
+			}
 
-		if ( $menu == 'secondary' ) {
-			$label = __( 'Secondary Menu', 'gather' );
-		}
+			if ( $menu == 'secondary' ) {
+				$label = __( 'Secondary Menu', 'gather' );
+			}
 
-		$options[$menu . '-menu-background'] = array(
-			'id' => $menu . '-menu-background',
-			'label'   => __( sprintf( 'Background (%s)', $label ), 'gather' ),
-			'section' => $section,
-			'type'    => 'color',
-			'default' => $primary_color,
-		);
+			$options[$menu . '-menu-background'] = array(
+				'id' => $menu . '-menu-background',
+				'label'   => __( sprintf( 'Background (%s)', $label ), 'gather' ),
+				'section' => $section,
+				'type'    => 'color',
+				'default' => $primary_color,
+			);
 
-		$mod = get_theme_mod( $menu . '-menu-background', $primary_color );
-		$color = sanitize_hex_color( $mod );
+			$mod = get_theme_mod( $menu . '-menu-background', $primary_color );
+			$color = sanitize_hex_color( $mod );
 
-		// 5% lighter
-		$color_obj = new Jetpack_Color( $color );
-		$lighten5 = $color_obj->lighten(5)->toHex();
+			// 5% lighter
+			$color_obj = new Jetpack_Color( $color );
+			$lighten5 = $color_obj->lighten(5)->toHex();
 
-		// 20% lighter
-		$color_obj = new Jetpack_Color( $color );
-		$lighten20 = $color_obj->lighten(20)->toHex();
+			// 20% lighter
+			$color_obj = new Jetpack_Color( $color );
+			$lighten20 = $color_obj->lighten(20)->toHex();
 
-		// Contrasting text
-		$color_obj = new Jetpack_Color( $color );
-		$contrast = $color_obj->getGrayscaleContrastingColor()->lighten(40)->toHex();
+			// Contrasting text
+			$color_obj = new Jetpack_Color( $color );
+			$contrast = $color_obj->getGrayscaleContrastingColor()->lighten(40)->toHex();
 
-		$options[$menu . '-menu-background-hover'] = array(
-			'id' => $menu . '-menu-background-hover',
-			'label'   => sprintf( __( 'Background Hover (%s)', 'gather' ), $label ),
-			'section' => $section,
-			'type'    => 'color',
-			'default' => $lighten5,
-		);
+			$options[$menu . '-menu-background-hover'] = array(
+				'id' => $menu . '-menu-background-hover',
+				'label'   => sprintf( __( 'Background Hover (%s)', 'gather' ), $label ),
+				'section' => $section,
+				'type'    => 'color',
+				'default' => $lighten5,
+			);
 
-		$options[$menu . '-menu-color'] = array(
-			'id' => $menu . '-menu-color',
-			'label'   => sprintf( __( 'Text (%s)', 'gather' ), $label ),
-			'section' => $section,
-			'type'    => 'color',
-			'default' => $contrast,
-		);
+			$options[$menu . '-menu-color'] = array(
+				'id' => $menu . '-menu-color',
+				'label'   => sprintf( __( 'Text (%s)', 'gather' ), $label ),
+				'section' => $section,
+				'type'    => 'color',
+				'default' => $contrast,
+			);
 
-		$options[$menu . '-menu-border'] = array(
-			'id' => $menu . '-menu-border',
-			'label'   => sprintf( __( 'Border (%s)', 'gather' ), $label ),
-			'section' => $section,
-			'type'    => 'color',
-			'default' => $lighten20,
-		);
+			$options[$menu . '-menu-border'] = array(
+				'id' => $menu . '-menu-border',
+				'label'   => sprintf( __( 'Border (%s)', 'gather' ), $label ),
+				'section' => $section,
+				'type'    => 'color',
+				'default' => $lighten20,
+			);
 
-		$options[$menu . '-menu-search'] = array(
-			'id' => $menu . '-menu-search',
-			'label'   => sprintf( __( 'Search Box (%s)', 'gather' ), $label ),
-			'section' => $section,
-			'type'    => 'checkbox',
-			'default' => 0,
-		);
+			$options[$menu . '-menu-search'] = array(
+				'id' => $menu . '-menu-search',
+				'label'   => sprintf( __( 'Search Box (%s)', 'gather' ), $label ),
+				'section' => $section,
+				'type'    => 'checkbox',
+				'default' => 0,
+			);
+
+		endif;
 
 	}
 
