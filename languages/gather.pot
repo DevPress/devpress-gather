@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.8.0\n"
+"Project-Id-Version: Gather 0.9.0\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
@@ -121,11 +121,11 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-#: functions.php:43 inc/customizer-options.php:128
+#: functions.php:43 inc/customizer-options.php:126
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:44 inc/customizer-options.php:132
+#: functions.php:44 inc/customizer-options.php:130
 msgid "Secondary Menu"
 msgstr ""
 
@@ -225,19 +225,19 @@ msgstr ""
 msgid "Navigation Styles"
 msgstr ""
 
-#: inc/customizer-options.php:160
+#: inc/customizer-options.php:158
 msgid "Background Hover (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:168
+#: inc/customizer-options.php:166
 msgid "Text (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:176
+#: inc/customizer-options.php:174
 msgid "Border (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:184
+#: inc/customizer-options.php:182
 msgid "Search Box (%s)"
 msgstr ""
 
