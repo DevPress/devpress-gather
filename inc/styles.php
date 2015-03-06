@@ -143,92 +143,92 @@ function gather_styles() {
 		'secondary'
 	);
 
-	foreach ( $menus as $menu ) {
+	foreach ( $menus as $menu ) :
 
-		if ( ! has_nav_menu( $menu ) ) {
-			break;
-		}
+		if ( has_nav_menu( $menu ) ) :
 
-		if ( $menu == 'primary' ) {
-			$selector = '#primary-navigation' . ' ';
-		}
+			if ( $menu == 'primary' ) {
+				$selector = '#primary-navigation' . ' ';
+			}
 
-		if ( $menu == 'secondary' ) {
-			$selector = '#secondary-navigation' . ' ';
-		}
+			if ( $menu == 'secondary' ) {
+				$selector = '#secondary-navigation' . ' ';
+			}
 
-		// Background
-		$setting = $menu . '-menu-background';
-		$mod = get_theme_mod( $setting, false );
+			// Background
+			$setting = $menu . '-menu-background';
+			$mod = get_theme_mod( $setting, false );
 
-		if ( $mod ) {
-			Customizer_Library_Styles()->add( array(
-				'selectors' => array(
-					$selector,
-					$selector . 'ul ul a:hover'
-				),
-				'declarations' => array(
-					'background-color' => $mod
-				)
-			) );
-		}
+			if ( $mod ) {
+				Customizer_Library_Styles()->add( array(
+					'selectors' => array(
+						$selector,
+						$selector . 'ul ul a:hover'
+					),
+					'declarations' => array(
+						'background-color' => $mod
+					)
+				) );
+			}
 
-		// Background Hover
-		$setting = $menu . '-menu-background-hover';
-		$mod = get_theme_mod( $setting, false );
+			// Background Hover
+			$setting = $menu . '-menu-background-hover';
+			$mod = get_theme_mod( $setting, false );
 
-		if ( $mod ) {
-			Customizer_Library_Styles()->add( array(
-				'selectors' => array(
-					$selector . 'a:hover',
-					$selector . 'li:hover a'
-				),
-				'declarations' => array(
-					'background-color' => $mod
-				)
-			) );
-		}
+			if ( $mod ) {
+				Customizer_Library_Styles()->add( array(
+					'selectors' => array(
+						$selector . 'a:hover',
+						$selector . 'li:hover a'
+					),
+					'declarations' => array(
+						'background-color' => $mod
+					)
+				) );
+			}
 
-		// Navigation Text
-		$setting = $menu . '-menu-color';
-		$mod = get_theme_mod( $setting, false );
+			// Navigation Text
+			$setting = $menu . '-menu-color';
+			$mod = get_theme_mod( $setting, false );
 
-		if ( $mod ) {
-			Customizer_Library_Styles()->add( array(
-				'selectors' => array(
-					$selector . 'a',
-					$selector . 'a:hover',
-					$selector . 'li:hover a',
-					$selector . '.dropdown-toggle:after'
-				),
-				'declarations' => array(
-					'color' => $mod
-				)
-			) );
-		}
+			if ( $mod ) {
+				Customizer_Library_Styles()->add( array(
+					'selectors' => array(
+						$selector . 'a',
+						$selector . 'a:hover',
+						$selector . 'li:hover a',
+						$selector . '.dropdown-toggle:after'
+					),
+					'declarations' => array(
+						'color' => $mod
+					)
+				) );
+			}
 
-		// Border
-		$setting = $menu . '-menu-border';
-		$mod = get_theme_mod( $setting, false );
+			// Border
+			$setting = $menu . '-menu-border';
+			$mod = get_theme_mod( $setting, false );
 
-		if ( $mod ) {
-			Customizer_Library_Styles()->add( array(
-				'selectors' => array(
-					$selector . 'ul',
-					$selector . 'a',
-					$selector . '.dropdown-toggle',
-					$selector . 'ul ul',
-					$selector . 'ul ul a',
-					$selector . 'ul li:hover ul a',
-					$selector . 'ul ul ul'
-				),
-				'declarations' => array(
-					'border-color' => $mod
-				)
-			) );
-		}
+			if ( $mod ) {
+				Customizer_Library_Styles()->add( array(
+					'selectors' => array(
+						$selector . 'ul',
+						$selector . 'a',
+						$selector . '.dropdown-toggle',
+						$selector . 'ul ul',
+						$selector . 'ul ul a',
+						$selector . 'ul li:hover ul a',
+						$selector . 'ul ul ul'
+					),
+					'declarations' => array(
+						'border-color' => $mod
+					)
+				) );
+			}
 
-	}
+		endif;
+
+	endforeach;
 
 	// Header Background Color
 	$setting = 'header-background-color';
