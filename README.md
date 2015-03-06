@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+0.9.1
+---
+
+* Fix: Customizer styles for secondary menu
+
 0.9.0
 ---
 
