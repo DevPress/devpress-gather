@@ -178,6 +178,7 @@ function gather_social_nav_class( $classes, $item ) {
     		'instagr.am',
     		'instagram.com',
     		'skype.com',
+    		'soundcloud.com',
     		'spotify.com',
     		'twitter.com',
     		'vimeo.com'

@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+0.9.2
+---
+
+* Enhancement: Add social icon for SoundCloud
+
 0.9.1
 ---
 

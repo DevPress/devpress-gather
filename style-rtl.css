@@ -404,12 +404,9 @@ body {
   -webkit-font-smoothing: antialiased;
   word-wrap: break-word;
   min-height: 100%;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -440,8 +437,7 @@ h4, h5, h6 {
 a {
   color: #5bc08c;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
@@ -468,7 +464,6 @@ a:active {
 /* Layout
 -------------------------------------------------------------- */
 #page {
-  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -705,8 +700,8 @@ a:active {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-          transition: transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .main-navigation ul ul {
@@ -934,6 +929,10 @@ a:active {
 
   .main-navigation .social a[href*="skype.com"]:before {
     content: '\f17e';
+  }
+
+  .main-navigation .social a[href*="soundcloud.com"]:before {
+    content: '\f1be';
   }
 
   .main-navigation .social a[href*="spotify.com"]:before {
@@ -1185,8 +1184,7 @@ a:active {
 
 .masonry .entry-image-link {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in-out;
-          transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .masonry .entry-image-link:hover {
