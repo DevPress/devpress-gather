@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Update: Use new title tag feature
+
 0.9.2
 ---
 
