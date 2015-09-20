@@ -28,6 +28,7 @@ Development
 ---
 
 * Update: Use new title tag feature
+* Update: Remove Favicon option (now a standard WordPress feature)
 
 0.9.2
 ---

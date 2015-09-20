@@ -86,24 +86,6 @@ function gather_options() {
 		'default' => '',
 	);
 
-	$options['logo-favicon'] = array(
-		'id' => 'logo-favicon',
-		'label'   => __( 'Favicon', 'gather' ),
-		'section' => $section,
-		'type'    => 'upload',
-		'default' => '',
-		'description'  => __( 'File must be <strong>.png</strong> format. Optimal dimensions: <strong>32px x 32px</strong>.', 'gather' ),
-	);
-
-	$options['logo-apple-touch'] = array(
-		'id' => 'logo-apple-touch',
-		'label'   => __( 'Apple Touch Icon', 'gather' ),
-		'section' => $section,
-		'type'    => 'upload',
-		'default' => '',
-		'description'  => __( 'File must be <strong>.png</strong> format. Optimal dimensions: <strong>152px x 152px</strong>.', 'gather' ),
-	);
-
 	// Navigation Styles
 	$section = 'navigation-styles';
 
