@@ -41,13 +41,15 @@
 		<div class="site-branding">
 			<div class="col-width">
 
-				<?php if ( get_theme_mod( 'logo', 0 ) ) {
+				<?php if ( get_theme_mod( 'logo', 0 ) ) :
 					$class = 'site-logo';
 					$output = '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '">';
-				} else {
+				elseif ( function_exists( 'the_custom_logo' ) && get_theme_mod( 'custom_logo', true ) ) :
+					the_custom_logo();
+				else :
 					$class = 'site-title';
 					$output = get_bloginfo( 'name' );
-				} ?>
+				endif; ?>
 
 				<h1 class="<?php echo esc_attr( $class ); ?>">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

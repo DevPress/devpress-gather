@@ -8,43 +8,6 @@
  */
 
 /**
- * Filters wp_title to print a neat <title> tag based on what is being viewed.
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string The filtered title.
- */
-function gather_wp_title( $title, $sep ) {
-	if ( is_feed() ) {
-		return $title;
-	}
-
-	global $page, $paged;
-
-	// If "Downloads" are set on home page, just display site name and tagline
-	if ( get_theme_mod( 'front-page-downloads', 0 ) && is_front_page() ) {
-		$title = '';
-	}
-
-	// Add the blog name
-	$title .= get_bloginfo( 'name', 'display' );
-
-	// Add the blog description for the home/front page.
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		$title .= " $sep $site_description";
-	}
-
-	// Add a page number if necessary:
-	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-		$title .= " $sep " . sprintf( __( 'Page %s', 'gather' ), max( $paged, $page ) );
-	}
-
-	return $title;
-}
-add_filter( 'wp_title', 'gather_wp_title', 10, 2 );
-
-/**
  * Sets the authordata global when viewing an author archive.
  *
  * This provides backwards compatibility with
@@ -227,3 +190,35 @@ function gather_infinite_scroll_render() {
 	    get_template_part( 'content', gather_template_part() );
 	}
 }
+
+/**
+ * Theme Update Script
+ *
+ * Runs if version number saved in theme_mod "version" doesn't match current theme version.
+ */
+function gather_update_check() {
+
+	$ver = get_theme_mod( 'version', false );
+
+	// Return if update has already been run
+	if ( version_compare( $ver, GATHER_VERSION ) >= 0 ) {
+		return;
+	}
+
+		// If a logo has been set previously, update to use logo feature introduced in WordPress 4.5
+		if ( function_exists( 'the_custom_logo' ) && get_theme_mod( 'logo', false ) ) {
+
+			// Since previous logo was stored a URL, convert it to an attachment ID
+			$logo = attachment_url_to_postid( get_theme_mod( 'logo' ) );
+
+			if ( is_int( $logo ) ) {
+				set_theme_mod( 'custom_logo', attachment_url_to_postid( get_theme_mod( 'logo' ) ) );
+			}
+
+		remove_theme_mod( 'logo' );
+	}
+
+	// Update to match your current theme version
+	set_theme_mod( 'version', GATHER_VERSION );
+}
+add_action( 'after_setup_theme', 'gather_update_check' );

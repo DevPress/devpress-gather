@@ -72,19 +72,21 @@ function gather_options() {
 	// Logo
 	$section = 'logo';
 
-	$sections[] = array(
-		'id' => $section,
-		'title' => __( 'Logo', 'gather' ),
-		'priority' => '20'
-	);
+	if ( ! function_exists( 'the_custom_logo' ) ) :
+		$sections[] = array(
+			'id' => $section,
+			'title' => __( 'Logo', 'gather' ),
+			'priority' => '20'
+		);
 
-	$options['logo'] = array(
-		'id' => 'logo',
-		'label'   => __( 'Logo', 'gather' ),
-		'section' => $section,
-		'type'    => 'upload',
-		'default' => '',
-	);
+		$options['logo'] = array(
+			'id' => 'logo',
+			'label'   => __( 'Logo', 'gather' ),
+			'section' => $section,
+			'type'    => 'upload',
+			'default' => '',
+		);
+	endif;
 
 	// Navigation Styles
 	$section = 'navigation-styles';

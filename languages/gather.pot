@@ -1,14 +1,14 @@
-# Copyright (C) 2015 DevPress
+# Copyright (C) 2016 DevPress
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.9.1\n"
+"Project-Id-Version: Gather 0.9.3\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.4.9\n"
@@ -30,26 +30,6 @@ msgstr ""
 
 #: 404.php:20
 msgid "The page you are looking for doesn't exist. Try a search?"
-msgstr ""
-
-#: archive.php:23
-msgid "Author: %s"
-msgstr ""
-
-#: archive.php:26
-msgid "Day: %s"
-msgstr ""
-
-#: archive.php:29
-msgid "Month: %s"
-msgstr ""
-
-#: archive.php:32
-msgid "Year: %s"
-msgstr ""
-
-#: archive.php:35
-msgid "Archives"
 msgstr ""
 
 #: comment.php:31
@@ -121,23 +101,23 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-#: functions.php:43 inc/customizer-options.php:126
+#: functions.php:51 inc/customizer-options.php:110
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:44 inc/customizer-options.php:130
+#: functions.php:52 inc/customizer-options.php:114
 msgid "Secondary Menu"
 msgstr ""
 
-#: functions.php:99
+#: functions.php:107
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:109 inc/customizer-options.php:402
+#: functions.php:117 inc/customizer-options.php:386
 msgid "Footer"
 msgstr ""
 
-#: header.php:23
+#: header.php:22
 msgid "Skip to content"
 msgstr ""
 
@@ -197,167 +177,143 @@ msgstr ""
 msgid "Background Image Style"
 msgstr ""
 
-#: inc/customizer-options.php:77 inc/customizer-options.php:83
+#: inc/customizer-options.php:78 inc/customizer-options.php:84
 msgid "Logo"
 msgstr ""
 
-#: inc/customizer-options.php:91
-msgid "Favicon"
-msgstr ""
-
-#: inc/customizer-options.php:95
-msgid ""
-"File must be <strong>.png</strong> format. Optimal dimensions: <strong>32px "
-"x 32px</strong>."
-msgstr ""
-
-#: inc/customizer-options.php:100
-msgid "Apple Touch Icon"
-msgstr ""
-
-#: inc/customizer-options.php:104
-msgid ""
-"File must be <strong>.png</strong> format. Optimal dimensions: "
-"<strong>152px x 152px</strong>."
-msgstr ""
-
-#: inc/customizer-options.php:112
+#: inc/customizer-options.php:96
 msgid "Navigation Styles"
 msgstr ""
 
-#: inc/customizer-options.php:158
+#: inc/customizer-options.php:142
 msgid "Background Hover (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:166
+#: inc/customizer-options.php:150
 msgid "Text (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:174
+#: inc/customizer-options.php:158
 msgid "Border (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:182
+#: inc/customizer-options.php:166
 msgid "Search Box (%s)"
 msgstr ""
 
-#: inc/customizer-options.php:197
+#: inc/customizer-options.php:181
 msgid "Colors"
 msgstr ""
 
-#: inc/customizer-options.php:203
+#: inc/customizer-options.php:187
 msgid "Primary Color"
 msgstr ""
 
-#: inc/customizer-options.php:211
+#: inc/customizer-options.php:195
 msgid "Secondary Color"
 msgstr ""
 
-#: inc/customizer-options.php:219
+#: inc/customizer-options.php:203
 msgid "Site Title Color"
 msgstr ""
 
-#: inc/customizer-options.php:227
+#: inc/customizer-options.php:211
 msgid "Site Title Hover Color"
 msgstr ""
 
-#: inc/customizer-options.php:235
+#: inc/customizer-options.php:219
 msgid "Site Tagline Color"
 msgstr ""
 
-#: inc/customizer-options.php:246
+#: inc/customizer-options.php:230
 msgid "Layout"
 msgstr ""
 
-#: inc/customizer-options.php:257
+#: inc/customizer-options.php:241
 msgid "Standard Layout"
 msgstr ""
 
-#: inc/customizer-options.php:273
+#: inc/customizer-options.php:257
 msgid "Archive Layout"
 msgstr ""
 
-#: inc/customizer-options.php:282
+#: inc/customizer-options.php:266
 msgid "Display Sidebar on Archives"
 msgstr ""
 
-#: inc/customizer-options.php:293
+#: inc/customizer-options.php:277
 msgid "Typography"
 msgstr ""
 
-#: inc/customizer-options.php:299
+#: inc/customizer-options.php:283
 msgid "Site Title Font"
 msgstr ""
 
-#: inc/customizer-options.php:308
+#: inc/customizer-options.php:292
 msgid "Primary Font"
 msgstr ""
 
-#: inc/customizer-options.php:317
+#: inc/customizer-options.php:301
 msgid "Secondary Font"
 msgstr ""
 
-#: inc/customizer-options.php:329
+#: inc/customizer-options.php:313
 msgid "Archive"
 msgstr ""
 
-#: inc/customizer-options.php:335
+#: inc/customizer-options.php:319
 msgid "Display Excerpts"
 msgstr ""
 
-#: inc/customizer-options.php:336
+#: inc/customizer-options.php:320
 msgid "Always display excerpts instead of full content."
 msgstr ""
 
-#: inc/customizer-options.php:344 inc/customizer-options.php:369
+#: inc/customizer-options.php:328 inc/customizer-options.php:353
 msgid "Display Featured Images"
 msgstr ""
 
-#: inc/customizer-options.php:355
+#: inc/customizer-options.php:339
 msgid "Post"
 msgstr ""
 
-#: inc/customizer-options.php:361
+#: inc/customizer-options.php:345
 msgid "Display Post Dates"
 msgstr ""
 
-#: inc/customizer-options.php:383
+#: inc/customizer-options.php:367
 msgid "Easy Digital Downloads"
 msgstr ""
 
-#: inc/customizer-options.php:389
+#: inc/customizer-options.php:373
 msgid "Display Downloads on Front Page"
 msgstr ""
 
-#: inc/customizer-options.php:408
+#: inc/customizer-options.php:392
 msgid "Footer Text"
 msgstr ""
 
-#: inc/extras.php:40
-msgid "Page %s"
-msgstr ""
-
-#: inc/extras.php:93
+#: inc/extras.php:56
 msgid "Name"
 msgstr ""
 
-#: inc/extras.php:94
+#: inc/extras.php:57
 msgid "Name *"
 msgstr ""
 
-#: inc/extras.php:100
+#: inc/extras.php:63
 msgid "Email"
 msgstr ""
 
-#: inc/extras.php:101
+#: inc/extras.php:64
 msgid "Email *"
 msgstr ""
 
-#: inc/extras.php:107 inc/extras.php:108
+#: inc/extras.php:70 inc/extras.php:71
 msgid "Website"
 msgstr ""
 
-#: inc/extras.php:126
+#: inc/extras.php:89
 msgid "Comment *"
 msgstr ""
 
@@ -522,16 +478,6 @@ msgstr ""
 
 #. Template Name of the plugin/theme
 msgid "Full Width Page"
-msgstr ""
-
-#: archive.php:29
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: archive.php:32
-msgctxt "yearly archives date format"
-msgid "Y"
 msgstr ""
 
 #: comment.php:48

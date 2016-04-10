@@ -24,11 +24,13 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
-Development
+0.9.3
 ---
 
 * Update: Use new title tag feature
 * Update: Remove Favicon option (now a standard WordPress feature)
+* Update: Support logo feature (released in WordPress 4.5)
+* Update: Display taxonomy descriptions when present
 
 0.9.2
 ---
