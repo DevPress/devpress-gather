@@ -41,7 +41,7 @@
 		<div class="site-branding">
 			<div class="col-width">
 
-				<?php if ( get_theme_mod( 'logo', 0 ) ) :
+				<?php if ( ! function_exists( 'the_custom_logo' ) && get_theme_mod( 'logo', 0 ) ) :
 					$class = 'site-logo';
 					$output = '<img src="' . esc_url( get_theme_mod( 'logo' ) ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) ) . '">';
 				elseif ( function_exists( 'the_custom_logo' ) && get_theme_mod( 'custom_logo', false ) ) :
