@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+0.9.4 (11-12-2016)
+---
+
+* Update: Improve site-title/logo margin if no site tagline present
+
 0.9.3
 ---
 

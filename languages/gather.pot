@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gather 0.9.3\n"
+"Project-Id-Version: Gather 0.9.4\n"
 "Report-Msgid-Bugs-To: https://devpress.com/\n"
 "POT-Creation-Date: 2014-08-11 22:46:59+00:00\n"
 "MIME-Version: 1.0\n"
@@ -109,11 +109,11 @@ msgstr ""
 msgid "Secondary Menu"
 msgstr ""
 
-#: functions.php:107
+#: functions.php:111
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:117 inc/customizer-options.php:386
+#: functions.php:121 inc/customizer-options.php:386
 msgid "Footer"
 msgstr ""
 
