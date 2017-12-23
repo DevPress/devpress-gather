@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	// load all tasks
 	require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
-    grunt.initConfig({
+	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
 			files: ['scss/*.scss'],
@@ -15,65 +15,60 @@ module.exports = function(grunt) {
 		},
 		sass: {
 			default: {
-		  		options : {
-			  		style : 'expanded'
-			  	},
-			  	files: {
-					'style.css':'scss/style.scss',
+				options : {
+					style : 'expanded',
+					sourceMap: true
+				},
+				files: {
+					'style.css':'scss/style.scss'
 				}
 			}
 		},
-	    autoprefixer: {
-            options: {
-				browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1', 'ie 9']
+		postcss: {
+			options: {
+			map: true,
+			processors: [
+				require('autoprefixer-core')({browsers: 'last 2 versions'}),
+			]
 			},
-			single_file: {
-				src: 'style.css',
-				dest: 'style.css'
+			files: {
+				'css/style.css':'css/style.css'
 			}
 		},
-		csscomb: {
-			options: {
-                config: '.csscomb.json'
-            },
-            files: {
-                'style.css': ['style.css'],
-            }
-		},
 		concat: {
-		    build: {
-		        src: [
-		            'js/skip-link-focus-fix.js',
-		            'js/jquery.fastclick.js',
-		            'js/jquery.fittext.js',
-		            'js/jquery.fitvids.js',
-		            'js/global.js'
-		        ],
-		        dest: 'js/gather.min.js',
-		    }
+			build: {
+				src: [
+					'js/skip-link-focus-fix.js',
+					'js/jquery.fastclick.js',
+					'js/jquery.fittext.js',
+					'js/jquery.fitvids.js',
+					'js/global.js'
+				],
+				dest: 'js/gather.min.js',
+			}
 		},
 		uglify: {
-		    build: {
-		        src: 'js/gather.min.js',
-		        dest: 'js/gather.min.js'
-		    }
+			build: {
+				src: 'js/gather.min.js',
+				dest: 'js/gather.min.js'
+			}
 		},
-	    // https://www.npmjs.org/package/grunt-wp-i18n
-	    makepot: {
-	        target: {
-	            options: {
-	                domainPath: '/languages/',
-	                potFilename: 'gather.pot',
-	                potHeaders: {
-	                poedit: true, // Includes common Poedit headers.
-                    'x-poedit-keywordslist': true // Include a list of all possible gettext functions.
-                },
-		        type: 'wp-theme',
-		        updateTimestamp: false,
-		        processPot: function( pot, options ) {
+		// https://www.npmjs.org/package/grunt-wp-i18n
+		makepot: {
+			target: {
+				options: {
+					domainPath: '/languages/',
+					potFilename: 'gather.pot',
+					potHeaders: {
+					poedit: true, // Includes common Poedit headers.
+					'x-poedit-keywordslist': true // Include a list of all possible gettext functions.
+				},
+				type: 'wp-theme',
+				updateTimestamp: false,
+				processPot: function( pot, options ) {
 					pot.headers['report-msgid-bugs-to'] = 'https://devpress.com/';
-		        	pot.headers['language'] = 'en_US';
-		        	return pot;
+					pot.headers['language'] = 'en_US';
+					return pot;
 					}
 				}
 			}
@@ -117,7 +112,7 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-	    replace: {
+		replace: {
 			styleVersion: {
 				src: [
 					'scss/style.scss',
@@ -143,30 +138,31 @@ module.exports = function(grunt) {
 
 	grunt.registerTask( 'default', [
 		'sass',
-		'autoprefixer',
-    ]);
+		'postcss',
+		'concat',
+		'uglify',
+	]);
 
-    grunt.registerTask( 'release', [
-    	'replace',
-    	'sass',
-    	'autoprefixer',
-    	'csscomb',
-    	'concat:build',
-		'uglify:build',
+	grunt.registerTask( 'release', [
+		'replace',
+		'sass',
+		'postcss',
+		'concat',
+		'uglify',
 		'makepot',
 		'cssjanus'
 	]);
 
 	// Makepot and push it on Transifex task(s).
-    grunt.registerTask( 'txpush', [
-    	'makepot',
-    	'exec:txpush_s'
-    ]);
+	grunt.registerTask( 'txpush', [
+		'makepot',
+		'exec:txpush_s'
+	]);
 
-    // Pull from Transifex and create .mo task(s).
-    grunt.registerTask( 'txpull', [
-    	'exec:txpull',
-    	'potomo'
-    ]);
+	// Pull from Transifex and create .mo task(s).
+	grunt.registerTask( 'txpull', [
+		'exec:txpull',
+		'potomo'
+	]);
 
 };

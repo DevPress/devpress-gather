@@ -177,59 +177,13 @@ function gather_scripts() {
 		'replace'
 	);
 
-	if ( SCRIPT_DEBUG || WP_DEBUG ) :
-
-		wp_enqueue_script(
-			'gather-skip-link-focus-fix',
-			get_template_directory_uri() . '/js/skip-link-focus-fix.js',
-			array(),
-			GATHER_VERSION,
-			true
-		);
-
-		wp_enqueue_script(
-			'gather-fast-click',
-			get_template_directory_uri() . '/js/jquery.fastclick.js',
-			array(),
-			GATHER_VERSION,
-			true
-		);
-
-		wp_enqueue_script(
-			'gather-fittext',
-			get_template_directory_uri() . '/js/jquery.fittext.js',
-			array( 'jquery' ),
-			GATHER_VERSION,
-			true
-		);
-
-		wp_enqueue_script(
-			'gather-fitvids',
-			get_template_directory_uri() . '/js/jquery.fitvids.js',
-			array( 'jquery' ),
-			GATHER_VERSION,
-			true
-		);
-
-		wp_enqueue_script(
-			'gather-global',
-			get_template_directory_uri() . '/js/global.js',
-			array( 'jquery', 'gather-fitvids' ),
-			GATHER_VERSION,
-			true
-		);
-
-	else :
-
-		wp_enqueue_script(
-			'gather-scripts',
-			get_template_directory_uri() . '/js/gather.min.js',
-			array( 'jquery' ),
-			GATHER_VERSION,
-			true
-		);
-
-	endif;
+	wp_enqueue_script(
+		'gather-scripts',
+		get_template_directory_uri() . '/js/gather.min.js',
+		array( 'jquery' ),
+		GATHER_VERSION,
+		true
+	);
 
 	if ( gather_load_masonry() ) {
 		 wp_enqueue_script( 'masonry' );
@@ -245,7 +199,7 @@ add_action( 'wp_enqueue_scripts', 'gather_scripts' );
  * Load placeholder polyfill for IE9 and older
  */
 function gather_placeholder_polyfill() {
-    echo '<!--[if lte IE 9]><script src="' . get_template_directory_uri() . '/js/jquery-placeholder.js"></script><![endif]-->'. "\n";
+	echo '<!--[if lte IE 9]><script src="' . get_template_directory_uri() . '/js/jquery-placeholder.js"></script><![endif]-->'. "\n";
 }
 add_action( 'wp_head', 'gather_placeholder_polyfill' );
 

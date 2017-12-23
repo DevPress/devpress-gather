@@ -24,6 +24,12 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Update: Grunt dependencies updated
+* Update: FastClick script removed
+
 0.9.4 (11-12-2016)
 ---
 
