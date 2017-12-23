@@ -5,10 +5,10 @@
  */
  (function($) {
 
- 	var gather = {
+	var gather = {
 
- 		// Cache selectors
-	 	cache: {
+		// Cache selectors
+		cache: {
 			$document: $(document),
 			$window: $(window),
 			$postswrap: $('#posts-wrap'),
@@ -53,7 +53,7 @@
 					// Remove any inline styles that may have been added to menu
 					$('.main-navigation .menu').attr('style','');
 					$('.main-navigation').find('.children, .sub-menu').each( function(){
-		    			$(this).attr('style','');
+						$(this).attr('style','');
 					});
 
 					$('.main-navigation').find('.dropdown-toggle').each( function(){
@@ -89,13 +89,13 @@
 			$('.main-navigation .menu > .menu-item-has-children').append( '<span class="dropdown-toggle" />');
 
 			// When mobile menu is tapped/clicked
-			$('.menu-toggle').fastClick( function() {
+			$('.menu-toggle').on( 'click', function() {
 				var menu = $(this).data('toggle');
 				$(menu).toggle();
 			});
 
 			// When mobile submenu is tapped/clicked
-			$('.dropdown-toggle').fastClick( function() {
+			$('.dropdown-toggle').on( 'click', function() {
 				var $submenu = $(this).parent().find('.children,.sub-menu'),
 					$toggle = $(this);
 				$submenu.toggle( 0, function() {
@@ -199,8 +199,8 @@
 			};
 		}
 
- 	};
+	};
 
- 	gather.init();
+	gather.init();
 
  })(jQuery);
