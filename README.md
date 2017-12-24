@@ -27,7 +27,9 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 Development
 ---
 
+* Enhancement: CSS is minified
 * Update: Grunt dependencies updated
+* Update: File structure for assets updated
 * Update: FastClick script removed
 
 0.9.4 (11-12-2016)

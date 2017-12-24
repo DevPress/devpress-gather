@@ -150,10 +150,21 @@ function gather_fonts() {
 	$font_uri = customizer_library_get_google_font_uri( $fonts );
 
 	// Load Google Fonts
-	wp_enqueue_style( 'gather-body-fonts', $font_uri, array(), null, 'screen' );
+	wp_enqueue_style(
+		'gather-body-fonts',
+		$font_uri,
+		array(),
+		null,
+		'screen'
+	);
 
 	// Icon Font
-	wp_enqueue_style( 'gather-icons', get_template_directory_uri() . '/fonts/gather-icons.css', array(), '0.4.0' );
+	wp_enqueue_style(
+		'gather-icons',
+		get_template_directory_uri() . '/assets/fonts/gather-icons.css',
+		array(),
+		'0.4.0'
+	);
 
 }
 add_action( 'wp_enqueue_scripts', 'gather_fonts' );
@@ -165,7 +176,7 @@ function gather_scripts() {
 
 	wp_enqueue_style(
 		'gather-style',
-		get_stylesheet_uri(),
+		get_template_directory_uri() . '/css/style.min.css',
 		array(),
 		GATHER_VERSION
 	);
@@ -199,7 +210,7 @@ add_action( 'wp_enqueue_scripts', 'gather_scripts' );
  * Load placeholder polyfill for IE9 and older
  */
 function gather_placeholder_polyfill() {
-	echo '<!--[if lte IE 9]><script src="' . get_template_directory_uri() . '/js/jquery-placeholder.js"></script><![endif]-->'. "\n";
+	echo '<!--[if lte IE 9]><script src="' . get_template_directory_uri() . '/assets/js/jquery-placeholder.js"></script><![endif]-->'. "\n";
 }
 add_action( 'wp_head', 'gather_placeholder_polyfill' );
 

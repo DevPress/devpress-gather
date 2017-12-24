@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		watch: {
-			files: ['scss/*.scss'],
-			tasks: 'sass',
+			files: ['assets/scss/**/*.scss', 'assets/js/**/*.js'],
+			tasks: ['sass', 'postcss', 'cssmin', 'concat', 'uglify'],
 			options: {
 				livereload: true,
 			},
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 					sourceMap: true
 				},
 				files: {
-					'style.css':'scss/style.scss'
+					'css/style.css':'assets/scss/style.scss'
 				}
 			}
 		},
@@ -35,20 +35,39 @@ module.exports = function(grunt) {
 				'css/style.css':'css/style.css'
 			}
 		},
+		cssmin: {
+			options: {
+				aggressiveMerging : false
+			},
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'css',
+					ext: '.min.css'
+				}]
+			}
+		},
 		concat: {
-			build: {
+			default: {
 				src: [
-					'js/skip-link-focus-fix.js',
-					'js/jquery.fastclick.js',
-					'js/jquery.fittext.js',
-					'js/jquery.fitvids.js',
-					'js/global.js'
+					'assets/js/skip-link-focus-fix.js',
+					'assets/js/jquery.fittext.js',
+					'assets/js/jquery.fitvids.js',
+					'assets/js/theme.js'
 				],
-				dest: 'js/gather.min.js',
+				dest: 'js/gather.min.js'
 			}
 		},
 		uglify: {
-			build: {
+			options: {
+				mangle: {
+					except: ['jQuery']
+				},
+				drop_console: true
+			},
+			default: {
 				src: 'js/gather.min.js',
 				dest: 'js/gather.min.js'
 			}
@@ -106,9 +125,13 @@ module.exports = function(grunt) {
 				},
 				files: [
 					{
-						src: 'style.css',
-						dest: 'style-rtl.css'
-					}
+						src: 'css/style.css',
+						dest: 'css/style-rtl.css'
+					},
+					{
+						src: 'css/style.min.css',
+						dest: 'css/style-rtl.min.css'
+					},
 				]
 			}
 		},
@@ -139,6 +162,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'default', [
 		'sass',
 		'postcss',
+		'cssmin',
 		'concat',
 		'uglify',
 	]);
@@ -147,6 +171,7 @@ module.exports = function(grunt) {
 		'replace',
 		'sass',
 		'postcss',
+		'cssmin',
 		'concat',
 		'uglify',
 		'makepot',
