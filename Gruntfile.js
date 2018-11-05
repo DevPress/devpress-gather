@@ -1,4 +1,9 @@
 'use strict';
+
+// Packages
+const fiberLibrary = require('fibers');
+const sassLibrary = require('node-sass');
+
 module.exports = function(grunt) {
 
 	// load all tasks
@@ -16,6 +21,8 @@ module.exports = function(grunt) {
 		sass: {
 			default: {
 				options : {
+					implementation: sassLibrary,
+					fiber: fiberLibrary,
 					style : 'expanded',
 					sourceMap: true
 				},
@@ -63,13 +70,14 @@ module.exports = function(grunt) {
 		uglify: {
 			options: {
 				mangle: {
-					except: ['jQuery']
+					reserved: ['jQuery']
 				},
 				drop_console: true
 			},
 			default: {
-				src: 'js/gather.min.js',
-				dest: 'js/gather.min.js'
+				files: {
+					'js/gather.min.js' : 'js/gather.min.js'
+				}
 			}
 		},
 		// https://www.npmjs.org/package/grunt-wp-i18n
@@ -90,32 +98,6 @@ module.exports = function(grunt) {
 					return pot;
 					}
 				}
-			}
-		},
-		exec: {
-			txpull: { // Pull Transifex translation - grunt exec:txpull
-				cmd: 'tx pull -a --minimum-perc=90' // Percentage translated
-			},
-			txpush_s: { // Push pot to Transifex - grunt exec:txpush_s
-				cmd: 'tx push -s'
-			},
-		},
-		dirs: {
-			lang: 'languages',
-		},
-		potomo: {
-			dist: {
-				options: {
-					poDel: false // Set to true if you want to erase the .po
-				},
-				files: [{
-					expand: true,
-					cwd: '<%= dirs.lang %>',
-					src: ['*.po'],
-					dest: '<%= dirs.lang %>',
-					ext: '.mo',
-					nonull: true
-				}]
 			}
 		},
 		cssjanus: {
@@ -176,18 +158,6 @@ module.exports = function(grunt) {
 		'uglify',
 		'makepot',
 		'cssjanus'
-	]);
-
-	// Makepot and push it on Transifex task(s).
-	grunt.registerTask( 'txpush', [
-		'makepot',
-		'exec:txpush_s'
-	]);
-
-	// Pull from Transifex and create .mo task(s).
-	grunt.registerTask( 'txpull', [
-		'exec:txpull',
-		'potomo'
 	]);
 
 };
