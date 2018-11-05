@@ -14,7 +14,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 Gather is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
 */
 /* Reset
 -------------------------------------------------------------- */
@@ -352,10 +351,15 @@ body {
   display: flex;
   flex-direction: column; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 700;
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
 h1 {
   font-size: 36px; }
@@ -366,7 +370,9 @@ h2 {
 h3 {
   font-size: 22px; }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 18px; }
 
 a {
@@ -375,9 +381,9 @@ a {
   transition: all 0.2s ease;
   word-wrap: break-word; }
 
-a:hover,
+a:active,
 a:focus,
-a:active {
+a:hover {
   text-decoration: underline; }
 
 .col-width {
@@ -475,8 +481,7 @@ a:active {
     border-radius: 0;
     margin-bottom: 0; }
   .single.sidebar-right .site-content .secondary {
-    margin: 0;
-    margin-top: 1px; } }
+    margin: 1px 0 0; } }
 
 /* Header
 -------------------------------------------------------------- */
@@ -513,8 +518,7 @@ a:active {
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
-  margin: 0;
-  margin-top: 15px; }
+  margin: 15px 0 0; }
 
 @media screen and (max-width: 881px) {
   .site-branding {
@@ -768,7 +772,7 @@ a:active {
 .page-header {
   background: #fff;
   border-right: 5px solid #5bc08c;
-  padding: 15px 25px 15px;
+  padding: 15px 25px;
   margin: 30px 0 0;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
@@ -793,8 +797,8 @@ a:active {
 .entry-image-section {
   position: relative; }
 
-.entry-image-link,
-.entry-image img {
+.entry-image img,
+.entry-image-link {
   display: block; }
 
 .entry-image {
@@ -836,8 +840,8 @@ a:active {
   bottom: 15px;
   left: 15px; }
 
-.entry-content,
 .author-meta,
+.entry-content,
 .entry-footer-meta {
   padding: 0 8% 4%; }
 
@@ -866,7 +870,9 @@ a:active {
   margin-bottom: 5px; }
 
 /* Post Meta */
-.category-meta:before, .tag-meta:before, .edit-meta:before {
+.category-meta:before,
+.edit-meta:before,
+.tag-meta:before {
   font-family: 'gather-icons';
   speak: none;
   font-style: normal;
@@ -904,8 +910,8 @@ a:active {
 @media screen and (max-width: 510px) {
   .entry-title {
     padding: 6%; }
-  .entry-content,
   .author-meta,
+  .entry-content,
   .entry-footer-meta {
     padding: 0 6% 6%; } }
 
@@ -919,12 +925,12 @@ a:active {
 
 #content blockquote cite {
   display: inline-block;
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-size: 16px; }
 
 #content blockquote cite:before {
   content: '\2014';
-  margin-left: .5em; }
+  margin-left: 0.5em; }
 
 #content blockquote p:last-of-type {
   margin-bottom: 0; }
@@ -1016,7 +1022,8 @@ a:active {
   padding-left: 59px;
   float: right; }
 
-.search-form input, .search-form button {
+.search-form button,
+.search-form input {
   margin: 0; }
 
 .search-form .search-submit {
@@ -1025,8 +1032,8 @@ a:active {
   float: right;
   height: 38px; }
 
-.error404.sidebar-right .site-main,
-.error404.sidebar-left .site-main {
+.error404.sidebar-left .site-main,
+.error404.sidebar-right .site-main {
   margin: 0; }
 
 /* Widgets
@@ -1044,8 +1051,8 @@ a:active {
 .widget select {
   max-width: 100%; }
 
-.widget > ul,
-.widget > div > ul {
+.widget > div > ul,
+.widget > ul {
   list-style: none;
   margin-right: 0; }
 
@@ -1054,7 +1061,7 @@ a:active {
 
 @media screen and (max-width: 881px) {
   .secondary .widget {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 15px 6%; } }
 
 /* Paging Navigation
@@ -1068,7 +1075,7 @@ a:active {
   font-size: 15px; }
 
 .site-main .comment-navigation {
-  padding: 0 6% 0; }
+  padding: 0 6%; }
 
 .site-main #comment-nav-below {
   padding: 4% 6% 0; }
@@ -1127,12 +1134,14 @@ a:active {
   font-weight: 400;
   margin: 0 0 15px; }
 
-.comment, .trackback, .pingback {
+.comment,
+.pingback,
+.trackback {
   position: relative;
   padding: 0 80px 0 0; }
 
 .comment-body {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px; }
 
 .comment-author {
   font-family: "Merriweather", Georgia, serif;
@@ -1147,7 +1156,8 @@ a:active {
   right: 0;
   border-radius: 100%; }
 
-.trackback .avatar, .pingback .avatar {
+.pingback .avatar,
+.trackback .avatar {
   background: #ddd;
   color: #fff;
   font-size: 20px;
@@ -1218,7 +1228,9 @@ a:active {
   display: none;
   /* Using placeholders instead */ }
 
-#author, #email, #url {
+#author,
+#email,
+#url {
   width: 50%; }
 
 #respond textarea {
@@ -1246,7 +1258,9 @@ a:active {
   font-weight: 600; }
 
 @media screen and (max-width: 510px) {
-  #author, #email, #url {
+  #author,
+  #email,
+  #url {
     width: 100%; }
   #respond textarea {
     width: 100%; } }
@@ -1299,8 +1313,8 @@ a:active {
 @media screen and (max-width: 510px) {
   .footer-widgets .widget {
     margin-bottom: 15px; }
-  .footer-widgets .col-width,
-  #colophon .col-width {
+  #colophon .col-width,
+  .footer-widgets .col-width {
     padding-left: 6%;
     padding-right: 6%; } }
 
@@ -1314,9 +1328,9 @@ a:active {
   width: 1px;
   overflow: hidden; }
 
-.screen-reader-text:hover,
 .screen-reader-text:active,
-.screen-reader-text:focus {
+.screen-reader-text:focus,
+.screen-reader-text:hover {
   background-color: #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -1336,8 +1350,8 @@ a:active {
 
 /* Clearings
 --------------------------------------------------------------*/
-.clear:before,
-.clear:after {
+.clear:after,
+.clear:before {
   content: '';
   display: table; }
 
@@ -1363,9 +1377,9 @@ a:active {
 
 /* Media
 --------------------------------------------------------------*/
-.page-content img.wp-smiley,
+.comment-content img.wp-smiley,
 .entry-content img.wp-smiley,
-.comment-content img.wp-smiley {
+.page-content img.wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
@@ -1442,8 +1456,8 @@ object {
 
 /* Clearings
 --------------------------------------------------------------*/
-.clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
   content: " ";
   display: table; }
 

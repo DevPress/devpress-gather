@@ -71,13 +71,16 @@ function gather_setup() {
 		'image', 'gallery', 'video', 'quote', 'link'
 	) );
 
+	// Adds support for wide images introduced in WordPress 5.0.
+	add_theme_support( 'align-wide' );
+
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'gather_custom_background_args', array(
 		'default-color' => 'f2f2f2',
 		'default-image' => '',
 	) ) );
 
-	// Support custom logo feature
+	// Support custom logo feature.
 	add_theme_support( 'custom-logo', array( 'size' => 'large' ) );
 
 }
