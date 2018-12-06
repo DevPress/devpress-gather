@@ -234,9 +234,11 @@ textarea {
 
 button,
 .button,
+.wp-block-button__link,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  -webkit-appearance: none;
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -244,7 +246,6 @@ input[type="submit"] {
   position: relative;
   text-decoration: none;
   text-align: center;
-  -webkit-appearance: none;
   border-radius: 3px;
   display: inline-block;
   padding: 7px 20px 9px;
@@ -252,25 +253,28 @@ input[type="submit"] {
   box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 15px; }
-
-button:hover,
-.button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  background: #49b97f; }
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  box-shadow: inset 0 2px rgba(0, 0, 0, 0.15);
-  padding: 8px 20px;
-  outline: none; }
+  button:hover,
+  .button:hover,
+  .wp-block-button__link:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    background: #49b97f;
+    text-decoration: none; }
+  button:focus, button:active,
+  .button:focus,
+  .button:active,
+  .wp-block-button__link:focus,
+  .wp-block-button__link:active,
+  input[type="button"]:focus,
+  input[type="button"]:active,
+  input[type="reset"]:focus,
+  input[type="reset"]:active,
+  input[type="submit"]:focus,
+  input[type="submit"]:active {
+    box-shadow: inset 0 2px rgba(0, 0, 0, 0.15);
+    padding: 8px 20px;
+    outline: none; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -302,17 +306,16 @@ textarea {
   padding: 8px;
   width: 100%;
   border-radius: 3px; }
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="email"]:focus,
-input[type="search"]:focus,
-input[type="url"]:focus,
-textarea:focus {
-  background-color: #fff;
-  outline: none;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.2); }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus,
+  input[type="email"]:focus,
+  input[type="search"]:focus,
+  input[type="url"]:focus,
+  textarea:focus {
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.2); }
 
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -790,9 +793,8 @@ a:hover {
   font-size: 13px;
   text-align: center;
   text-transform: uppercase; }
-
-.entry-meta a {
-  color: #666; }
+  .entry-meta a {
+    color: #666; }
 
 .entry-image-section {
   position: relative; }
@@ -858,16 +860,14 @@ a:hover {
   position: absolute;
   right: 20px;
   top: 20px; }
-
-.author-avatar img {
-  border-radius: 50%; }
+  .author-avatar img {
+    border-radius: 50%; }
 
 .author-description {
   margin-right: 90px; }
-
-.author-description h3 {
-  font-size: 18px;
-  margin-bottom: 5px; }
+  .author-description h3 {
+    font-size: 18px;
+    margin-bottom: 5px; }
 
 /* Post Meta */
 .category-meta:before,
@@ -917,23 +917,23 @@ a:hover {
 
 /* Post Formats
 --------------------------------------------------------------*/
+#content .wp-block-pullquote {
+  padding: 30px 0; }
+
 #content blockquote {
   background: #f6f6f6;
   margin: 0 0 20px;
   padding: 20px;
   border-right: 4px solid #5bc08c; }
-
-#content blockquote cite {
-  display: inline-block;
-  margin-top: 0.5em;
-  font-size: 16px; }
-
-#content blockquote cite:before {
-  content: '\2014';
-  margin-left: 0.5em; }
-
-#content blockquote p:last-of-type {
-  margin-bottom: 0; }
+  #content blockquote cite {
+    display: inline-block;
+    margin-top: 0.5em;
+    font-size: 16px; }
+    #content blockquote cite::before {
+      content: '\2014';
+      margin-left: 0.5em; }
+  #content blockquote p:last-of-type {
+    margin-bottom: 0; }
 
 .single #content blockquote {
   font-size: 18px; }
@@ -952,9 +952,8 @@ a:hover {
 .masonry .entry-image-link {
   opacity: 1;
   transition: opacity 0.3s ease-in-out; }
-
-.masonry .entry-image-link:hover {
-  opacity: 0.8; }
+  .masonry .entry-image-link:hover {
+    opacity: 0.8; }
 
 .masonry .entry-header {
   padding: 6% 6% 4%; }
@@ -974,10 +973,9 @@ a:hover {
   padding: 4% 6%;
   text-decoration: none;
   border-top: 1px solid #eee; }
-
-.masonry .entry-footer-meta a:hover {
-  background: #5bc08c;
-  color: #fff; }
+  .masonry .entry-footer-meta a:hover {
+    background: #5bc08c;
+    color: #fff; }
 
 /* Columns */
 @media screen and (min-width: 881px) {
@@ -1411,8 +1409,9 @@ object {
   margin: 5px 0; }
 
 /* Galleries */
-.gallery {
-  margin-bottom: 20px; }
+.gallery,
+.wp-block-gallery {
+  margin: 0 0 20px; }
 
 .gallery-item {
   display: inline-block;

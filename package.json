@@ -1,7 +1,7 @@
 {
 	"name": "gather",
-	"version": "0.9.4",
-	"repository": "https://github.com/DevPress/devpress-gather/",
+	"version": "1.0.0",
+	"repository": "https://github.com/devpress/devpress-gather/",
 	"license": "GPL-2.0",
 	"devDependencies": {
 		"autoprefixer-core": "^6.0.0",

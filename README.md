@@ -15,7 +15,7 @@ This theme can be installed under "Appearance" > "Themes".  Click on the "Add Ne
 
 ### Grunt
 
-This theme uses Grunt to compile SASS and Javascript.  It also generates translation files, autoprefixes styles, and concats and minifies scripts.
+This theme uses Grunt to compile Sass and Javascript.  It also generates translation files, autoprefixes styles, and concats and minifies scripts.
 
 If you have Grunt installed, just run `npm install` in the theme directory to download dependencies.
 
@@ -24,13 +24,14 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
-Development
+1.0.0 (12-05-2018)
 ---
 
-* Enhancement: CSS is minified
+* Update: Support for WordPress 5.0 Editor (Gutenberg)
 * Update: Grunt dependencies updated
 * Update: File structure for assets updated
 * Update: FastClick script removed
+* Enhancement: CSS is minified
 
 0.9.4 (11-12-2016)
 ---
