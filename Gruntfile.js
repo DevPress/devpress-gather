@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 			options: {
 			map: true,
 			processors: [
-				require('autoprefixer-core')({browsers: 'last 2 versions'}),
+				require('autoprefixer')({browsers: 'last 2 versions, > 2%'}),
 			]
 			},
 			files: {
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 		replace: {
 			styleVersion: {
 				src: [
-					'scss/style.scss',
+					'assets/scss/style.scss',
 				],
 				overwrite: true,
 				replacements: [{
