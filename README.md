@@ -28,6 +28,7 @@ Development
 ---
 
 * Update: HTML5 Script support
+* Update: Improved button styling
 
 1.0.0 (12-05-2018)
 ---

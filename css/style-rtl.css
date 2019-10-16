@@ -238,7 +238,6 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: none;
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
@@ -246,13 +245,15 @@ input[type="submit"] {
   position: relative;
   text-decoration: none;
   text-align: center;
+  -webkit-appearance: none;
   border-radius: 3px;
   display: inline-block;
   padding: 7px 20px 9px;
   background-color: #5bc08c;
   box-shadow: inset 0 -2px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-size: 15px; }
+  font-size: 15px;
+  text-decoration: none; }
   button:hover,
   .button:hover,
   .wp-block-button__link:hover,
@@ -261,20 +262,15 @@ input[type="submit"] {
   input[type="submit"]:hover {
     background: #49b97f;
     text-decoration: none; }
-  button:focus, button:active,
+  button:focus,
   .button:focus,
-  .button:active,
   .wp-block-button__link:focus,
-  .wp-block-button__link:active,
   input[type="button"]:focus,
-  input[type="button"]:active,
   input[type="reset"]:focus,
-  input[type="reset"]:active,
-  input[type="submit"]:focus,
-  input[type="submit"]:active {
+  input[type="submit"]:focus {
     box-shadow: inset 0 2px rgba(0, 0, 0, 0.15);
     padding: 8px 20px;
-    outline: none; }
+    text-decoration: none; }
 
 input[type="checkbox"],
 input[type="radio"] {
