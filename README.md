@@ -24,6 +24,11 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
+Development
+---
+
+* Update: HTML5 Script support
+
 1.0.0 (12-05-2018)
 ---
 
