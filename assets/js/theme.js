@@ -66,11 +66,9 @@
 			// Handle Masonry on Resize
 			this.cache.$window.on( 'resize', self.debounce(
 				function() {
-
 					if ( self.cache.masonry ) {
 						self.masonryInit();
 					}
-
 				}, 200 )
 			);
 
@@ -162,18 +160,16 @@
 					gutter : gutter
 				});
 			});
-
-			$(document.body).on('jetpack-lazy-loaded-image', function () {
-				console.log('lazy-loaded');
-				$postswrap.imagesLoaded(function () {
-					console.log('images-loaded');
+			
+			// Handle Masonry on Resize
+			$(document.body).on( 'jetpack-lazy-loaded-image', self.debounce(
+				function() {
 					$postswrap.masonry('reloadItems').masonry('layout');
-				});
-			});
+				}, 200 )
+			);
 
 			// Layout posts that arrive via infinite scroll.
 			$(document.body).on('post-load', function () {
-				console.log('post-load')
 				var $newItems = $postswrap.find('.module').not('.masonry');
 				$newItems.css({ 'margin-right' : 0 }).addClass('masonry');
 

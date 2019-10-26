@@ -29,6 +29,7 @@ Development
 
 * Update: HTML5 Script support
 * Update: Improved button styling
+* Fix: Improved support for Jetpack Lazy Load and Infinite Scroll.
 
 1.0.0 (12-05-2018)
 ---
