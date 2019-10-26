@@ -149,33 +149,42 @@
 			if ( document.body.clientWidth <= 880 ) {
 				gutter = 20;
 			}
-
-			// So cached selectors can be used in functions
+			
+			var $postswrap = this.cache.$postswrap;
 			var self = this;
 
-			// Initialize
-			this.cache.$postswrap.imagesLoaded( function() {
-				self.cache.$postswrap.find('.module').css({ 'margin-right' : 0 });
-				self.cache.$postswrap.masonry({
+			$postswrap.imagesLoaded(function () {
+				$posts = $postswrap.find('.module').css({ 'margin-right' : 0 }).addClass('masonry');
+
+				$postswrap.masonry({
 					itemSelector: '.module',
+					transitionDuration: 0,
 					gutter : gutter
 				});
 			});
 
-			// For Infinite Scroll
-			var infinite_count = 0;
-
-			$( document.body ).on( 'post-load', function () {
-
-				infinite_count = infinite_count + 1;
-				var $selector = $('#infinite-view-' + infinite_count);
-				var $elements = $selector.find('.module');
-				$('#posts-wrap').masonry( 'appended', $elements );
-				$elements.imagesLoaded( function() {
-					$('#posts-wrap').masonry();
-					$('.hentry').fitVids();
+			$(document.body).on('jetpack-lazy-loaded-image', function () {
+				console.log('lazy-loaded');
+				$postswrap.imagesLoaded(function () {
+					console.log('images-loaded');
+					$postswrap.masonry('reloadItems').masonry('layout');
 				});
+			});
 
+			// Layout posts that arrive via infinite scroll.
+			$(document.body).on('post-load', function () {
+				console.log('post-load')
+				var $newItems = $postswrap.find('.module').not('.masonry');
+				$newItems.css({ 'margin-right' : 0 }).addClass('masonry');
+
+				$newItems.hide();
+				$postswrap.append($newItems);
+
+				$postswrap.imagesLoaded(function () {
+					$postswrap.masonry('appended', $newItems, true).masonry('reloadItems').masonry('layout');
+					$newItems.show(200);
+					$newItems.fitVids();
+				});
 			});
 
 		},
