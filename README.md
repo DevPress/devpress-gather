@@ -24,12 +24,12 @@ If you have Grunt installed, just run `npm install` in the theme directory to do
 
 ## Change Log
 
-Development
+1.1.0 (10-29-2019)
 ---
 
 * Update: HTML5 Script support
 * Update: Improved button styling
-* Fix: Improved support for Jetpack Lazy Load and Infinite Scroll.
+* Fix: Improved support for Jetpack Lazy Load and Infinite Scroll
 
 1.0.0 (12-05-2018)
 ---
